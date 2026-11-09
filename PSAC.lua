@@ -11,13 +11,19 @@ local SETTLE_TIME = 0.3      -- short wait after teleport so you're in range
 
 -- Fast Mode timings
 local FAST_HOLD_DURATION = 0   -- hold time forced onto prompts while interacting
-local FAST_SETTLE_TIME = 0.7
-local FAST_PROMPT_DELAY = 0.2
+local FAST_SETTLE_TIME = 0.15
+local FAST_PROMPT_DELAY = 0.5
 local FAST_TELEPORT_DELAY = 1.5 -- max time per target; moves on sooner if the node is done
 
+-- Dim_O settings
+local WORKBENCH_NAME = "Workbench"  -- teleport here first when entering a Dim_O
+local WORKBENCH_WAIT = 1.5          -- wait after the Workbench teleport
+local FAST_WORKBENCH_WAIT = 0.75
+local NODES_PER_DIM_O = 7           -- leave a Dim_O after collecting this many nodes
+local NO_PROGRESS_TIMEOUT = 3       -- ...or after this many seconds with nothing new to collect
+
 local HEIGHT_OFFSET = Vector3.new(0, 4, 0)
-local DIM_O_PREFIX = "Dim_O" -- dimensions starting with this go in the Dim_O list
-local MAX_ATTEMPTS = 3       -- Dim_O mode gives up on a node that survives this many visits
+local DIM_O_PREFIX = "Dim_" -- dimensions starting with this go in the Dim_O list
 local LIST_REFRESH = 1.5     -- how often the dimension lists update (seconds)
 
 -- Loading screen hiding: a ScreenGui in PlayerGui is hidden if its name contains
@@ -67,7 +73,7 @@ local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, -64, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
-title.Text = "Auto Teleport"
+title.Text = "Portal Sandbox Autofarm"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.Font = Enum.Font.GothamBold
 title.TextSize = 14
@@ -365,7 +371,7 @@ local chestButton = createToggleButton(1)
 createLabel("Dimension (pick one)", 2)
 local nodeList = createList(3, false)
 local nodeButton = createToggleButton(4)
-createLabel("Dim_O (pick several, in order)", 5)
+createLabel("Scrap Dimensions (pick several, in order)", 5)
 local dimOList = createList(6, true)
 local dimOButton = createToggleButton(7)
 local fastButton = createToggleButton(8)
@@ -453,9 +459,13 @@ task.spawn(function()
 	end
 end)
 
-local function getNodesFolder(dimName)
+local function getDimension(dimName)
 	local dimensions = workspace:FindFirstChild("Dimensions")
-	local dim = dimensions and dimensions:FindFirstChild(dimName)
+	return dimensions and dimensions:FindFirstChild(dimName)
+end
+
+local function getNodesFolder(dimName)
+	local dim = getDimension(dimName)
 	local nodes = dim and dim:FindFirstChild("Nodes")
 	if nodes and nodes:IsA("Folder") then
 		return nodes
@@ -597,13 +607,14 @@ local function makePassLoop(getTargets)
 	end
 end
 
--- Next node in a dimension that still has an interactable prompt
-local function nextDimONode(dimName, attempts)
+-- Dim_O nodes are NOT removed from the Nodes folder after collection, so we track which
+-- nodes we've already visited instead of waiting for them to disappear.
+local function nextUnvisitedDimONode(dimName, visited)
 	local nodes = getNodesFolder(dimName)
 	if not nodes then return nil end
 
 	for _, model in ipairs(nodes:GetChildren()) do
-		if model:IsA("Model") and (attempts[model] or 0) < MAX_ATTEMPTS then
+		if model:IsA("Model") and model.Name ~= WORKBENCH_NAME and not visited[model] then
 			local prompt = model:FindFirstChildWhichIsA("ProximityPrompt", true)
 			if prompt and prompt.Enabled then
 				return model
@@ -613,29 +624,82 @@ local function nextDimONode(dimName, attempts)
 	return nil
 end
 
+-- Teleport to the Workbench model inside a Dim_O so its nodes become reachable.
+-- Returns true if the teleport happened.
+local warnedMissing = {}
+
+local function enterDimension(dimName, id)
+	local dim = getDimension(dimName)
+	local workbench = dim and dim:FindFirstChild(WORKBENCH_NAME, true)
+	if not workbench or not workbench:IsA("PVInstance") then
+		if not warnedMissing[dimName] then
+			warnedMissing[dimName] = true
+			warn("No '" .. WORKBENCH_NAME .. "' found in " .. dimName .. ", continuing without it")
+		end
+		return false
+	end
+
+	local character = player.Character
+	local root = character and character:FindFirstChild("HumanoidRootPart")
+	if not root then return false end
+
+	root.CFrame = workbench:GetPivot() + HEIGHT_OFFSET
+	interruptibleWait(fastMode and FAST_WORKBENCH_WAIT or WORKBENCH_WAIT, id)
+	return true
+end
+
+-- Collect from one Dim_O. Each node is visited once. Stops after NODES_PER_DIM_O
+-- nodes, or when nothing new has been available for NO_PROGRESS_TIMEOUT seconds.
+-- Returns how many nodes were collected.
+local function collectDimension(dimName, id)
+	local visited = {}
+	local count = 0
+	local lastProgress = os.clock() -- also gives nodes time to load in right after entering
+
+	while runId == id and count < NODES_PER_DIM_O do
+		local node = nextUnvisitedDimONode(dimName, visited)
+
+		if node then
+			visited[node] = true
+			if visitTarget(node, id) then
+				count += 1
+			end
+			lastProgress = os.clock()
+		else
+			if os.clock() - lastProgress >= NO_PROGRESS_TIMEOUT then
+				break
+			end
+			task.wait(0.1)
+		end
+	end
+
+	return count
+end
+
 local function runDimO(id)
-	local attempts = setmetatable({}, { __mode = "k" })
+	local currentDim = nil     -- the Dim_O we last entered via its Workbench
+	local lastCharacter = nil  -- so a respawn forces re-entry
 
 	while runId == id do
 		local order = table.clone(dimOList.order)
-		local didWork = false
+		local collectedThisPass = 0
 
 		for _, dimName in ipairs(order) do
-			-- stay in this dimension until its Nodes folder has nothing left
-			while runId == id do
-				local node = nextDimONode(dimName, attempts)
-				if not node then break end
+			if runId ~= id then break end
 
-				didWork = true
-				if visitTarget(node, id) then
-					attempts[node] = (attempts[node] or 0) + 1
+			-- Moving to a different Dim_O: go to its Workbench first
+			if currentDim ~= dimName or player.Character ~= lastCharacter then
+				if enterDimension(dimName, id) then
+					currentDim = dimName
+					lastCharacter = player.Character
 				end
 			end
-			if runId ~= id then break end
+
+			collectedThisPass += collectDimension(dimName, id)
 		end
 
-		if not didWork then
-			interruptibleWait(2, id) -- everything cleared, check again shortly
+		if collectedThisPass == 0 then
+			interruptibleWait(2, id) -- nothing collected anywhere, check again shortly
 		end
 		task.wait()
 	end
@@ -649,7 +713,7 @@ modes.chests = {
 }
 
 modes.nodes = {
-	label = "Node TP",
+	label = "Material Farm",
 	button = nodeButton,
 	run = makePassLoop(getSelectedDimensionTargets),
 	canStart = function() return #nodeList.order > 0 end,
@@ -657,11 +721,11 @@ modes.nodes = {
 }
 
 modes.dimo = {
-	label = "Dim_O TP",
+	label = "Scrap Farm",
 	button = dimOButton,
 	run = runDimO,
 	canStart = function() return #dimOList.order > 0 end,
-	startMessage = "Pick a Dim_O!",
+	startMessage = "Pick a Dimension!",
 }
 
 local function flashMessage(mode, text)
