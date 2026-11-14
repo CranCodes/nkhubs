@@ -1,5 +1,5 @@
--- LUAOBF-4CY8D | Obfuscated Lua script | 2026-11-13
-local function _d26gxw(b,k)
+-- LUAOBF-244UB | Obfuscated Lua script | 2026-11-14
+local function _d1p6ns(b,k)
   local n=#k
   if n==0 then return "" end
   local o={}
@@ -20,655 +20,825 @@ local function _d26gxw(b,k)
   end
   return table.concat(o)
 end
-local _h = game:GetService(_d26gxw({2,80,85,15,55,78,71},{82,60,52,118}))
-local _z = game:GetService(_d26gxw({8,56,19,38,20,37,6,33,41,24,19,38,43,34,21,49},{93,75,118,84}))
-local _x = game:GetService(_d26gxw({3,24,89,4,79,118,50,29,74,8,66,64},{87,111,60,97,33,37}))
-local _y = game:GetService(_d26gxw({22,82,46,73,2,64,39,48,82,58,118,31,76,52,37,80,59},{68,55,94,37,107,35,70}))
-local _g = game:GetService(_d26gxw({25,27,37,121,46,28,61,67,40,11},{75,110,75,42}))
-local _r = _h.LocalPlayer
-local _c = _r:WaitForChild(_d26gxw({56,65,45,49,68,66,126,5,1},{104,45,76,72,33,48,57,112}))
+local _v = game:GetService(_d1p6ns({106,30,28,88,90,72,1},{58,114,125,33,63}))
+local _l = game:GetService(_d1p6ns({109,69,39,60,32,20,70,78,76,101,39,60,31,19,85,94},{56,54,66,78,105,122,54,59}))
+local _e = game:GetService(_d1p6ns({23,94,42,13,18,117,57,49,95,38,11,25},{67,41,79,104,124,38,92}))
+local _m = game:GetService(_d1p6ns({26,55,35,67,85,43,51,39,74,88,27,38,60,93,93,47,55},{72,82,83,47,60}))
+local _b = game:GetService(_d1p6ns({47,30,43,28,38,55,19,20,8,32},{125,107,69,79,67,69,101}))
+local _d = game:GetService(_d1p6ns({6,76,67,57,17,49,73,100,62,1,34},{80,37,49,77,100}))
+local _h = _v.LocalPlayer
+local _k = _h:WaitForChild(_d1p6ns({2,7,37,72,10,2,6,53,59},{82,107,68,49,111,112,65,64}))
 
 
-local _v = 5     
-local _n = 2       
-local _m = 0.3      
+local _c = 5     
+local _u = 2       
+local _f = 0.3      
 
 
-local _d = 0   
-local _q = 0.15
-local _b = 0.5
-local _f = 1.5 
+local _i = 0   
+local _r = 0.15
+local _q = 0.5
+local _t = 1.5 
 
 
-local _p = _d26gxw({125,91,86,71,5,7,68,87,76},{42,52,36,44,103,98})  
-local _i = 1.5          
-local _t = 0.75
-local _o = 7           
-local _e = 3       
-local _u = 0.75         
-local _l = 30 
+local _z = _d1p6ns({19,85,14,60,60,60,83,39,82},{68,58,124,87,94,89,61})  
+local _o = 1.5          
+local _s = 0.75
+local _w = 7           
+local _x = 3       
+local _g = 0.75         
+local _n = 30 
 
-local _w = Vector3.new(0, 4, 0)
+local _a = Vector3.new(0, 4, 0)
 
 
 
-local _k = 8      
-local _s = 1.5 
+local _j = 8      
+local _p = 1.5 
 local function getHiddenOffset(model)
-	local _a = model:FindFirstChildWhichIsA(_d26gxw({2,84,45,50,59,75,43,62,43,118,48,37,63,86,54},{82,38,66,74}), true)
-	local _j = (_a and _a.MaxActivationDistance) or _k
-	local _ow = math.clamp(_j - _s, 1, _k)
-	return Vector3.new(0, -_ow, 0)
+	local _y = model:FindFirstChildWhichIsA(_d1p6ns({46,73,40,16,32,19,82,51,17,25,12,84,42,24,61},{126,59,71,104,73}), true)
+	local _gc = (_y and _y.MaxActivationDistance) or _j
+	local _cv = math.clamp(_gc - _p, 1, _j)
+	return Vector3.new(0, -_cv, 0)
 end
-local _ht = _d26gxw({47,23,59,104},{107,126,86,55,69,34,117,88}) 
-local _qq = 1.5     
+local _ng = _d1p6ns({43,68,27,29},{111,45,118,66,34,67,46}) 
+local _ad = 1.5     
 
 
-local _yj = true
-local _hy = 0.3  
-local _yg = false 
+local _fo = true
+local _ai = 0.3  
+local _yc = false 
 
 
 
 
-local _kt = {}
-local _jp = { _d26gxw({27,57,14,37,26,15,16},{119,86,111,65,115,97}), _d26gxw({82,27,62,61,75,87,27,91,17,49},{62,116,95,89,56,52,105}), _d26gxw({72,85,41,82,69,85,83,33,83,88},{60,39,72,60,54}), _d26gxw({65,63,79,62,63,31,21,37,70,57,81,62,42,30},{53,90,35,91,79,112,103,81}) }
-local _av = { _d26gxw({57,5,9,85,52,44,73,27,85,46,61},{73,105,108,52,71}), _d26gxw({44,65,8,52,23,21,6},{64,46,105,80,126,123,97}) }
+local _tm = {}
+local _lp = { _d1p6ns({75,57,0,34,54,73,49},{39,86,97,70,95}), _d1p6ns({9,86,19,19,68,84,19,0,92,28},{101,57,114,119,55,55,97}), _d1p6ns({86,6,26,81,69,56,81,87,77,26},{34,116,123,63,54,81,37,62}), _d1p6ns({46,8,78,81,49,19,35,46,30,65,70,36,25,63},{90,109,34,52,65,124,81}) }
+local _nw = { _d1p6ns({65,12,0,34,70,17,102,70,1,12,55},{49,96,101,67,53,116,70}), _d1p6ns({92,39,33,76,1,94,47},{48,72,64,40,104}) }
 
-local _hi = 548
-local _au = 28
+local _na = 560
+local _pe = 28
 
 
-local _bg = 0.4 
-local _ok = 0 
-local _rg = 0.25 
-local _fe = 15 
+local _je = 0.4 
+local _xn = 0 
+local _nb = 0.25 
+local _pu = 15 
 
-local _pb = Color3.fromRGB(200, 50, 50)
-local _hu = Color3.fromRGB(50, 180, 80)
-local _sh = Color3.fromRGB(55, 55, 65)
-local _yn = Color3.fromRGB(60, 110, 200)
-local _tn = Color3.fromRGB(70, 70, 80)
+local _qg = Color3.fromRGB(200, 50, 50)
+local _qq = Color3.fromRGB(50, 180, 80)
+local _jc = Color3.fromRGB(55, 55, 65)
+local _ao = Color3.fromRGB(60, 110, 200)
+local _hb = Color3.fromRGB(70, 70, 80)
 
-local _xe = true
-local _df = false
-local _mt = false
+local _cy = true
+local _kn = false
+local _ah = false
+local _ch = false 
 
-local function isDimO(_sb)
-	return string.sub(_sb, 1, #_ht) == _ht
+local function isDimO(_fz)
+	return string.sub(_fz, 1, #_ng) == _ng
 end
 
 
-local _mm = Instance.new(_d26gxw({39,9,33,66,12,2,51,31,58},{116,106,83,39,105,108}))
-_mm.Name = _d26gxw({14,25,60,88,57,37,60,71,40,1,54,89,57,54,44,66},{77,113,89,43})
-_mm.ResetOnSpawn = false
-_mm.Parent = _c
 
-local _ys = Instance.new(_d26gxw({45,75,29,81,50},{107,57,124,60,87,64,84}))
-_ys.Size = UDim2.new(0, 240, 0, _hi)
-_ys.Position = UDim2.new(0, 20, 0.5, -274)
-_ys.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
-_ys.BorderSizePixel = 0
-_ys.Active = true
-_ys.Parent = _mm
-Instance.new(_d26gxw({47,42,111,21,2,53,31,17},{122,99,44,122,112,91}), _ys).CornerRadius = UDim.new(0, 10)
-
-local _kd = Instance.new(_d26gxw({28,92,59,79,53},{90,46,90,34,80,64}))
-_kd.Size = UDim2.new(1, 0, 0, 28)
-_kd.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
-_kd.BorderSizePixel = 0
-_kd.Parent = _ys
-Instance.new(_d26gxw({43,123,116,57,12,92,82,36},{126,50,55,86}), _kd).CornerRadius = UDim.new(0, 10)
-
-local _ra = Instance.new(_d26gxw({11,4,45,7,102,6,3,58,13},{95,97,85,115,42,103,97}))
-_ra.Size = UDim2.new(1, -64, 1, 0)
-_ra.Position = UDim2.new(0, 10, 0, 0)
-_ra.BackgroundTransparency = 1
-_ra.Text = _d26gxw({8,36,88,35,57,39,10,4,57,37,78,53,55,51,10,22,45,63,69,49,57,57,71},{88,75,42,87})
-_ra.TextColor3 = Color3.new(1, 1, 1)
-_ra.Font = Enum.Font.GothamBold
-_ra.TextSize = 14
-_ra.TextXAlignment = Enum.TextXAlignment.Left
-_ra.Parent = _kd
-
-local _um = Instance.new(_d26gxw({22,44,91,77,0,60,87,77,45,39},{66,73,35,57}))
-_um.Size = UDim2.new(0, 22, 0, 22)
-_um.Position = UDim2.new(1, -51, 0, 3)
-_um.BackgroundColor3 = Color3.fromRGB(90, 90, 110)
-_um.Text = "-"
-_um.TextColor3 = Color3.new(1, 1, 1)
-_um.Font = Enum.Font.GothamBold
-_um.TextSize = 16
-_um.Parent = _kd
-Instance.new(_d26gxw({15,100,12,73,11,90,30,95},{90,45,79,38,121,52,123,45}), _um).CornerRadius = UDim.new(0, 6)
-
-local _zh = Instance.new(_d26gxw({122,47,21,95,2,91,62,25,68,46},{46,74,109,43,64}))
-_zh.Size = UDim2.new(0, 22, 0, 22)
-_zh.Position = UDim2.new(1, -25, 0, 3)
-_zh.BackgroundColor3 = _pb
-_zh.Text = "X"
-_zh.TextColor3 = Color3.new(1, 1, 1)
-_zh.Font = Enum.Font.GothamBold
-_zh.TextSize = 14
-_zh.Parent = _kd
-Instance.new(_d26gxw({23,26,35,0,48,61,5,29},{66,83,96,111}), _zh).CornerRadius = UDim.new(0, 6)
-
-local _zr = Instance.new(_d26gxw({15,21,94,22,89},{73,103,63,123,60,109,82,50}))
-_zr.Size = UDim2.new(1, 0, 1, -28)
-_zr.Position = UDim2.new(0, 0, 0, 28)
-_zr.BackgroundTransparency = 1
-_zr.Parent = _ys
+local function dimOwnerId(_bc)
+	local _id = _bc:GetAttribute(_d1p6ns({96,21,19,42,11,103,48},{47,98,125,79,121,46,84}))
+	return _id ~= nil and tonumber(_id) or nil
+end
 
 
-local _vk = Instance.new(_d26gxw({120,75,33,86,61},{62,57,64,59,88,113}))
-_vk.Size = UDim2.new(1, -20, 0, 24)
-_vk.Position = UDim2.new(0, 10, 0, 6)
-_vk.BackgroundTransparency = 1
-_vk.Parent = _zr
+local function getPlayerDimO()
+	local _ge = workspace:FindFirstChild(_d1p6ns({97,65,39,23,32,1,76,71,36,1},{37,40,74,114,78,114}))
+	if not _ge then return nil end
+	for _pr, _bc in ipairs(_ge:GetChildren()) do
+		if isDimO(_bc.Name) and dimOwnerId(_bc) == _h.UserId then
+			return _bc
+		end
+	end
+	return nil
+end
 
-local _ik = Instance.new(_d26gxw({59,14,4,39,64,6,34,38,49,33,70,6},{110,71,72,78,51,114}))
-_ik.FillDirection = Enum.FillDirection.Horizontal
-_ik.Padding = UDim.new(0, 6)
-_ik.SortOrder = Enum.SortOrder.LayoutOrder
-_ik.Parent = _vk
 
-local function createTabButton(text, _mf)
-	local _ss = Instance.new(_d26gxw({61,1,63,0,54,16,93,29,11,41},{105,100,71,116,116,101,41}))
-	_ss.Size = UDim2.new(1 / 3, -4, 1, 0)
-	_ss.LayoutOrder = _mf
-	_ss.Text = text
-	_ss.TextColor3 = Color3.new(1, 1, 1)
-	_ss.Font = Enum.Font.GothamBold
-	_ss.TextSize = 13
-	_ss.BorderSizePixel = 0
-	_ss.Parent = _vk
-	Instance.new(_d26gxw({126,9,19,54,12,42,55,5},{43,64,80,89,126,68,82,119}), _ss).CornerRadius = UDim.new(0, 6)
-	return _ss
+local _vf = Instance.new(_d1p6ns({18,95,15,60,29,13,4,52,85},{65,60,125,89,120,99,67}))
+_vf.Name = _d1p6ns({45,43,47,5,15,2,6,32,11,51,37,4,15,17,22,37},{110,67,74,118,123,86,99,76})
+_vf.ResetOnSpawn = false
+_vf.Parent = _k
+
+local _oe = Instance.new(_d1p6ns({0,50,70,63,80},{70,64,39,82,53,113}))
+_oe.Size = UDim2.new(0, 460, 0, _na)
+_oe.Position = UDim2.new(0, 20, 0.5, -280)
+_oe.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+_oe.BorderSizePixel = 0
+_oe.Active = true
+_oe.Parent = _vf
+Instance.new(_d1p6ns({50,36,103,20,4,9,8,86},{103,109,36,123,118}), _oe).CornerRadius = UDim.new(0, 10)
+
+local _du = Instance.new(_d1p6ns({16,66,15,87,51},{86,48,110,58}))
+_du.Size = UDim2.new(1, 0, 0, 28)
+_du.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
+_du.BorderSizePixel = 0
+_du.Parent = _oe
+Instance.new(_d1p6ns({47,45,57,17,8,10,31,12},{122,100,122,126}), _du).CornerRadius = UDim.new(0, 10)
+
+local _nk = Instance.new(_d1p6ns({41,8,65,33,45,25,31,8,85},{125,109,57,85,97,120}))
+_nk.Size = UDim2.new(1, -64, 1, 0)
+_nk.Position = UDim2.new(0, 10, 0, 0)
+_nk.BackgroundTransparency = 1
+_nk.Text = _d1p6ns({19,29,35,55,10,52,122,102,34,28,53,33,4,32,122,116,54,6,62,37,10,42,55},{67,114,81,67,107,88,90,53})
+_nk.TextColor3 = Color3.new(1, 1, 1)
+_nk.Font = Enum.Font.GothamBold
+_nk.TextSize = 14
+_nk.TextXAlignment = Enum.TextXAlignment.Left
+_nk.Parent = _du
+
+local _zs = Instance.new(_d1p6ns({15,81,18,61,27,51,41,9,52,90},{91,52,106,73,89,70,93,125}))
+_zs.Size = UDim2.new(0, 22, 0, 22)
+_zs.Position = UDim2.new(1, -51, 0, 3)
+_zs.BackgroundColor3 = Color3.fromRGB(90, 90, 110)
+_zs.Text = "-"
+_zs.TextColor3 = Color3.new(1, 1, 1)
+_zs.Font = Enum.Font.GothamBold
+_zs.TextSize = 16
+_zs.Parent = _du
+Instance.new(_d1p6ns({112,28,100,90,36,91,66,87},{37,85,39,53,86,53,39}), _zs).CornerRadius = UDim.new(0, 6)
+
+local _in = Instance.new(_d1p6ns({10,13,87,90,28,29,91,90,49,6},{94,104,47,46}))
+_in.Size = UDim2.new(0, 22, 0, 22)
+_in.Position = UDim2.new(1, -25, 0, 3)
+_in.BackgroundColor3 = _qg
+_in.Text = "X"
+_in.TextColor3 = Color3.new(1, 1, 1)
+_in.Font = Enum.Font.GothamBold
+_in.TextSize = 14
+_in.Parent = _du
+Instance.new(_d1p6ns({37,10,12,5,75,16,82,2},{112,67,79,106,57,126,55}), _in).CornerRadius = UDim.new(0, 6)
+
+local _cr = Instance.new(_d1p6ns({52,41,75,54,13},{114,91,42,91,104,98,124}))
+_cr.Size = UDim2.new(1, 0, 1, -28)
+_cr.Position = UDim2.new(0, 0, 0, 28)
+_cr.BackgroundTransparency = 1
+_cr.Parent = _oe
+
+
+local _el = Instance.new(_d1p6ns({48,75,73,59,33},{118,57,40,86,68}))
+_el.Size = UDim2.new(1, -20, 0, 24)
+_el.Position = UDim2.new(0, 10, 0, 6)
+_el.BackgroundTransparency = 1
+_el.Parent = _cr
+
+local _qy = Instance.new(_d1p6ns({115,53,36,4,27,82,48,9,20,7,83,8},{38,124,104,109,104}))
+_qy.FillDirection = Enum.FillDirection.Horizontal
+_qy.Padding = UDim.new(0, 6)
+_qy.SortOrder = Enum.SortOrder.LayoutOrder
+_qy.Parent = _el
+
+local function createTabButton(text, _om)
+	local _we = Instance.new(_d1p6ns({10,28,93,0,11,43,13,81,27,39},{94,121,37,116,73}))
+	_we.Size = UDim2.new(1 / 3, -4, 1, 0)
+	_we.LayoutOrder = _om
+	_we.Text = text
+	_we.TextColor3 = Color3.new(1, 1, 1)
+	_we.Font = Enum.Font.GothamBold
+	_we.TextSize = 13
+	_we.BorderSizePixel = 0
+	_we.Parent = _el
+	Instance.new(_d1p6ns({123,51,15,10,87,53,60,92},{46,122,76,101,37,91,89}), _we).CornerRadius = UDim.new(0, 6)
+	return _we
 end
 
 
 local function createPage()
-	local _ed = Instance.new(_d26gxw({20,69,67,58,55},{82,55,34,87}))
-	_ed.Size = UDim2.new(1, 0, 1, -32)
-	_ed.Position = UDim2.new(0, 0, 0, 32)
-	_ed.BackgroundTransparency = 1
-	_ed.Parent = _zr
+	local _wr = Instance.new(_d1p6ns({3,24,46,59,70},{69,106,79,86,35,56}))
+	_wr.Size = UDim2.new(1, 0, 1, -32)
+	_wr.Position = UDim2.new(0, 0, 0, 32)
+	_wr.BackgroundTransparency = 1
+	_wr.Parent = _cr
 
-	local _xz = Instance.new(_d26gxw({10,97,57,69,75,43,100,20,85,87,42,92},{95,40,117,44,56}))
-	_xz.Padding = UDim.new(0, 6)
-	_xz.SortOrder = Enum.SortOrder.LayoutOrder
-	_xz.Parent = _ed
+	local _xw = Instance.new(_d1p6ns({0,104,113,82,30,73,54,52,88,82,78,25},{85,33,61,59,109,61,122}))
+	_xw.Padding = UDim.new(0, 6)
+	_xw.SortOrder = Enum.SortOrder.LayoutOrder
+	_xw.Parent = _wr
 
-	local _mn = Instance.new(_d26gxw({1,104,15,84,48,69,54,91,51},{84,33,95,53}))
-	_mn.PaddingTop = UDim.new(0, 2)
-	_mn.PaddingLeft = UDim.new(0, 10)
-	_mn.PaddingRight = UDim.new(0, 10)
-	_mn.Parent = _ed
+	local _wd = Instance.new(_d1p6ns({41,46,101,52,24,3,92,59,27},{124,103,53,85}))
+	_wd.PaddingTop = UDim.new(0, 2)
+	_wd.PaddingLeft = UDim.new(0, 10)
+	_wd.PaddingRight = UDim.new(0, 10)
+	_wd.Parent = _wr
 
-	return _ed
+	return _wr
 end
 
-local _sv = createPage()
-local _zg = createPage()
-local _ka = createPage()
-local _qa = createTabButton(_d26gxw({110,19,88,62},{40,114,42,83}), 1)
-local _xt = createTabButton(_d26gxw({58,8,39,69},{118,103,72,49,67}), 2)
-local _ej = createTabButton(_d26gxw({109,40,14,11,65},{46,90,111,109,53,57}), 3)
+local _xv = createPage()
+local _uw = createPage()
+local _cx = createPage()
+local _yg = createTabButton(_d1p6ns({62,33,37,41},{120,64,87,68,41,83,108}), 1)
+local _qt = createTabButton(_d1p6ns({44,30,44,2},{96,113,67,118}), 2)
+local _ml = createTabButton(_d1p6ns({55,42,95,50,78},{116,88,62,84,58,117,37,55}), 3)
 
-local function selectTab(_sb)
-	_sv.Visible = (_sb == _d26gxw({94,86,77,88},{56,55,63,53,84}))
-	_zg.Visible = (_sb == _d26gxw({12,66,34,55},{96,45,77,67,75,94}))
-	_ka.Visible = (_sb == _d26gxw({88,52,84,91,42},{59,70,53,61,94,39,47,81}))
-	_qa.BackgroundColor3 = (_sb == _d26gxw({65,75,53,51},{39,42,71,94,123})) and _yn or _sh
-	_xt.BackgroundColor3 = (_sb == _d26gxw({93,89,43,49},{49,54,68,69})) and _yn or _sh
-	_ej.BackgroundColor3 = (_sb == _d26gxw({27,87,55,7,12},{120,37,86,97})) and _yn or _sh
+local function selectTab(_fz)
+	_xv.Visible = (_fz == _d1p6ns({51,41,4,62},{85,72,118,83}))
+	_uw.Visible = (_fz == _d1p6ns({61,77,70,17},{81,34,41,101,94,103,52,33}))
+	_cx.Visible = (_fz == _d1p6ns({53,10,91,33,35},{86,120,58,71,87}))
+	_yg.BackgroundColor3 = (_fz == _d1p6ns({59,14,9,83},{93,111,123,62})) and _ao or _jc
+	_qt.BackgroundColor3 = (_fz == _d1p6ns({53,91,30,89},{89,52,113,45,82,98,91,100})) and _ao or _jc
+	_ml.BackgroundColor3 = (_fz == _d1p6ns({64,11,56,54,17},{35,121,89,80,101})) and _ao or _jc
 end
 
-_qa.MouseButton1Click:Connect(function() selectTab(_d26gxw({6,68,93,21},{96,37,47,120,78})) end)
-_xt.MouseButton1Click:Connect(function() selectTab(_d26gxw({14,38,23,78},{98,73,120,58,118,72})) end)
-_ej.MouseButton1Click:Connect(function() selectTab(_d26gxw({0,16,70,19,23},{99,98,39,117})) end)
-selectTab(_d26gxw({68,56,58,6},{34,89,72,107}))
+_yg.MouseButton1Click:Connect(function() selectTab(_d1p6ns({42,32,70,52},{76,65,52,89,34})) end)
+_qt.MouseButton1Click:Connect(function() selectTab(_d1p6ns({28,89,59,78},{112,54,84,58,113,56,47})) end)
+_ml.MouseButton1Click:Connect(function() selectTab(_d1p6ns({24,30,58,61,56},{123,108,91,91,76,39})) end)
+selectTab(_d1p6ns({47,67,56,14},{73,34,74,99,117,35,68}))
 
 
-local _nv = _sv
+local _oo = _xv
 
 
-local _we = false
-_um.MouseButton1Click:Connect(function()
-	_we = not _we
-	_zr.Visible = not _we
-	_ys.Size = UDim2.new(0, 240, 0, _we and _au or _hi)
-	_um.Text = _we and "+" or "-"
+local _fs = false
+_zs.MouseButton1Click:Connect(function()
+	_fs = not _fs
+	_cr.Visible = not _fs
+	_oe.Size = UDim2.new(0, 460, 0, _fs and _pe or _na)
+	_zs.Text = _fs and "+" or "-"
 end)
 
-local function createToggleButton(_mf)
-	local _ss = Instance.new(_d26gxw({102,13,83,55,29,27,66,70,7,69},{50,104,43,67,95,110,54}))
-	_ss.Size = UDim2.new(1, 0, 0, 36)
-	_ss.LayoutOrder = _mf
-	_ss.BackgroundColor3 = _pb
-	_ss.TextColor3 = Color3.new(1, 1, 1)
-	_ss.Font = Enum.Font.GothamBold
-	_ss.TextSize = 16
-	_ss.Parent = _nv
-	Instance.new(_d26gxw({52,41,18,25,25,42,4,18},{97,96,81,118,107,68}), _ss).CornerRadius = UDim.new(0, 8)
-	return _ss
+local function createToggleButton(_om)
+	local _we = Instance.new(_d1p6ns({103,24,94,34,28,41,71,9,73,56},{51,125,38,86,94,92}))
+	_we.Size = UDim2.new(1, 0, 0, 36)
+	_we.LayoutOrder = _om
+	_we.BackgroundColor3 = _qg
+	_we.TextColor3 = Color3.new(1, 1, 1)
+	_we.Font = Enum.Font.GothamBold
+	_we.TextSize = 16
+	_we.Parent = _oo
+	Instance.new(_d1p6ns({31,32,17,14,12,36,67,56},{74,105,82,97,126,74,38}), _we).CornerRadius = UDim.new(0, 8)
+	return _we
 end
 
-local function createLabel(text, _mf)
-	local _jf = Instance.new(_d26gxw({119,61,20,86,104,17,57,80,79},{35,88,108,34,36,112,91,53}))
-	_jf.Size = UDim2.new(1, 0, 0, 16)
-	_jf.LayoutOrder = _mf
-	_jf.BackgroundTransparency = 1
-	_jf.Text = text
-	_jf.TextColor3 = Color3.fromRGB(170, 170, 180)
-	_jf.Font = Enum.Font.Gotham
-	_jf.TextSize = 12
-	_jf.TextXAlignment = Enum.TextXAlignment.Left
-	_jf.Parent = _nv
-	return _jf
+local function createLabel(text, _om)
+	local _ee = Instance.new(_d1p6ns({96,4,2,23,120,0,24,6,88},{52,97,122,99}))
+	_ee.Size = UDim2.new(1, 0, 0, 16)
+	_ee.LayoutOrder = _om
+	_ee.BackgroundTransparency = 1
+	_ee.Text = text
+	_ee.TextColor3 = Color3.fromRGB(170, 170, 180)
+	_ee.Font = Enum.Font.Gotham
+	_ee.TextSize = 12
+	_ee.TextXAlignment = Enum.TextXAlignment.Left
+	_ee.Parent = _oo
+	return _ee
 end
 
 
-local _cp = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+local _on = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 
-local function createSwitch(_mf, _oo, _pk, onChanged)
-	local _xw = Instance.new(_d26gxw({59,80,59,83,24},{125,34,90,62}))
-	_xw.Size = UDim2.new(1, 0, 0, 30)
-	_xw.LayoutOrder = _mf
-	_xw.BackgroundTransparency = 1
-	_xw.Parent = _nv
+local function createSwitch(_om, _iu, _xd, onChanged)
+	local _vm = Instance.new(_d1p6ns({98,65,15,94,71},{36,51,110,51,34,85,59}))
+	_vm.Size = UDim2.new(1, 0, 0, 30)
+	_vm.LayoutOrder = _om
+	_vm.BackgroundTransparency = 1
+	_vm.Parent = _oo
 
-	local label = Instance.new(_d26gxw({107,95,35,57,119,77,93,95,55},{63,58,91,77,59,44}))
+	local label = Instance.new(_d1p6ns({22,20,82,12,14,16,72,29,46},{66,113,42,120}))
 	label.Size = UDim2.new(1, -54, 1, 0)
 	label.BackgroundTransparency = 1
-	label.Text = _oo
+	label.Text = _iu
 	label.TextColor3 = Color3.new(1, 1, 1)
 	label.Font = Enum.Font.GothamMedium
 	label.TextSize = 14
 	label.TextXAlignment = Enum.TextXAlignment.Left
-	label.Parent = _xw
+	label.Parent = _vm
 
-	local _jk = Instance.new(_d26gxw({105,25,5,23,109,5,20,15,82,18},{61,124,125,99,47,112,96,123}))
-	_jk.Size = UDim2.new(0, 44, 0, 22)
-	_jk.AnchorPoint = Vector2.new(1, 0.5)
-	_jk.Position = UDim2.new(1, 0, 0.5, 0)
-	_jk.Text = ""
-	_jk.AutoButtonColor = false
-	_jk.BorderSizePixel = 0
-	_jk.Parent = _xw
-	Instance.new(_d26gxw({52,120,55,30,19,95,17,3},{97,49,116,113}), _jk).CornerRadius = UDim.new(1, 0)
+	local _gp = Instance.new(_d1p6ns({58,1,64,69,99,14,81,26,11,86},{110,100,56,49,33,123,37}))
+	_gp.Size = UDim2.new(0, 44, 0, 22)
+	_gp.AnchorPoint = Vector2.new(1, 0.5)
+	_gp.Position = UDim2.new(1, 0, 0.5, 0)
+	_gp.Text = ""
+	_gp.AutoButtonColor = false
+	_gp.BorderSizePixel = 0
+	_gp.Parent = _vm
+	Instance.new(_d1p6ns({29,103,24,54,28,88,45,92},{72,46,91,89,110,54}), _gp).CornerRadius = UDim.new(1, 0)
 
-	local _dy = Instance.new(_d26gxw({52,95,89,28,31},{114,45,56,113,122,94,75}))
-	_dy.Size = UDim2.new(0, 18, 0, 18)
-	_dy.AnchorPoint = Vector2.new(0, 0.5)
-	_dy.BackgroundColor3 = Color3.new(1, 1, 1)
-	_dy.BorderSizePixel = 0
-	_dy.Parent = _jk
-	Instance.new(_d26gxw({113,2,123,12,89,65,59,86},{36,75,56,99,43,47,94}), _dy).CornerRadius = UDim.new(1, 0)
+	local _dl = Instance.new(_d1p6ns({32,28,66,90,7},{102,110,35,55,98,63}))
+	_dl.Size = UDim2.new(0, 18, 0, 18)
+	_dl.AnchorPoint = Vector2.new(0, 0.5)
+	_dl.BackgroundColor3 = Color3.new(1, 1, 1)
+	_dl.BorderSizePixel = 0
+	_dl.Parent = _gp
+	Instance.new(_d1p6ns({106,115,103,44,43,34,90,72},{63,58,36,67,89,76}), _dl).CornerRadius = UDim.new(1, 0)
 
-	local _nu = _pk
+	local _pk = _xd
 
-	local function apply(_vo)
-		local _wo = _nu and UDim2.new(1, -20, 0.5, 0) or UDim2.new(0, 2, 0.5, 0)
-		local _gu = _nu and _hu or _tn
-		if _vo then
-			_dy.Position = _wo
-			_jk.BackgroundColor3 = _gu
+	local function apply(_gg)
+		local _mw = _pk and UDim2.new(1, -20, 0.5, 0) or UDim2.new(0, 2, 0.5, 0)
+		local _vl = _pk and _qq or _hb
+		if _gg then
+			_dl.Position = _mw
+			_gp.BackgroundColor3 = _vl
 		else
-			_x:Create(_dy, _cp, { Position = _wo }):Play()
-			_x:Create(_jk, _cp, { BackgroundColor3 = _gu }):Play()
+			_e:Create(_dl, _on, { Position = _mw }):Play()
+			_e:Create(_gp, _on, { BackgroundColor3 = _vl }):Play()
 		end
 	end
 
 	apply(true)
 
-	_jk.MouseButton1Click:Connect(function()
-		_nu = not _nu
+	_gp.MouseButton1Click:Connect(function()
+		_pk = not _pk
 		apply(false)
-		onChanged(_nu)
+		onChanged(_pk)
 	end)
 end
 
 
-local function createList(_mf, _by, _dr)
-	local _le = Instance.new(_d26gxw({119,31,23,14,84,6,11,74,27,35,19,89,7,7},{36,124,101,97,56,106,98}))
-	_le.Size = UDim2.new(1, 0, 0, _dr or 80)
-	_le.LayoutOrder = _mf
-	_le.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-	_le.BorderSizePixel = 0
-	_le.ScrollBarThickness = 4
-	_le.CanvasSize = UDim2.new(0, 0, 0, 0)
-	_le.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	_le.Parent = _nv
-	Instance.new(_d26gxw({22,6,41,69,49,33,15,88},{67,79,106,42}), _le).CornerRadius = UDim.new(0, 8)
+local function createList(_om, _pt, _bk)
+	local _ci = Instance.new(_d1p6ns({109,50,0,72,13,68,38,80,54,52,85,0,69,42},{62,81,114,39,97,40,79}))
+	_ci.Size = UDim2.new(1, 0, 0, _bk or 80)
+	_ci.LayoutOrder = _om
+	_ci.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+	_ci.BorderSizePixel = 0
+	_ci.ScrollBarThickness = 4
+	_ci.CanvasSize = UDim2.new(0, 0, 0, 0)
+	_ci.AutomaticCanvasSize = Enum.AutomaticSize.Y
+	_ci.Parent = _oo
+	Instance.new(_d1p6ns({21,3,116,63,78,25,28,50},{64,74,55,80,60,119,121}), _ci).CornerRadius = UDim.new(0, 8)
 
-	local _xz = Instance.new(_d26gxw({48,109,29,57,22,80,29,49,28,75,36,36},{101,36,81,80}))
-	_xz.Padding = UDim.new(0, 3)
-	_xz.SortOrder = Enum.SortOrder.LayoutOrder
-	_xz.Parent = _le
+	local _xw = Instance.new(_d1p6ns({62,122,15,94,21,31,127,34,78,9,30,71},{107,51,67,55,102}))
+	_xw.Padding = UDim.new(0, 3)
+	_xw.SortOrder = Enum.SortOrder.LayoutOrder
+	_xw.Parent = _ci
 
-	local _at = Instance.new(_d26gxw({44,125,4,21,21,29,93,58,19},{121,52,84,116,113}))
-	_at.PaddingTop = UDim.new(0, 3)
-	_at.PaddingBottom = UDim.new(0, 3)
-	_at.PaddingLeft = UDim.new(0, 3)
-	_at.PaddingRight = UDim.new(0, 6)
-	_at.Parent = _le
+	local _tr = Instance.new(_d1p6ns({9,4,125,43,8,9,53,35,74},{92,77,45,74,108,109}))
+	_tr.PaddingTop = UDim.new(0, 3)
+	_tr.PaddingBottom = UDim.new(0, 3)
+	_tr.PaddingLeft = UDim.new(0, 3)
+	_tr.PaddingRight = UDim.new(0, 6)
+	_tr.Parent = _ci
 
-	local _dq = {
+	local _kw = {
 		names = {},
 		order = {}, 
 		onChanged = nil,
 	}
-	local _on = {}
+	local _ji = {}
 
-	local function indexOf(_sb)
-		for _fx, _ml in ipairs(_dq.order) do
-			if _ml == _sb then return _fx end
+	local function indexOf(_fz)
+		for _gy, _iq in ipairs(_kw.order) do
+			if _iq == _fz then return _gy end
 		end
 	end
 
 	local function restyle()
-		for _sb, _ss in pairs(_on) do
-			local _eo = indexOf(_sb)
-			if _eo then
-				_ss.BackgroundColor3 = _yn
-				_ss.Text = _by and (_eo .. ". " .. _sb) or _sb
+		for _fz, _we in pairs(_ji) do
+			local _az = indexOf(_fz)
+			if _az then
+				_we.BackgroundColor3 = _ao
+				_we.Text = _pt and (_az .. ". " .. _fz) or _fz
 			else
-				_ss.BackgroundColor3 = _sh
-				_ss.Text = _sb
+				_we.BackgroundColor3 = _jc
+				_we.Text = _fz
 			end
 		end
 	end
 
-	local function toggle(_sb)
-		local _eo = indexOf(_sb)
-		if _eo then
-			table.remove(_dq.order, _eo)
+	local function toggle(_fz)
+		local _az = indexOf(_fz)
+		if _az then
+			table.remove(_kw.order, _az)
 		else
-			if not _by then table.clear(_dq.order) end
-			table.insert(_dq.order, _sb)
+			if not _pt then table.clear(_kw.order) end
+			table.insert(_kw.order, _fz)
 		end
 		restyle()
-		if _dq.onChanged then _dq.onChanged() end
+		if _kw.onChanged then _kw.onChanged() end
 	end
 
-	function _dq.setNames(_ld)
+	function _kw.setNames(_pn)
 		
-		if #_ld == #_dq.names then
+		if #_pn == #_kw.names then
 			local _oh = true
-			for _fx, _ml in ipairs(_ld) do
-				if _dq.names[_fx] ~= _ml then _oh = false break end
+			for _gy, _iq in ipairs(_pn) do
+				if _kw.names[_gy] ~= _iq then _oh = false break end
 			end
 			if _oh then return end
 		end
-		_dq.names = _ld
+		_kw.names = _pn
 
-		local _kh = {}
-		for _qc, _ml in ipairs(_ld) do _kh[_ml] = true end
+		local _cm = {}
+		for _pr, _iq in ipairs(_pn) do _cm[_iq] = true end
 
-		for _sb, _ss in pairs(_on) do
-			if not _kh[_sb] then
-				_ss:Destroy()
-				_on[_sb] = nil
+		for _fz, _we in pairs(_ji) do
+			if not _cm[_fz] then
+				_we:Destroy()
+				_ji[_fz] = nil
 			end
 		end
 
-		local _bm = false
-		for _fx = #_dq.order, 1, -1 do
-			if not _kh[_dq.order[_fx]] then
-				table.remove(_dq.order, _fx)
-				_bm = true
+		local _wx = false
+		for _gy = #_kw.order, 1, -1 do
+			if not _cm[_kw.order[_gy]] then
+				table.remove(_kw.order, _gy)
+				_wx = true
 			end
 		end
 
-		for _fx, _sb in ipairs(_ld) do
-			local _ss = _on[_sb]
-			if not _ss then
-				_ss = Instance.new(_d26gxw({18,58,65,57,32,82,50,43,86,35},{70,95,57,77,98,39}))
-				_ss.Size = UDim2.new(1, 0, 0, 24)
-				_ss.TextColor3 = Color3.new(1, 1, 1)
-				_ss.Font = Enum.Font.Gotham
-				_ss.TextSize = 13
-				_ss.TextXAlignment = Enum.TextXAlignment.Left
-				_ss.Parent = _le
-				Instance.new(_d26gxw({118,110,102,47,81,73,64,50},{35,39,37,64}), _ss).CornerRadius = UDim.new(0, 6)
-				local _mn = Instance.new(_d26gxw({124,36,108,60,77,9,85,51,78},{41,109,60,93}))
-				_mn.PaddingLeft = UDim.new(0, 8)
-				_mn.Parent = _ss
-				_ss.MouseButton1Click:Connect(function() toggle(_sb) end)
-				_on[_sb] = _ss
+		for _gy, _fz in ipairs(_pn) do
+			local _we = _ji[_fz]
+			if not _we then
+				_we = Instance.new(_d1p6ns({55,63,34,81,11,33,23,46,53,75},{99,90,90,37,73,84}))
+				_we.Size = UDim2.new(1, 0, 0, 24)
+				_we.TextColor3 = Color3.new(1, 1, 1)
+				_we.Font = Enum.Font.Gotham
+				_we.TextSize = 13
+				_we.TextXAlignment = Enum.TextXAlignment.Left
+				_we.Parent = _ci
+				Instance.new(_d1p6ns({38,114,21,51,41,2,22,73},{115,59,86,92,91,108}), _we).CornerRadius = UDim.new(0, 6)
+				local _wd = Instance.new(_d1p6ns({111,2,25,72,94,47,32,71,93},{58,75,73,41}))
+				_wd.PaddingLeft = UDim.new(0, 8)
+				_wd.Parent = _we
+				_we.MouseButton1Click:Connect(function() toggle(_fz) end)
+				_ji[_fz] = _we
 			end
-			_ss.LayoutOrder = _fx
+			_we.LayoutOrder = _gy
 		end
 
 		restyle()
-		if _bm and _dq.onChanged then _dq.onChanged() end
+		if _wx and _kw.onChanged then _kw.onChanged() end
 	end
 
-	return _dq
+	return _kw
 end
 
 
-local _ak = false
-local _ct, startPos
-local _mq = {}
+local _ou = false
+local _zx, startPos
+local _ui = {}
 
-_kd.InputBegan:Connect(function(_nx)
-	if _nx.UserInputType == Enum.UserInputType.MouseButton1
-		or _nx.UserInputType == Enum.UserInputType.Touch then
-		_ak = true
-		_ct = _nx.Position
-		startPos = _ys.Position
+_du.InputBegan:Connect(function(_le)
+	if _le.UserInputType == Enum.UserInputType.MouseButton1
+		or _le.UserInputType == Enum.UserInputType.Touch then
+		_ou = true
+		_zx = _le.Position
+		startPos = _oe.Position
 
-		_nx.Changed:Connect(function()
-			if _nx.UserInputState == Enum.UserInputState.End then
-				_ak = false
+		_le.Changed:Connect(function()
+			if _le.UserInputState == Enum.UserInputState.End then
+				_ou = false
 			end
 		end)
 	end
 end)
 
-table.insert(_mq, _z.InputChanged:Connect(function(_nx)
-	if _ak and (_nx.UserInputType == Enum.UserInputType.MouseMovement
-		or _nx.UserInputType == Enum.UserInputType.Touch) then
-		local _wy = _nx.Position - _ct
-		_ys.Position = UDim2.new(
-			startPos.X.Scale, startPos.X.Offset + _wy.X,
-			startPos.Y.Scale, startPos.Y.Offset + _wy.Y
+table.insert(_ui, _l.InputChanged:Connect(function(_le)
+	if _ou and (_le.UserInputType == Enum.UserInputType.MouseMovement
+		or _le.UserInputType == Enum.UserInputType.Touch) then
+		local _gw = _le.Position - _zx
+		_oe.Position = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + _gw.X,
+			startPos.Y.Scale, startPos.Y.Offset + _gw.Y
 		)
 	end
 end))
 
 
-local _mx = 240
-local _zd = 0.55 
+local _ir = 460
+local _so = 0.55 
 
-local _jd = Instance.new(_d26gxw({127,109,104,79,75,72,94},{42,36,59,44}))
-_jd.Parent = _ys
+local _ye = Instance.new(_d1p6ns({63,110,63,36,41,22,15},{106,39,108,71,72,122}))
+_ye.Parent = _oe
 
 local function applyWindowScale()
-	local _vf = _mm.AbsoluteSize
-	if _vf.X <= 0 or _vf.Y <= 0 then
-		local _ub = workspace.CurrentCamera
-		if _ub then
-			_vf = _ub.ViewportSize
+	local _ed = _vf.AbsoluteSize
+	if _ed.X <= 0 or _ed.Y <= 0 then
+		local _as = workspace.CurrentCamera
+		if _as then
+			_ed = _as.ViewportSize
 		end
 	end
-	if _vf.X <= 0 or _vf.Y <= 0 then return end
+	if _ed.X <= 0 or _ed.Y <= 0 then return end
 
-	local _fj = math.min(
-		(_vf.X - 20) / _mx,
-		(_vf.Y - 20) / _hi
+	local _ll = math.min(
+		(_ed.X - 20) / _ir,
+		(_ed.Y - 20) / _na
 	)
-	local _za = math.clamp(_fj, _zd, 1)
-	_jd.Scale = _za
+	local _nc = math.clamp(_ll, _so, 1)
+	_ye.Scale = _nc
 
 	
 	
-	_ys.Position = UDim2.new(0, _za < 1 and 10 or 20, 0.5, -math.floor(_hi * _za / 2))
+	_oe.Position = UDim2.new(0, _nc < 1 and 10 or 20, 0.5, -math.floor(_na * _nc / 2))
 end
 
 applyWindowScale()
-table.insert(_mq, _mm:GetPropertyChangedSignal(_d26gxw({7,81,85,47,91,8,64,14,21,90,92,37},{70,51,38,64,55,125,52,107})):Connect(applyWindowScale))
+table.insert(_ui, _vf:GetPropertyChangedSignal(_d1p6ns({112,1,67,95,90,63,69,6,99,89,76,47},{49,99,48,48,54,74})):Connect(applyWindowScale))
 
 
-local _mg = createToggleButton(1)
-createLabel(_d26gxw({29,8,85,83,55,18,81,89,55,18,24,30,41,8,91,93,121,18,93,64,60,19,89,90,117,65,81,88,121,14,74,82,60,19,17},{89,97,56,54}), 2)
-local _aa = createList(3, true)
+local _dn = createToggleButton(1)
 
 
-local _qw = createLabel(_d26gxw({100,30,50,12,78,10,90,20,36,73,89,67,71,20,56,26,84,69,68,81,126,27,88,91,95,24,36,12,89,3,16},{42,113,86,105,61,42}), 4)
-local _zb = Instance.new(_d26gxw({111,85,55,95,116,5,30},{59,48,79,43,54,106,102,92}))
-_zb.Size = UDim2.new(1, 0, 0, 28)
-_zb.LayoutOrder = 5
-_zb.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-_zb.BorderSizePixel = 0
-_zb.Text = ""
-_zb.PlaceholderText = _d26gxw({28,6,61,97,106,72,72,73},{121,40,90,79,74,122,120})
-_zb.TextColor3 = Color3.new(1, 1, 1)
-_zb.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
-_zb.Font = Enum.Font.Gotham
-_zb.TextSize = 14
-_zb.ClearTextOnFocus = false
-_zb.Parent = _nv
-Instance.new(_d26gxw({5,127,0,26,83,62,83,49},{80,54,67,117,33}), _zb).CornerRadius = UDim.new(0, 8)
 
 
-_zb:GetPropertyChangedSignal(_d26gxw({3,31,56,94},{87,122,64,42,65,112})):Connect(function()
-	local _uk = _zb.Text:gsub("%D", "")
-	if _uk ~= _zb.Text then
-		_zb.Text = _uk
+local _fi = Instance.new(_d1p6ns({110,88,4,58,7},{40,42,101,87,98}))
+_fi.Size = UDim2.new(1, 0, 0, 0)
+_fi.AutomaticSize = Enum.AutomaticSize.Y
+_fi.LayoutOrder = 2
+_fi.BackgroundTransparency = 1
+_fi.Parent = _xv
+
+local _ua = Instance.new(_d1p6ns({54,35,35,39,54,39,47,11,22,33,48,39},{99,106,111,78,69,83}))
+_ua.FillDirection = Enum.FillDirection.Horizontal
+_ua.Padding = UDim.new(0, 8)
+_ua.SortOrder = Enum.SortOrder.LayoutOrder
+_ua.Parent = _fi
+
+local function createColumn(_om)
+	local _qm = Instance.new(_d1p6ns({34,51,34,9,44},{100,65,67,100,73}))
+	_qm.Size = UDim2.new(0.5, -4, 0, 0)
+	_qm.AutomaticSize = Enum.AutomaticSize.Y
+	_qm.LayoutOrder = _om
+	_qm.BackgroundTransparency = 1
+	_qm.Parent = _fi
+
+	local _xw = Instance.new(_d1p6ns({53,20,19,8,64,20,17,62,24,92,21,41},{96,93,95,97,51}))
+	_xw.Padding = UDim.new(0, 6)
+	_xw.SortOrder = Enum.SortOrder.LayoutOrder
+	_xw.Parent = _qm
+
+	return _qm
+end
+
+local _qf = createColumn(1)
+local _cf = createColumn(2)
+
+
+_oo = _qf
+createLabel(_d1p6ns({127,17,13,88,70,92,63,84,22,19,29,0,95,63,88,19,64,78,77,89,51,73,25,12,17,8,70,56,27,23,18,89,77,93,127},{59,120,96,61,40,47,86}), 1)
+local _tx = createList(2, true)
+
+
+local _vo = createLabel(_d1p6ns({21,62,12,18,35,104,43,52,26,87,52,33,54,52,6,4,57,39,53,113,64,5,53,57,46,56,26,18,52,97,97},{91,81,104,119,80,72}), 3)
+local _wb = Instance.new(_d1p6ns({27,94,34,36,13,84,34},{79,59,90,80}))
+_wb.Size = UDim2.new(1, 0, 0, 28)
+_wb.LayoutOrder = 4
+_wb.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+_wb.BorderSizePixel = 0
+_wb.Text = ""
+_wb.PlaceholderText = _d1p6ns({18,100,4,99,14,119,71,122},{119,74,99,77,46,69})
+_wb.TextColor3 = Color3.new(1, 1, 1)
+_wb.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+_wb.Font = Enum.Font.Gotham
+_wb.TextSize = 14
+_wb.ClearTextOnFocus = false
+_wb.Parent = _oo
+Instance.new(_d1p6ns({99,37,123,55,75,49,5,36},{54,108,56,88,57,95,96,86}), _wb).CornerRadius = UDim.new(0, 8)
+
+
+_wb:GetPropertyChangedSignal(_d1p6ns({12,71,71,65},{88,34,63,53,70,88})):Connect(function()
+	local _nz = _wb.Text:gsub("%D", "")
+	if _nz ~= _wb.Text then
+		_wb.Text = _nz
 	end
 end)
 
 local function getNodeAmount()
-	local _ml = tonumber(_zb.Text)
-	_ml = _ml and math.floor(_ml)
-	if _ml and _ml >= 1 then
-		return _ml
+	local _iq = tonumber(_wb.Text)
+	_iq = _iq and math.floor(_iq)
+	if _iq and _iq >= 1 then
+		return _iq
 	end
 	return nil
 end
 
 local function updateAmountVisibility()
-	local _jc = #_aa.order > 1
-	_qw.Visible = _jc
-	_zb.Visible = _jc
+	local _zw = #_tx.order > 1
+	_vo.Visible = _zw
+	_wb.Visible = _zw
 end
 updateAmountVisibility()
 
-local _fk = createToggleButton(6)
-createLabel(_d26gxw({48,14,93,2,46,75,39,4,66,6,48,24,10,2,65,16,126,67,19,4,76,8,126,24,6,27,74,17,63,7,79,77,70,13,126,4,17,9,74,17,119},{99,109,47,99,94,107}), 7)
-local _ju = createList(8, true)
-local _dc = createToggleButton(9)
-local _az = createToggleButton(10)
+local _wa = createToggleButton(5)
 
-local function refreshFastButton()
-	_az.Text = _d26gxw({59,36,34,14,26,105,28,25,32,107,90},{125,69,81,122,58,36,115}) .. (_xe and "ON" or _d26gxw({105,108,54},{38,42,112,125,110,72,41}))
-	_az.BackgroundColor3 = _xe and _hu or _pb
+
+createLabel(_d1p6ns({43,21,32,12,8,86,22,4,21,19,60,30,17,25,60,30,88,94,34,4,27,29,114,30,29,0,55,31,25,26,126,77,17,24,114,2,10,18,55,31,81},{120,118,82,109}), 6)
+local _ri = createList(7, true)
+local _fj = createToggleButton(8)
+
+
+_oo = _cf
+createLabel(_d1p6ns({96,11,68,105,109,62,66,28,79,58,64,56,65,10,1,97,89,62,76,18,1,58,76,33,74,11,64,37,5,119,70,23,1,38,91,51,74,11,8},{47,121,33,73,41,87}), 1)
+local _af = createList(2, true)
+
+local _cz = createLabel(_d1p6ns({125,86,12,119,79,3,64,4,13,62,82,3,92,87,0,56,81,70,26,86,12,38,74,15,64,65,13,126,5},{50,36,105,87,63,102}), 3)
+local _xp = Instance.new(_d1p6ns({60,89,89,0,18,42,39},{104,60,33,116,80,69,95}))
+_xp.Size = UDim2.new(1, 0, 0, 28)
+_xp.LayoutOrder = 4
+_xp.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+_xp.BorderSizePixel = 0
+_xp.Text = ""
+_xp.PlaceholderText = _d1p6ns({57,94,43,85,17,123,72,108},{92,112,76,123,49,73,120})
+_xp.TextColor3 = Color3.new(1, 1, 1)
+_xp.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+_xp.Font = Enum.Font.Gotham
+_xp.TextSize = 14
+_xp.ClearTextOnFocus = false
+_xp.Parent = _oo
+Instance.new(_d1p6ns({101,25,12,39,49,87,78,31},{48,80,79,72,67,57,43,109}), _xp).CornerRadius = UDim.new(0, 8)
+
+_xp:GetPropertyChangedSignal(_d1p6ns({60,44,13,9},{104,73,117,125,86,49})):Connect(function()
+	local _nz = _xp.Text:gsub("%D", "")
+	if _nz ~= _xp.Text then
+		_xp.Text = _nz
+	end
+end)
+
+local function getOreAmount()
+	local _iq = tonumber(_xp.Text)
+	_iq = _iq and math.floor(_iq)
+	if _iq and _iq >= 1 then
+		return _iq
+	end
+	return nil
 end
 
-_az.MouseButton1Click:Connect(function()
-	_xe = not _xe
+local function updateOreAmountVisibility()
+	local _zw = #_af.order > 1
+	_cz.Visible = _zw
+	_xp.Visible = _zw
+end
+updateOreAmountVisibility()
+
+local _gl = createToggleButton(5)
+
+
+_oo = _xv
+
+local _gm = createToggleButton(3)
+
+local function refreshFastButton()
+	_gm.Text = _d1p6ns({23,69,9,19,107,14,62,64,31,93,107},{81,36,122,103,75,67}) .. (_cy and "ON" or _d1p6ns({18,43,22},{93,109,80,87,118,106,117}))
+	_gm.BackgroundColor3 = _cy and _qq or _qg
+end
+
+_gm.MouseButton1Click:Connect(function()
+	_cy = not _cy
 	refreshFastButton()
 end)
 refreshFastButton()
 
-createSwitch(11, _d26gxw({10,81,25,27,98,84,18,31,38,81,19,25,98,75,30,12,39,93,19},{66,56,125,126}), _df, function(_nu)
-	_df = _nu
+createSwitch(4, _d1p6ns({36,18,63,21,26,44,17,13,31,50,30,93,96,13,15,9,62,21,84},{108,123,91,112,58,64,126}), _kn, function(_pk)
+	_kn = _pk
 end)
 
 
 
 
 
-local _eu = nil 
+local _hh = nil 
 
 local function clearHiddenHold()
-	_eu = nil
+	_hh = nil
 end
 
-local function holdHiddenPosition(_eb)
-	_eu = _eb
+local function holdHiddenPosition(_im)
+	_hh = _im
 end
 
-table.insert(_mq, _g.Heartbeat:Connect(function()
+table.insert(_ui, _b.Heartbeat:Connect(function()
 	
-	if _eu then
-		local character = _r.Character
-		local _bx = character and character:FindFirstChild(_d26gxw({109,43,90,91,18,74,55,83,104,19,74,42,103,91,14,81},{37,94,55,58,124}))
-		if _bx then
-			_bx.CFrame = _eu
-			_bx.AssemblyLinearVelocity = Vector3.zero
+	if _hh then
+		local character = _h.Character
+		local _qn = character and character:FindFirstChild(_d1p6ns({110,69,23,70,91,37,67,75,116,95,21,83,101,43,88,91},{38,48,122,39,53,74,42,47}))
+		if _qn then
+			_qn.CFrame = _hh
+			_qn.AssemblyLinearVelocity = Vector3.zero
 		end
 	end
 end))
 
-createSwitch(12, _d26gxw({19,61,2,40,86,2,123,25,9,40,86},{91,84,102,76,51,108}), _mt, function(_nu)
-	_mt = _nu
-	if not _nu then
+createSwitch(5, _d1p6ns({34,67,13,45,40,86,74,103,6,45,40},{106,42,105,73,77,56}), _ah, function(_pk)
+	_ah = _pk
+	if not _pk then
 		clearHiddenHold()
+		_gd()
 	end
 end)
 
 
-_nv = _zg
-local _sx = createToggleButton(1)
-local _kq = false 
-createSwitch(2, _d26gxw({27,35,42,21,112,13,50,38,60,65,120,20,56,49,45,8,62,7,116},{93,66,89,97,80,96}), _kq, function(_nu)
-	_kq = _nu
+
+local _dc = false
+local _vr = nil
+
+local function setAntiAfk(_pk)
+	_dc = _pk
+	if _pk and not _vr then
+		_vr = _h.Idled:Connect(function()
+			_d:CaptureController()
+			_d:ClickButton2(Vector2.new())
+		end)
+		table.insert(_ui, _vr)
+	elseif not _pk and _vr then
+		_vr:Disconnect()
+		_vr = nil
+	end
+end
+
+createSwitch(6, _d1p6ns({39,50,16,29,11,33,107,45},{102,92,100,116,38,96,45}), _dc, function(_pk)
+	setAntiAfk(_pk)
 end)
 
-local _ef = false 
-createSwitch(3, _d26gxw({48,49,67,4,23,11,88,21,72,4,23},{120,88,39,96,114,101}), _ef, function(_nu)
-	_ef = _nu
-	if not _nu then
+
+
+
+local _tz = { chests = true, nodes = true, dimo = true, ore = true, droppedloot = true }
+local _hw = {}
+
+local function isHiddenForMode(_fz)
+	if _fz == _d1p6ns({64,62,59,48,91,67,64,32,59,47,95},{36,76,84,64,43,38}) then
+		return _ch
+	end
+	return _ah
+end
+
+local function captureOriginIfHidden(_fz)
+	if _tz[_fz] and isHiddenForMode(_fz) then
+		local character = _h.Character
+		local _qn = character and character:FindFirstChild(_d1p6ns({6,64,50,12,93,33,92,59,63,92,33,65,15,12,65,58},{78,53,95,109,51}))
+		_hw[_fz] = _qn and _qn.CFrame or nil
+	else
+		_hw[_fz] = nil
+	end
+end
+
+local function restoreOriginIfAny(_fz)
+	if _tz[_fz] and _hw[_fz] then
+		local character = _h.Character
+		local _qn = character and character:FindFirstChild(_d1p6ns({105,58,50,18,13,67,46,69,29,48,28,23,124,38,83,59},{33,79,95,115,99,44,71}))
+		if _qn then
+			_qn.CFrame = _hw[_fz]
+		end
+		_hw[_fz] = nil
+	end
+end
+
+
+_oo = _uw
+local _ym = createToggleButton(1)
+local _th = false 
+createSwitch(2, _d1p6ns({12,55,43,34,106,59,55,50,47,118,112,34,47,37,44,63,36,49,113},{74,86,88,86}), _th, function(_pk)
+	_th = _pk
+end)
+
+
+createSwitch(3, _d1p6ns({32,83,94,75,57,63,72,119,85,75,57},{104,58,58,47,92,81}), _ch, function(_pk)
+	_ch = _pk
+	if not _pk then
 		clearHiddenHold()
+		_gd()
 	end
 end)
 
 
-createLabel(_d26gxw({125,53,0,40,95,41,65,25,46,27,61,66,63},{57,71,111,88,47,76,37}), 4)
+createLabel(_d1p6ns({97,80,53,57,22,52,62,10,76,86,63,36,21},{37,34,90,73,102,81,90,42}), 4)
 
-local _kw = Instance.new(_d26gxw({53,92,86,77,75,67,15,81,67,100,85,78,11,90},{102,63,36,34,39,47}))
-_kw.Size = UDim2.new(1, 0, 0, 280)
-_kw.LayoutOrder = 5
-_kw.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-_kw.BorderSizePixel = 0
-_kw.ScrollBarThickness = 4
-_kw.CanvasSize = UDim2.new(0, 0, 0, 0)
-_kw.AutomaticCanvasSize = Enum.AutomaticSize.Y
-_kw.Parent = _nv
-Instance.new(_d26gxw({49,37,123,6,47,10,9,74},{100,108,56,105,93}), _kw).CornerRadius = UDim.new(0, 8)
+local _ib = Instance.new(_d1p6ns({112,44,29,88,64,17,21,77,40,41,69,77,16,25},{35,79,111,55,44,125,124}))
+_ib.Size = UDim2.new(1, 0, 0, 280)
+_ib.LayoutOrder = 5
+_ib.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+_ib.BorderSizePixel = 0
+_ib.ScrollBarThickness = 4
+_ib.CanvasSize = UDim2.new(0, 0, 0, 0)
+_ib.AutomaticCanvasSize = Enum.AutomaticSize.Y
+_ib.Parent = _oo
+Instance.new(_d1p6ns({36,34,13,4,11,31,14,60},{113,107,78,107,121}), _ib).CornerRadius = UDim.new(0, 8)
 
-local _ts = Instance.new(_d26gxw({44,27,45,56,67,39,53,51,24,62,69,39},{121,82,97,81,48,83}))
-_ts.Padding = UDim.new(0, 2)
-_ts.SortOrder = Enum.SortOrder.LayoutOrder
-_ts.Parent = _kw
+local _hg = Instance.new(_d1p6ns({109,8,119,77,53,39,53,89,56,84,81,50},{56,65,59,36,70,83,121}))
+_hg.Padding = UDim.new(0, 2)
+_hg.SortOrder = Enum.SortOrder.LayoutOrder
+_hg.Parent = _ib
 
-local _lk = Instance.new(_d26gxw({14,28,12,14,59,25,30,28,60},{91,85,92,111,95,125,119,114}))
-_lk.PaddingTop = UDim.new(0, 4)
-_lk.PaddingBottom = UDim.new(0, 4)
-_lk.PaddingLeft = UDim.new(0, 8)
-_lk.PaddingRight = UDim.new(0, 8)
-_lk.Parent = _kw
+local _mu = Instance.new(_d1p6ns({44,127,99,18,13,60,67,81,30},{121,54,51,115,105,88,42,63}))
+_mu.PaddingTop = UDim.new(0, 4)
+_mu.PaddingBottom = UDim.new(0, 4)
+_mu.PaddingLeft = UDim.new(0, 8)
+_mu.PaddingRight = UDim.new(0, 8)
+_mu.Parent = _ib
 
-local _nn = Color3.fromRGB(150, 150, 160)
+local _jy = Color3.fromRGB(150, 150, 160)
 
 
 
-local function isDropModel(_yp)
-	return _yp:IsA(_d26gxw({28,45,32,76,46},{81,66,68,41,66,94,44,55}))
+local function isDropModel(_bt)
+	return _bt:IsA(_d1p6ns({20,62,45,11,92},{89,81,73,110,48,71,81}))
 end
 
 
 
 
-local function readLabelText(_kc, _sb)
-	local label = _kc and _kc:FindFirstChild(_sb, true)
-	if label and label:IsA(_d26gxw({113,61,24,81,60,38,71,61,12},{37,88,96,37,112,71})) then
+local function readLabelText(_rd, _fz)
+	local label = _rd and _rd:FindFirstChild(_fz, true)
+	if label and label:IsA(_d1p6ns({13,42,49,66,104,24,32,27,53},{89,79,73,54,36,121,66,126})) then
 		local text = label.ContentText ~= "" and label.ContentText or label.Text
-		text = string.gsub(text, _d26gxw({21,124,59,115,122,31,102,112,109,42,120,21},{75,89,72,89,82,49}), "%1")
+		text = string.gsub(text, _d1p6ns({24,30,72,98,93,104,22,18,109,6,108,31},{70,59,59,72,117}), "%1")
 		if text ~= "" then
 			return text
 		end
@@ -677,650 +847,671 @@ local function readLabelText(_kc, _sb)
 end
 
 
-local function describeDrop(_yp, _oe)
-	local _mp = _yp:FindFirstChildWhichIsA(_d26gxw({5,80,3,80,37,86,14,78,35,126,26,85},{71,57,111,60}), true)
+local function describeDrop(_bt, _ca)
+	local _an = _bt:FindFirstChildWhichIsA(_d1p6ns({123,38,94,69,42,74,23,50,93,8,71,64},{57,79,50,41,72,37,118,64}), true)
 
 	
 	
-	if _oe == _d26gxw({20,38,12,52,13,15,52,22,2,39,22,26,49,55,8,55},{80,84,99,68,125,106}) then
-		local _sc = _yp:GetAttribute(_d26gxw({34,16,24,72,57,98,84,0,2},{109,103,118,45,75,44,53}))
-		local _ru = _yp:GetAttribute(_d26gxw({103,18,36,36,86,97,1},{40,101,74,65,36}))
-		local userId = _ru ~= nil and tonumber(_ru) or nil
+	if _ca == _d1p6ns({18,64,60,70,38,87,55,116,55,81,56,70,55,81,56,69},{86,50,83,54}) then
+		local _fm = _bt:GetAttribute(_d1p6ns({119,53,35,52,74,12,44,60,93},{56,66,77,81}))
+		local _id = _bt:GetAttribute(_d1p6ns({55,77,81,29,75,117,51},{120,58,63,120,57,60,87}))
+		local userId = _id ~= nil and tonumber(_id) or nil
 
-		if _sc ~= nil and tostring(_sc) ~= "" then
-			return tostring(_sc) .. _d26gxw({81,64,82,101,47,5,84,6,82,17,76},{118,51,114,39,78,102,63}), userId
-		elseif _ru ~= nil and tostring(_ru) ~= "" then
-			return _d26gxw({13,11,90,8,70,87,11,36,74,17,44,65,88,13,61,35,93,67},{79,106,57,99,54,54,104}) .. tostring(_ru) .. ")", userId
+		if _fm ~= nil and tostring(_fm) ~= "" then
+			return tostring(_fm) .. _d1p6ns({10,17,122,59,91,50,70,18,59,26,81},{45,98,90,121,58,81}), userId
+		elseif _id ~= nil and tostring(_id) ~= "" then
+			return _d1p6ns({114,9,73,58,16,86,12,91,72,2,30,23,89,10,66,33,78,113},{48,104,42,81,96,55,111}) .. tostring(_id) .. ")", userId
 		end
-		return readLabelText(_mp, _d26gxw({120,80,20,64,49,24,47,1,64},{44,53,108,52,125,121,77,100})) or _yp.Name, nil
+		return readLabelText(_an, _d1p6ns({31,79,56,12,50,42,72,37,20},{75,42,64,120,126})) or _bt.Name, nil
 	end
 
-	local _qv = readLabelText(_mp, _d26gxw({102,8,32,35,2,36,80,8,52},{50,109,88,87,78,69}))
-	local _ws = readLabelText(_mp, _d26gxw({21,24,16},{70,77,82,65,93,69,122}))
+	local _yf = readLabelText(_an, _d1p6ns({30,22,95,69,104,72,74,47,31},{74,115,39,49,36,41,40}))
+	local _bq = readLabelText(_an, _d1p6ns({109,115,31},{62,38,93,108,117,104}))
 
-	local text = _qv or _yp.Name 
-	if _ws then
-		text = text .. _d26gxw({103,64,125,83,103},{71,96,80,115}) .. _ws
+	local text = _yf or _bt.Name 
+	if _bq then
+		text = text .. _d1p6ns({8,89,118,68,8},{40,121,91,100}) .. _bq
 	end
 	return text, nil
 end
 
-local function summarizeFolder(_oe)
-	local _pd = workspace:FindFirstChild(_oe)
-	local _wv = {}
-	if _pd then
-		for _qc, _yp in ipairs(_pd:GetChildren()) do
-			if isDropModel(_yp) then
-				local text, userId = describeDrop(_yp, _oe)
-				table.insert(_wv, { text = text, userId = userId, model = _yp, isBackpack = (_oe == _d26gxw({45,83,49,6,77,10,13,99,63,21,86,31,8,66,53,5},{105,33,94,118,61,111})) })
+local function summarizeFolder(_ca)
+	local _oq = workspace:FindFirstChild(_ca)
+	local _ij = {}
+	if _oq then
+		for _pr, _bt in ipairs(_oq:GetChildren()) do
+			if isDropModel(_bt) then
+				local text, userId = describeDrop(_bt, _ca)
+				table.insert(_ij, { text = text, userId = userId, model = _bt, isBackpack = (_ca == _d1p6ns({57,21,67,48,13,2,72,2,28,4,71,48,28,4,71,51},{125,103,44,64})) })
 			end
 		end
-		table.sort(_wv, function(_ym, _ss) return _ym.text < _ss.text end)
+		table.sort(_ij, function(_wz, _we) return _wz.text < _we.text end)
 	end
-	return _pd ~= nil, _wv
+	return _oq ~= nil, _ij
 end
 
 
-local _my = {}      
-local _rp = {}  
-local _qe = {}     
+local _jo = {}      
+local _dj = {}  
+local _va = {}     
 
 local function requestAvatar(userId)
-	if _rp[userId] then return end
-	_rp[userId] = true
+	if _dj[userId] then return end
+	_dj[userId] = true
 
 	task.spawn(function()
-		local _wn, _zr = pcall(function()
-			return _h:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
+		local _hr, _cr = pcall(function()
+			return _v:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
 		end)
-		if _wn and _zr then
-			_my[userId] = _zr
-			for _qc, img in ipairs(_qe[userId] or {}) do
+		if _hr and _cr then
+			_jo[userId] = _cr
+			for _pr, img in ipairs(_va[userId] or {}) do
 				if img.Parent then
-					img.Image = _zr
+					img.Image = _cr
 				end
 			end
 		else
-			_rp[userId] = nil 
+			_dj[userId] = nil 
 		end
 	end)
 end
 
 
-local _lv = setmetatable({}, { __mode = "k" })
-local _zl = 0
+local _td = setmetatable({}, { __mode = "k" })
+local _cc = 0
 local function getModelId(model)
-	if not _lv[model] then
-		_zl = _zl + (1)
-		_lv[model] = _zl
+	if not _td[model] then
+		_cc = _cc + (1)
+		_td[model] = _cc
 	end
-	return _lv[model]
+	return _td[model]
 end
 
 
 
-local function teleportToModel(model)
-	if not model or not model.Parent then return false, _d26gxw({31,49,23,80,7,63,54,82,90,72,56,32},{86,69,114,61,39}) end
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({106,95,87,17,76,69,83,20,112,69,85,4,114,75,72,4},{34,42,58,112}))
-	if not _bx then return false, _d26gxw({99,14,69,92,6,82,89,76,2,17,90,28},{45,97,101,63,110,51,43}) end
 
-	
-	
-	if not model:FindFirstChildWhichIsA(_d26gxw({114,17,13,33,96,17,12,48},{48,112,126,68}), true) then
-		warn(_d26gxw({38,24,37,95,48,51,93},{125,84,74,48,68,110}) .. model:GetFullName() .. _d26gxw({31,12,75,89,67,89,2,119,79,5,88,94,16,23,2,57,31,16,66,67,16,23,14,59,86,1,68,94,79,23,30,56,31,16,66,79,17,82,77,62,76,68,68,69,67,71,2,36,86,16,67,69,13,23,25,56,31,16,79,70,6,71,2,37,75,68,94,69},{63,100,42,42,99,55,109,87}))
-		return false, _d26gxw({96,34,90,69,66,34,79,1,75,41,14,77,64,34,14,21,79,63,90,22,7},{46,77,46,101})
+
+local function teleportToModel(model, _if)
+	if not model or not model.Parent then return false, _d1p6ns({29,1,8,41,71,61,6,77,35,8,58,16},{84,117,109,68,103}) end
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({27,78,37,75,61,84,33,78,1,84,39,94,3,90,58,94},{83,59,72,42}))
+	if not _qn then return false, _d1p6ns({29,36,80,41,31,50,57,17,41,3,54,57},{83,75,112,74,119}) end
+
+	if _if and not model:FindFirstChildWhichIsA(_d1p6ns({31,84,94,81,29,83,86,41},{93,53,45,52,77,50,36}), true) then
+		warn(_d1p6ns({16,27,47,21,55,22,119},{75,87,64,122,67}) .. model:GetFullName() .. _d1p6ns({20,50,56,93,29,92,91,122,41,79,79,70,71,122,54,64,29,70,92,51,42,14,94,94,93,63,55,90,17,18,71,53,121,90,85,87,70,63,121,71,78,18,90,53,121,94,82,65,93,46,48,65,83,18,64,53,121,90,88,94,81,42,54,92,73,18,64,53},{52,90,89,46,61,50}))
+		return false, _d1p6ns({43,89,45,90,55,11,9,1,83,61,90,115,10,7,69,70,56,8,47,23,65},{101,54,89,122,91,100,104})
 	end
 
-	_bx.CFrame = model:GetPivot() + _w
+	_qn.CFrame = model:GetPivot() + _a
 	return true
 end
 
 
 
-local _xp = 0.4       
-local _yr = 3   
-local _wa = 0         
-local _wd = false
-local _pf = function() end 
+local _ds = 0.4       
+local _yp = 3   
+local _lg = 0         
+local _mg = false
+local _hq = function() end 
+local _gd = function() end 
 
 
-local function getScanPoint(_os, _wp)
-	if isDimO(_os.Name) then
-		local _vm = _os:FindFirstChild(_p, true)
-		if _vm and _vm:IsA(_d26gxw({120,7,19,45,72,6,9,70,50,63},{40,81,90,67,59,114,104})) then
-			return _vm:GetPivot() + _w
+local function getScanPoint(_bc, _wm)
+	if isDimO(_bc.Name) then
+		local _xf = _bc:FindFirstChild(_z, true)
+		if _xf and _xf:IsA(_d1p6ns({24,114,125,13,19,1,41,74,87,6},{72,36,52,99,96,117})) then
+			return _xf:GetPivot() + _a
 		end
 	end
 
-	local _in = _wp[_os]
-	if not _in then
-		_in = {}
-		for _qc, d in ipairs(_os:GetDescendants()) do
-			if d:IsA(_d26gxw({55,29,70,61,42,81,37,1},{117,124,53,88,122,48,87})) and d.CanCollide then
-				table.insert(_in, d)
+	local _gb = _wm[_bc]
+	if not _gb then
+		_gb = {}
+		for _pr, d in ipairs(_bc:GetDescendants()) do
+			if d:IsA(_d1p6ns({110,83,26,79,44,18,16,72},{44,50,105,42,124,115,98,60})) and d.CanCollide then
+				table.insert(_gb, d)
 			end
 		end
-		_wp[_os] = _in
+		_wm[_bc] = _gb
 	end
-	if #_in > 0 then
-		local _jg = _in[math.random(#_in)]
+	if #_gb > 0 then
+		local _pj = _gb[math.random(#_gb)]
 		
-		return CFrame.new(_jg.Position + Vector3.new(0, _jg.Size.Y / 2, 0)) + _w
+		return CFrame.new(_pj.Position + Vector3.new(0, _pj.Size.Y / 2, 0)) + _a
 	end
 
-	local _vm = _os:FindFirstChild(_p, true)
-	if _vm and _vm:IsA(_d26gxw({127,5,32,19,26,59,91,54,76,54},{47,83,105,125,105,79,58,88})) then
-		return _vm:GetPivot() + _w
+	local _xf = _bc:FindFirstChild(_z, true)
+	if _xf and _xf:IsA(_d1p6ns({40,58,3,87,28,82,18,22,15,47},{120,108,74,57,111,38,115})) then
+		return _xf:GetPivot() + _a
 	end
 	return nil
 end
 
 local function hasParts(model)
-	return model.Parent ~= nil and model:FindFirstChildWhichIsA(_d26gxw({7,9,84,24,7,36,26,83},{69,104,39,125,87}), true) ~= nil
+	return model.Parent ~= nil and model:FindFirstChildWhichIsA(_d1p6ns({103,92,66,33,52,68,79,69},{37,61,49,68,100}), true) ~= nil
 end
 
 
-local function searchForItem(model, _dm)
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({118,75,26,45,12,40,78,40,108,81,24,56,50,38,85,56},{62,62,119,76,98,71,39,76}))
-	if not _bx then return false, _d26gxw({123,21,82,32,58,34,71,27,17,55,55,49},{53,122,114,67,82,67}) end
+local function searchForItem(model, _ay)
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({46,86,5,76,66,9,74,12,127,67,9,87,56,76,94,18},{102,35,104,45,44}))
+	if not _qn then return false, _d1p6ns({35,40,27,54,50,79,75,10,14,51,94,39},{109,71,59,85,90,46,57,107}) end
 
-	_wa = _wa + (1)
-	local _ks = _wa
-	_wd = true
-	_pf() 
+	_lg = _lg + (1)
+	local _uf = _lg
+	_mg = true
+	_hq() 
 
-	local _kg = _bx.CFrame
+	local _ct = _qn.CFrame
 	local function stopped()
-		return _wa ~= _ks or not model.Parent or _r.Character ~= character
+		return _lg ~= _uf or not model.Parent or _h.Character ~= character
 	end
 
-	local _tb = workspace:FindFirstChild(_d26gxw({24,29,24,72,21,16,53,27,27,94},{92,116,117,45,123,99}))
-	local _tx = _tb and _tb:GetChildren() or {}
-	table.sort(_tx, function(_ym, _ss) return _ym.Name < _ss.Name end)
+	local _kl = workspace:FindFirstChild(_d1p6ns({42,63,32,33,31,29,63,34,42,2},{110,86,77,68,113}))
+	local _wi = _kl and _kl:GetChildren() or {}
+	table.sort(_wi, function(_wz, _we) return _wz.Name < _we.Name end)
 
-	local _wp = {}
-	local _bn = false
-	for _qc = 1, _yr do
-		for _mo, _os in ipairs(_tx) do
+	local _wm = {}
+	local _rw = false
+	for _pr = 1, _yp do
+		for _gt, _bc in ipairs(_wi) do
 			if stopped() then break end
 
-			local _pi = getScanPoint(_os, _wp)
-			if _pi then
-				_dm(_d26gxw({2,56,83,87,50,53,91,75,54,125},{81,93,50,37}) .. _mo .. "/" .. #_tx .. "  " .. _os.Name .. _d26gxw({4,109,73,69,14,37,18,79,109,21,73,66,63,5,75,61,72},{36,77,97,38,98,76,113}))
-				_bx.CFrame = _pi
+			local _ns = getScanPoint(_bc, _wm)
+			if _ns then
+				_ay(_d1p6ns({2,61,26,77,9,36,28,36,54,120},{81,88,123,63,106,76,117,74}) .. _gt .. "/" .. #_wi .. "  " .. _bc.Name .. _d1p6ns({19,25,66,63,64,90,90,1,124,88,92,25,25,40,67,67,16},{51,57,106,92,44}))
+				_qn.CFrame = _ns
 
 				
-				local _bp = os.clock() + _xp
-				while os.clock() < _bp and not stopped() and not hasParts(model) do
+				local _ht = os.clock() + _ds
+				while os.clock() < _ht and not stopped() and not hasParts(model) do
 					task.wait()
 				end
 				if hasParts(model) then
-					_bn = true
+					_rw = true
 					break
 				end
 			end
 		end
-		if _bn or stopped() then break end
+		if _rw or stopped() then break end
 	end
 
-	_wd = false
+	_mg = false
 
-	if _bn and _r.Character == character and _bx.Parent then
-		_bx.CFrame = model:GetPivot() + _w
+	if _rw and _h.Character == character and _qn.Parent then
+		_qn.CFrame = model:GetPivot() + _a
 		return true
 	end
 
 	
-	if _r.Character == character and _bx.Parent then
-		_bx.CFrame = _kg
+	if _h.Character == character and _qn.Parent then
+		_qn.CFrame = _ct
 	end
-	if _wa ~= _ks then return false, _d26gxw({98,61,4,50,32,23,73},{49,73,107,66,80,114,45}) end
-	return false, _d26gxw({42,17,4,64,11,73,45,74,0,94,25,14,77,71,54,93,68,26,25,13,8,72,43,77,11,16},{100,126,112,96,109,38,88,36})
+	if _lg ~= _uf then return false, _d1p6ns({29,65,15,3,62,80,4},{78,53,96,115}) end
+	return false, _d1p6ns({31,5,67,29,53,11,68,8,53,74,94,83,115,5,95,31,113,14,94,80,54,10,66,15,62,4},{81,106,55,61,83,100,49,102})
 end
 
-local _vl = nil
+local _zr = nil
 
 local function refreshDroppedList()
 	
-	local _bj = {}
-	for _qc, _oe in ipairs({ _d26gxw({36,2,43,89,16,21,32,107,1,19,47,89,1,19,47,90},{96,112,68,41}), _d26gxw({97,46,45,74,68,63,24,105,51,45,78},{37,92,66,58,52,90,124}) }) do
-		local _sf, _wv = summarizeFolder(_oe)
-		table.insert(_bj, { text = _oe .. " (" .. #_wv .. ")", header = true })
-		if not _sf then
-			table.insert(_bj, { text = _d26gxw({60,40,86,56,66,34,67,52,40,78,124,65,63,22,52,35},{90,71,58,92,39,80,99}), muted = true })
-		elseif #_wv == 0 then
-			table.insert(_bj, { text = _d26gxw({27,57,31,46},{117,86,113,75}), muted = true })
+	local _pz = {}
+	for _pr, _ca in ipairs({ _d1p6ns({58,7,39,92,14,16,44,110,31,22,35,92,31,22,35,95},{126,117,72,44}), _d1p6ns({108,63,60,72,88,40,55,116,71,34,39},{40,77,83,56}) }) do
+		local _dg, _ij = summarizeFolder(_ca)
+		table.insert(_pz, { text = _ca .. " (" .. #_ij .. ")", header = true })
+		if not _dg then
+			table.insert(_pz, { text = _d1p6ns({71,50,25,80,68,47,85,90,78,41,85,82,78,40,27,80},{33,93,117,52}), muted = true })
+		elseif #_ij == 0 then
+			table.insert(_pz, { text = _d1p6ns({82,12,90,10},{60,99,52,111}), muted = true })
 		else
-			for _qc, entry in ipairs(_wv) do
-				table.insert(_bj, { text = entry.text, userId = entry.userId, model = entry.model, isBackpack = entry.isBackpack })
+			for _pr, entry in ipairs(_ij) do
+				table.insert(_pz, { text = entry.text, userId = entry.userId, model = entry.model, isBackpack = entry.isBackpack })
 			end
 		end
 	end
 
-	local _in = {}
-	for _qc, _xw in ipairs(_bj) do
-		table.insert(_in, _xw.text .. "|" .. tostring(_xw.userId or "") .. "|" .. (_xw.model and getModelId(_xw.model) or ""))
+	local _gb = {}
+	for _pr, _vm in ipairs(_pz) do
+		table.insert(_gb, _vm.text .. "|" .. tostring(_vm.userId or "") .. "|" .. (_vm.model and getModelId(_vm.model) or ""))
 	end
-	local _pu = table.concat(_in, "\n")
-	if _pu == _vl then return end
-	_vl = _pu
+	local _ku = table.concat(_gb, "\n")
+	if _ku == _zr then return end
+	_zr = _ku
 
-	for _qc, _vd in ipairs(_kw:GetChildren()) do
-		if _vd:IsA(_d26gxw({108,4,72,126,84,65,20,66,69},{43,113,33,49,54})) then
-			_vd:Destroy()
+	for _pr, _au in ipairs(_ib:GetChildren()) do
+		if _au:IsA(_d1p6ns({117,9,40,125,55,88,25,34,70},{50,124,65,50,85})) then
+			_au:Destroy()
 		end
 	end
-	_qe = {}
+	_va = {}
 
-	for _mo, _xw in ipairs(_bj) do
-		local _sq
-		local _ie 
-		if _xw.model then
+	for _gt, _vm in ipairs(_pz) do
+		local _bi
+		local _ql 
+		if _vm.model then
 			
-			local model = _xw.model
-			local _zx = _xw.isBackpack 
-			_sq = Instance.new(_d26gxw({111,5,22,13,126,47,15,79,15,0},{59,96,110,121,60,90,123}))
-			_sq.Text = ""
-			_sq.AutoButtonColor = false
-			_sq.BackgroundColor3 = Color3.fromRGB(70, 70, 82)
-			_sq.MouseEnter:Connect(function() _sq.BackgroundTransparency = 0.6 end)
-			_sq.MouseLeave:Connect(function() _sq.BackgroundTransparency = 1 end)
-			_sq.MouseButton1Click:Connect(function()
-				local _wm = _ie and _ie.Text
-				local function _dm(text)
-					if _ie and _ie.Parent then
-						_ie.Text = text
+			local model = _vm.model
+			local _qw = _vm.isBackpack 
+			_bi = Instance.new(_d1p6ns({19,30,81,94,114,41,68,51,20,71},{71,123,41,42,48,92,48}))
+			_bi.Text = ""
+			_bi.AutoButtonColor = false
+			_bi.BackgroundColor3 = Color3.fromRGB(70, 70, 82)
+			_bi.MouseEnter:Connect(function() _bi.BackgroundTransparency = 0.6 end)
+			_bi.MouseLeave:Connect(function() _bi.BackgroundTransparency = 1 end)
+			_bi.MouseButton1Click:Connect(function()
+				local _pg = _ql and _ql.Text
+				local function _ay(text)
+					if _ql and _ql.Parent then
+						_ql.Text = text
 					end
 				end
 				local function flash(text)
-					_dm(text)
+					_ay(text)
 					task.delay(1.5, function()
-						if _wm and _ie and _ie.Parent and not _wd then
-							_ie.Text = _wm
+						if _pg and _ql and _ql.Parent and not _mg then
+							_ql.Text = _pg
 						end
 					end)
 				end
 
 				
-				if _wd then
-					_wa = _wa + (1)
+				if _mg then
+					_lg = _lg + (1)
 					return
 				end
 
-				local _wn, reason = teleportToModel(model)
-				if _wn then return end
-				if reason ~= _d26gxw({50,26,78,15,16,26,91,75,25,17,26,7,18,26,26,95,29,7,78,92,85},{124,117,58,47}) or not _zx then
+				local _hr, reason = teleportToModel(model, _qw)
+				if _hr then return end
+				if reason ~= _d1p6ns({33,33,33,67,37,15,14,42,48,7,105,72,1,33,117,19,40,18,27,61,124},{111,78,85,99,73,96}) or not _qw then
 					flash(reason)
 					return
 				end
 
 				
 				task.spawn(function()
-					local _bn, _yl = searchForItem(model, _dm)
-					if _bn then
-						_dm(_wm or "")
+					local _rw, _lk = searchForItem(model, _ay)
+					if _rw then
+						_ay(_pg or "")
 					else
-						flash(_yl)
+						flash(_lk)
 					end
 				end)
 			end)
-			Instance.new(_d26gxw({110,7,62,58,73,32,24,39},{59,78,125,85}), _sq).CornerRadius = UDim.new(0, 4)
+			Instance.new(_d1p6ns({126,8,57,10,6,69,36,8},{43,65,122,101,116}), _bi).CornerRadius = UDim.new(0, 4)
 		else
-			_sq = Instance.new(_d26gxw({53,83,19,36,85},{115,33,114,73,48}))
+			_bi = Instance.new(_d1p6ns({21,80,46,6,54},{83,34,79,107}))
 		end
-		_sq.Size = UDim2.new(1, 0, 0, 20)
-		_sq.LayoutOrder = _mo
-		_sq.BackgroundTransparency = 1
-		_sq.BorderSizePixel = 0
-		_sq.Parent = _kw
+		_bi.Size = UDim2.new(1, 0, 0, 20)
+		_bi.LayoutOrder = _gt
+		_bi.BackgroundTransparency = 1
+		_bi.BorderSizePixel = 0
+		_bi.Parent = _ib
 
-		local _bf = 0
-		if _xw.userId then
-			_bf = 24
+		local _xr = 0
+		if _vm.userId then
+			_xr = 24
 
-			local _ni = Instance.new(_d26gxw({114,11,17,91,59,11,59,89,3,28},{59,102,112,60,94,71,90}))
-			_ni.Size = UDim2.new(0, 18, 0, 18)
-			_ni.Position = UDim2.new(0, 0, 0.5, -9)
-			_ni.BackgroundColor3 = Color3.fromRGB(45, 45, 52) 
-			_ni.BorderSizePixel = 0
-			_ni.Image = _my[_xw.userId] or ""
-			_ni.Parent = _sq
-			Instance.new(_d26gxw({17,7,39,11,17,38,70,50},{68,78,100,100,99,72,35,64}), _ni).CornerRadius = UDim.new(1, 0)
+			local _kd = Instance.new(_d1p6ns({59,76,63,74,23,109,63,79,23,77},{114,33,94,45}))
+			_kd.Size = UDim2.new(0, 18, 0, 18)
+			_kd.Position = UDim2.new(0, 0, 0.5, -9)
+			_kd.BackgroundColor3 = Color3.fromRGB(45, 45, 52) 
+			_kd.BorderSizePixel = 0
+			_kd.Image = _jo[_vm.userId] or ""
+			_kd.Parent = _bi
+			Instance.new(_d1p6ns({60,40,48,21,15,7,4,1},{105,97,115,122,125}), _kd).CornerRadius = UDim.new(1, 0)
 
-			_qe[_xw.userId] = _qe[_xw.userId] or {}
-			table.insert(_qe[_xw.userId], _ni)
-			requestAvatar(_xw.userId)
+			_va[_vm.userId] = _va[_vm.userId] or {}
+			table.insert(_va[_vm.userId], _kd)
+			requestAvatar(_vm.userId)
 		end
 
-		local label = Instance.new(_d26gxw({121,68,9,72,23,3,88,72,77},{45,33,113,60,91,98,58}))
-		_ie = label
-		label.Size = UDim2.new(1, -_bf, 1, 0)
-		label.Position = UDim2.new(0, _bf, 0, 0)
+		local label = Instance.new(_d1p6ns({4,59,89,7,28,63,67,22,60},{80,94,33,115}))
+		_ql = label
+		label.Size = UDim2.new(1, -_xr, 1, 0)
+		label.Position = UDim2.new(0, _xr, 0, 0)
 		label.BackgroundTransparency = 1
-		label.Text = _xw.text
+		label.Text = _vm.text
 		label.TextXAlignment = Enum.TextXAlignment.Left
 		label.TextTruncate = Enum.TextTruncate.AtEnd
-		label.Font = _xw.header and Enum.Font.GothamBold or Enum.Font.Gotham
-		label.TextSize = _xw.header and 13 or 12
-		label.TextColor3 = (_xw.header or _xw.muted) and _nn or Color3.new(1, 1, 1)
-		label.Parent = _sq
+		label.Font = _vm.header and Enum.Font.GothamBold or Enum.Font.Gotham
+		label.TextSize = _vm.header and 13 or 12
+		label.TextColor3 = (_vm.header or _vm.muted) and _jy or Color3.new(1, 1, 1)
+		label.Parent = _bi
 	end
 end
 
 task.spawn(function()
-	while _mm.Parent do
+	while _vf.Parent do
 		refreshDroppedList()
 		task.wait(1)
 	end
 end)
 
-_nv = _sv
+_oo = _xv
 
 
-_nv = _ka
+_oo = _cx
 
-createLabel(_d26gxw({28,16,76,50,117,76,89,54,54,15,9,48,59,1,0},{85,100,41,95}), 1)
-local _od = createList(2, false, 170)
-createLabel(_d26gxw({48,40,53,12,21,19,9,21,30,101,57,11,26,1,93},{113,69,90,121,123,103,41,97}), 3)
+local _hy = createLabel(_d1p6ns({58,74,63,0,121,39,76,39,23,55,16,76,37,28,99,67,8},{99,37,74,114,89}), 1)
+local _jj = createLabel(_d1p6ns({16,39,33,92,34,32,115,27,60,62,32,84,44,55,55,116,114,127},{82,82,79,55,71,82,83,78}), 2)
 
-local _xi = Instance.new(_d26gxw({114,95,36,13,60,42,73},{38,58,92,121,126,69,49,120}))
-_xi.Size = UDim2.new(1, 0, 0, 28)
-_xi.LayoutOrder = 4
-_xi.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-_xi.BorderSizePixel = 0
-_xi.Text = "1"
-_xi.PlaceholderText = _d26gxw({110,72,62,8,60,27},{47,37,81,125,82,111})
-_xi.TextColor3 = Color3.new(1, 1, 1)
-_xi.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
-_xi.Font = Enum.Font.Gotham
-_xi.TextSize = 14
-_xi.ClearTextOnFocus = false
-_xi.Parent = _ka
-Instance.new(_d26gxw({29,104,48,71,25,75,45,83},{72,33,115,40,107,37}), _xi).CornerRadius = UDim.new(0, 8)
+createLabel(_d1p6ns({51,29,10,0,90,65,31,4,25,2,79,2,20,12,70},{122,105,111,109}), 3)
+local _xk = createList(4, false, 170)
+createLabel(_d1p6ns({98,19,39,89,2,87,94,60,67,76,64,12,41,74,24},{35,126,72,44,108}), 5)
 
-local _vw = createToggleButton(5)
-_vw.BackgroundColor3 = _yn
-_vw.Text = _d26gxw({62,14,59,52,21},{125,124,90,82,97})
-local _tr = createLabel("", 6)
+local _wj = Instance.new(_d1p6ns({61,41,83,39,17,48,48},{105,76,43,83,83,95,72}))
+_wj.Size = UDim2.new(1, 0, 0, 28)
+_wj.LayoutOrder = 6
+_wj.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+_wj.BorderSizePixel = 0
+_wj.Text = "1"
+_wj.PlaceholderText = _d1p6ns({54,54,89,88,23,43},{119,91,54,45,121,95,75})
+_wj.TextColor3 = Color3.new(1, 1, 1)
+_wj.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+_wj.Font = Enum.Font.Gotham
+_wj.TextSize = 14
+_wj.ClearTextOnFocus = false
+_wj.Parent = _cx
+Instance.new(_d1p6ns({56,59,97,84,31,28,71,73},{109,114,34,59}), _wj).CornerRadius = UDim.new(0, 8)
 
-local _ps = true
-createSwitch(7, _d26gxw({51,67,56,46,4,17,56,60,80,102,54,58,27,83,60,38,19,89},{112,49,89,72}), _ps, function(_nu)
-	_ps = _nu
+local _db = createToggleButton(7)
+_db.BackgroundColor3 = _ao
+_db.Text = _d1p6ns({52,1,58,56,55},{119,115,91,94,67,68,56,105})
+local _hv = createLabel("", 8)
+
+local _ae = true
+createSwitch(9, _d1p6ns({108,33,60,21,30,15,50,41,83,61,64,33,54,17,15,65,48,53},{47,83,93,115,106}), _ae, function(_pk)
+	_ae = _pk
 end)
 
-_nv = _sv
+_oo = _xv
 
 
 task.spawn(function()
-	while _mm.Parent do
+	while _vf.Parent do
 		local names, seen = {}, {}
-		local _pd = _y:FindFirstChild(_d26gxw({34,76,75,48,36,23,1,4,83,89},{97,62,42,86,80,94,117}))
-		if _pd then
-			for _qc, _qs in ipairs(_pd:GetChildren()) do
-				if not seen[_qs.Name] then
-					seen[_qs.Name] = true
-					table.insert(names, _qs.Name)
+		local _oq = _m:FindFirstChild(_d1p6ns({40,69,95,59,80,33,65,12,6,68},{107,55,62,93,36,104,53,105}))
+		if _oq then
+			for _pr, _wl in ipairs(_oq:GetChildren()) do
+				if not seen[_wl.Name] then
+					seen[_wl.Name] = true
+					table.insert(names, _wl.Name)
 				end
 			end
 		end
 		table.sort(names)
-		_od.setNames(names)
-		task.wait(_qq)
+		_xk.setNames(names)
+		task.wait(_ad)
 	end
 end)
 
 
 
-local function getItemKey(_fu)
-	local _pd = _y:FindFirstChild(_d26gxw({120,30,6,8,76,107,79,9,10,29},{59,108,103,110,56,34}))
-	local _qs = _pd and _pd:FindFirstChild(_fu)
-	if not _qs then return nil end
 
-	local _oc = _qs:GetAttribute(_d26gxw({101,17,43,79,100,73,28},{44,101,78,34,47})) or _qs:GetAttribute(_d26gxw({32,90,92,80,73,72,70},{73,46,57,61,34,45,63,34}))
-	if type(_oc) == _d26gxw({61,15,37,59,11,37},{78,123,87,82,101,66}) and _oc ~= "" then
-		return _oc
+local function getItemKey(_gj)
+	local _oq = _m:FindFirstChild(_d1p6ns({52,56,68,11,3,3,81,8,26,57},{119,74,37,109}))
+	local _wl = _oq and _oq:FindFirstChild(_gj)
+	if not _wl then return nil end
+
+	local _ux = _wl:GetAttribute(_d1p6ns({27,89,0,38,25,72,28},{82,45,101,75})) or _wl:GetAttribute(_d1p6ns({14,49,3,75,88,2,60},{103,69,102,38,51}))
+	if type(_ux) == _d1p6ns({8,41,25,69,80,73},{123,93,107,44,62,46}) and _ux ~= "" then
+		return _ux
+	end
+	return _wl.Name
+end
+
+
+local function craftItem(_qk, _aa)
+	local _sf = {
+		_d1p6ns({63,25,93,60,74,33,7,33,59,8},{93,124,58,85,36,98,117,64}),
+		_qk
+	}
+	local _or = game:GetService(_d1p6ns({115,92,10,8,9,66,88,14,1,4,114,77,21,22,1,70,92},{33,57,122,100,96})):WaitForChild(_d1p6ns({10,68,49,58,39,114,32,39,85,36,53,60,90},{73,54,80,92,83,52,85})):InvokeServer(unpack(_sf))
+	print(_d1p6ns({55,32,48,13,10,23,31,76,14,6,37,5,2,32,48,13,10,23},{108,99,66,108}), _qk, "->", _or)
+	if _or == false then
+		error(_d1p6ns({29,7,5,63,14,75,78,16,18,35,14,90,26,7,19,105,9,92,9,11,25,10,25,88,8,22,87,47,4,75,78},{110,98,119,73,107,57}) .. _qk)
+	end
+
+	task.wait(_xn) 
+
+	
+	local _zl = os.clock()
+	local _lm = 0
+	while _aa() do
+		local _sf = {
+			_d1p6ns({26,23,93,2,43},{121,101,60,100,95,124}),
+			_qk
+		}
+		_lm = _lm + (1)
+		local _il = game:GetService(_d1p6ns({101,36,53,83,84,80,86,53,32,91,110,71,88,51,36,88,88},{55,65,69,63,61,51})):WaitForChild(_d1p6ns({12,14,81,92,25,9,9,94,89,25,38,19,94},{79,124,48,58,109})):InvokeServer(unpack(_sf))
+		print(_d1p6ns({56,23,75,55,6,69,111,67,55,75,55,6,69},{99,84,57,86,96,49,50}), _qk, _d1p6ns({7,64,1,79,87,86,18},{102,52,117,42,58,38}), _lm, "->", _il)
+
+		if _il ~= false then
+			return 
+		end
+
+		if os.clock() - _zl >= _pu then
+			error(_d1p6ns({57,56,11,11,47,47,89,22,47,45,13,93,56,56,19,24,41,41,16,19,45,125,26,15,43,59,13,93,44,50,11,93},{74,93,121,125}) .. _qk .. " (" .. _lm .. _d1p6ns({26,26,4,1,95,22,0,1,73,82},{58,123,112,117}))
+		end
+		task.wait(_nb)
+	end
+end
+
+
+
+
+local function getPlayerWorkbench()
+	local _bc = getPlayerDimO()
+	if not _bc then return nil end
+
+	local _pi = _bc:FindFirstChild(_d1p6ns({113,90,3,26,86,93,95},{51,47,109,113}))
+	if _pi then
+		local _xf = _pi:FindFirstChild(_d1p6ns({48,22,30,86,30},{114,115,112,53,118,65}))
+		if _xf and _xf:IsA(_d1p6ns({18,13,56,7,59,49,30,63},{80,108,75,98,107})) then
+			return _xf
+		end
+	end
+
+	local _pd = _bc:FindFirstChild(_z, true)
+	if _pd and _pd:IsA(_d1p6ns({113,30,98,93,87,85,41,69,80,65},{33,72,43,51,36})) then
+		return _pd
 	end
 	return nil
 end
 
-
-local function craftItem(_eh, _ev)
-	local _qm = {
-		_d26gxw({79,59,30,47,39,22,49,76,56,13},{45,94,121,70,73,85,67}),
-		_eh
-	}
-	local _mk = game:GetService(_d26gxw({21,59,82,36,83,4,33,8,34,58,113,60,85,21,33,27,34},{71,94,34,72,58,103,64,124})):WaitForChild(_d26gxw({63,15,4,80,33,9,16,18,30,17,95,58,33},{124,125,101,54,85,79,101})):InvokeServer(unpack(_qm))
-	print(_d26gxw({98,48,31,13,69,47,48,88,91,22,10,5,77,24,31,25,95,7},{57,115,109,108,35,91,109,120}), _eh, "->", _mk)
-	if _mk == false then
-		error(_d26gxw({26,8,18,53,12,31,64,49,12,7,5,32,29,8,4,99,11,8,7,42,7,46,18,34,15,25,64,37,6,31,64},{105,109,96,67}) .. _eh)
-	end
-
-	task.wait(_ok) 
-
-	
-	local _do = os.clock()
-	local _wb = 0
-	while _ev() do
-		local _qm = {
-			_d26gxw({26,63,38,1,93},{121,77,71,103,41}),
-			_eh
-		}
-		_wb = _wb + (1)
-		local _zj = game:GetService(_d26gxw({52,71,18,77,69,52,23,18,71,6,114,88,56,4,7,69,7},{102,34,98,33,44,87,118})):WaitForChild(_d26gxw({11,32,74,28,42,119,65,86,43,38,66,21,48},{72,82,43,122,94,49,52,56})):InvokeServer(unpack(_qm))
-		print(_d26gxw({27,23,23,71,38,32,56,6,35,38,4,64,52},{64,84,101,38}), _eh, _d26gxw({70,64,29,62,15,52,83},{39,52,105,91,98,68}), _wb, "->", _zj)
-
-		if _zj ~= false then
-			return 
-		end
-
-		if os.clock() - _do >= _fe then
-			error(_d26gxw({51,22,73,74,90,50,83,80,89,79,52,83,73,89,85,37,16,79,85,81,39,83,88,78,94,38,7,27,90,80,50,83},{64,115,59,60,63}) .. _eh .. " (" .. _wb .. _d26gxw({101,74,38,36,77,40,91,38,35,1},{69,43,82,80,40}))
-		end
-		task.wait(_rg)
-	end
-end
-
-
-
-local function findNearestWorkbench(_ku)
-	local _pc, bestDist
-	for _qc, _yp in ipairs(workspace:GetDescendants()) do
-		if _yp.Name == _p and _yp:IsA(_d26gxw({24,26,114,32,18,61,41,34,88,43},{72,76,59,78,97,73})) then
-			local _ow = (_yp:GetPivot().Position - _ku).Magnitude
-			if not bestDist or _ow < bestDist then
-				_pc, bestDist = _yp, _ow
-			end
-		end
-	end
-	return _pc
-end
-
 local function goToWorkbench()
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({109,89,91,68,24,83,16,37,119,67,89,81,38,93,11,53},{37,44,54,37,118,60,121,65}))
-	if not _bx then return nil end
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({62,32,78,23,75,25,60,71,36,74,25,33,115,23,87,2},{118,85,35,118,37}))
+	if not _qn then return nil end
 
-	local _vm = findNearestWorkbench(_bx.Position)
-	if not _vm then
-		warn(_d26gxw({99,43,19,34,32,12,101,72,15,44,102,95},{56,104,97,67,70,120}) .. _p .. _d26gxw({92,16,69,18,14,94,71,93,18,94,3,10,20,66,72,14,11,81,64,24,87,16,64,15,26,86,87,20,21,87,3,27,9,95,78,93,12,88,70,15,30,16,90,18,14,16,80,9,26,94,71},{123,48,35,125}))
+	local _xf = getPlayerWorkbench()
+	if not _xf then
+		warn(_d1p6ns({102,49,90,25,42,83,52,29,17,71,13,32,67,7,26,6,8,30,37,73,13,29,11,71,13,62,7,6,74,28,8,60,37,74,54,17,82,65,12,63,7,62,82,0,67,26,41,73,10,85,94,8,23,62,7,8,29,48,93,22,39,66,27,15,82,106,29,34,68,1},{61,114,40,120,76,39,105}))
 		return nil
 	end
 
-	local _kg = { character = character, cframe = _bx.CFrame }
-	_bx.CFrame = _vm:GetPivot() + _w
-	task.wait(_m)
-	return _kg
+	local _ct = { character = character, cframe = _qn.CFrame }
+	_qn.CFrame = _xf:GetPivot() + _a
+	task.wait(_f)
+	return _ct
 end
 
-local function returnFromWorkbench(_kg)
-	if not _kg then return end
-	if _r.Character ~= _kg.character then return end 
-	local _bx = _kg.character:FindFirstChild(_d26gxw({109,6,80,39,22,59,50,65,33,82,41,12,4,58,87,7},{37,115,61,70,120,84,91}))
-	if _bx then
-		_bx.CFrame = _kg.cframe
+task.spawn(function()
+	while _vf.Parent do
+		local _bc = getPlayerDimO()
+		_hy.Text = _d1p6ns({55,90,14,58,118,2,29,3,80,21,59,63,41,26,84,21},{110,53,123,72,86,70,116}) .. (_bc and _bc.Name or _d1p6ns({34,23,7,24,21,48,57,22,23},{76,120,115,56,115,95}))
+		_jj.Text = _d1p6ns({16,42,50,10,55,45,124,52,60,51,51,2,57,58,56,91,114},{82,95,92,97}) .. (_bc and _bc:FindFirstChild(_d1p6ns({10,53,86,62,84,58,114},{72,64,56,85,49})) and _d1p6ns({5,11,77},{92,110,62,46,120,114}) or "No")
+		task.wait(_ad)
+	end
+end)
+
+local function returnFromWorkbench(_ct)
+	if not _ct then return end
+	if _h.Character ~= _ct.character then return end 
+	local _qn = _ct.character:FindFirstChild(_d1p6ns({112,6,55,21,63,87,26,62,38,62,87,7,10,21,35,76},{56,115,90,116,81}))
+	if _qn then
+		_qn.CFrame = _ct.cframe
 	end
 end
 
-local _ih = 0
-local _bw = false
+local _xq = 0
+local _lr = false
 
-_vw.MouseButton1Click:Connect(function()
+_db.MouseButton1Click:Connect(function()
 	
-	if _bw then
-		_ih = _ih + (1)
-		_bw = false
-		_vw.Text = _d26gxw({110,33,55,80,26},{45,83,86,54,110,61,45,51})
-		_tr.Text = _d26gxw({24,83,48,47,46,79,94},{75,39,95,95,94,42,58})
+	if _lr then
+		_xq = _xq + (1)
+		_lr = false
+		_db.Text = _d1p6ns({121,30,70,42,93},{58,108,39,76,41,115,102,123})
+		_hv.Text = _d1p6ns({31,62,82,27,50,41,46},{76,74,61,107,66})
 		return
 	end
 
-	local _ya = _od.order[1]
-	if not _ya then
-		_vw.Text = _d26gxw({105,0,69,52,25,8,72,127,80,29,67,50,24},{57,105,38,95})
+	local _sp = _xk.order[1]
+	if not _sp then
+		_db.Text = _d1p6ns({35,19,9,0,18,45,29,90,3,31,87,33,82},{115,122,106,107,50,76})
 		task.delay(1.5, function()
-			if _mm.Parent and not _bw then
-				_vw.Text = _d26gxw({63,32,21,46,61},{124,82,116,72,73,67})
+			if _vf.Parent and not _lr then
+				_db.Text = _d1p6ns({96,3,82,0,48},{35,113,51,102,68})
 			end
 		end)
 		return
 	end
 
-	local _jb = tonumber(_xi.Text)
-	_jb = _jb and math.floor(_jb)
-	if not _jb or _jb < 1 then
-		_tr.Text = _d26gxw({0,49,61,13,44,20,91,117,50,55,38,4,59,20,84,32,40,61,44,26,114,20,11,117,42,45,105,5,49,70,95},{69,95,73,104,94,52,58,85})
+	local _sa = tonumber(_wj.Text)
+	_sa = _sa and math.floor(_sa)
+	if not _sa or _sa < 1 then
+		_hv.Text = _d1p6ns({112,93,58,52,80,92,84,19,57,57,77,16,80,19,32,36,79,30,80,65,98,113,19,92,90,65,110,60,77,14,80},{53,51,78,81,34,124})
 		return
 	end
 
-	local _eh = getItemKey(_ya)
-	if not _eh then
-		_tr.Text = _ya .. _d26gxw({120,33,79,69,107,75,71,120,0,90,83,38,110,77,33},{88,73,46,54,75,37,40})
-		warn(_d26gxw({6,19,63,83,59,36,16,18},{93,80,77,50}) .. _ya .. _d26gxw({100,11,52,11,27,42,12,117,49,79,33,14,30,29,66,100,2,33,12,73,45,1,32,12,94,104,67,59,23,79,44,10,59,31,27,55,6,59,12},{68,99,85,120,59}))
+	local _qk = getItemKey(_sp)
+	if not _qk then
+		_hv.Text = _sp .. _d1p6ns({123,73,19,4,114,65,52,82,18,20,114,78,53,7,63,2,51,65,47,110,8,21,63,84},{91,39,124,112,82,39})
+		warn(_d1p6ns({112,19,83,53,12,95,13,1},{43,80,33,84,106}) .. _sp .. _d1p6ns({64,81,60,57,69,9,11,35,14,91,115,36,11,79,39,36,1,89,39,4,17,10,9,37,76,31,61,34,17,7,13,56,7,31,32,40,11,27},{96,63,83,77,101,111,100,86}))
 		return
 	end
-	print(_d26gxw({49,46,66,45,0,67,124,74,29,89,47,13,82,69},{106,109,48,76,102,55,33}), _ya, _d26gxw({122,89,22,15,59,18,51,14,88,27},{87,103,54,124,94,124}), _eh)
-	_ih = _ih + (1)
-	local _hq = _ih
-	_bw = true
+	print(_d1p6ns({116,116,56,0,73,67,23,65,95,94,41,10,74,83},{47,55,74,97}), _sp, _d1p6ns({68,89,112,80,12,9,52,74,7,0},{105,103,80,35}), _qk)
+	_xq = _xq + (1)
+	local _ik = _xq
+	_lr = true
 
 	local function runBatch()
-		local _rn = 0
-		for _fx = 1, _jb do
-			if _ih ~= _hq then return end
-			_vw.Text = _d26gxw({59,8,81,12,14,64},{104,124,62,124,46}) .. _rn .. "/" .. _jb .. ")"
-			_tr.Text = _d26gxw({56,15,39,77,38,15,27,28,93},{123,125,70,43,82,102,117}) .. _eh .. _d26gxw({72,114,77},{102,92,99,80,109})
+		local _oz = 0
+		for _gy = 1, _sa do
+			if _xq ~= _ik then return end
+			_db.Text = _d1p6ns({36,33,17,6,72,94},{119,85,126,118,104,118}) .. _oz .. "/" .. _sa .. ")"
+			_hv.Text = _d1p6ns({29,83,29,59,64,55,79,27,125},{94,33,124,93,52}) .. _qk .. _d1p6ns({7,1,31},{41,47,49,95,57,80,60})
 
-			local _wn, err = pcall(craftItem, _eh, function() return _ih == _hq end)
-			if _ih ~= _hq then return end
-			if not _wn then
-				warn(_d26gxw({42,58,24,88,28,121,33,6,0,36,28,90,72,63,40,21,73},{105,72,121,62,104,89,71,103}) .. _eh .. ": " .. tostring(err))
-				_tr.Text = _d26gxw({51,5,3,85,66,17,68,11,95,83,16,22,74},{117,100,106,57,39}) .. _rn .. "/" .. _jb .. _d26gxw({108,3,20,92,46,108,68,18,77,59,57,95,78},{76,43,103,57,75})
-				_bw = false
-				_vw.Text = _d26gxw({102,80,76,6,46},{37,34,45,96,90,77,57})
+			local _hr, err = pcall(craftItem, _qk, function() return _xq == _ik end)
+			if _xq ~= _ik then return end
+			if not _hr then
+				warn(_d1p6ns({32,73,42,81,79,26,5,90,34,91,94,94,67,93,36,69,27},{99,59,75,55,59,58}) .. _qk .. ": " .. tostring(err))
+				_hv.Text = _d1p6ns({108,2,90,51,81,87,10,2,85,43,81,65,10},{42,99,51,95,52,51}) .. _oz .. "/" .. _sa .. _d1p6ns({78,12,57,55,14,78,75,63,38,27,27,80,99},{110,36,74,82,107})
+				_lr = false
+				_db.Text = _d1p6ns({38,92,19,23,93},{101,46,114,113,41,118})
 				return
 			end
 
-			_rn = _rn + (1)
-			_tr.Text = _d26gxw({43,43,45,87,65,59,30,72},{104,89,76,49,53,94,122}) .. _rn .. "/" .. _jb
-			if _fx < _jb then
-				task.wait(_bg)
+			_oz = _oz + (1)
+			_hv.Text = _d1p6ns({1,10,85,10,54,17,80,89},{66,120,52,108,66,116,52,121}) .. _oz .. "/" .. _sa
+			if _gy < _sa then
+				task.wait(_je)
 			end
 		end
 
-		if _ih == _hq then
-			_bw = false
-			_vw.Text = _d26gxw({43,20,85,58,28},{104,102,52,92})
-			_tr.Text = _d26gxw({102,32,0,9,120,2},{34,79,110,108,66}) .. _rn .. "/" .. _jb .. " " .. _eh
+		if _xq == _ik then
+			_lr = false
+			_db.Text = _d1p6ns({12,75,25,37,89},{79,57,120,67,45,65,64,98})
+			_hv.Text = _d1p6ns({115,12,48,43,13,67},{55,99,94,78}) .. _oz .. "/" .. _sa .. " " .. _qk
 		end
 	end
 
 	task.spawn(function()
-		local _kg = _ps and goToWorkbench() or nil
-		if _ih == _hq then
+		local _ct = _ae and goToWorkbench() or nil
+		if _xq == _ik then
 			runBatch()
 		end
-		returnFromWorkbench(_kg)
+		returnFromWorkbench(_ct)
 	end)
 end)
 
 
-local _hd = {} 
+local _sj = {} 
 
-local function containsAny(_yq, _fo)
-	_yq = string.lower(_yq)
-	for _qc, kw in ipairs(_fo) do
-		if string.find(_yq, kw, 1, true) then
+local function containsAny(_py, _mc)
+	_py = string.lower(_py)
+	for _pr, kw in ipairs(_mc) do
+		if string.find(_py, kw, 1, true) then
 			return true
 		end
 	end
 	return false
 end
 
-local function nameMatches(_yp)
-	for _qc, exact in ipairs(_kt) do
-		if _yp.Name == exact then
+local function nameMatches(_bt)
+	for _pr, exact in ipairs(_tm) do
+		if _bt.Name == exact then
 			return true
 		end
 	end
-	return containsAny(_yp.Name, _jp)
+	return containsAny(_bt.Name, _lp)
 end
 
 
-local function isShowing(_yp, _mp)
-	local _vs = _yp
-	while _vs and _vs ~= _mp do
-		if _vs:IsA(_d26gxw({15,24,59,60,39,34,8,49,7},{72,109,82,115,69})) and not _vs.Visible then
+local function isShowing(_bt, _an)
+	local _fy = _bt
+	while _fy and _fy ~= _an do
+		if _fy:IsA(_d1p6ns({16,93,40,123,79,48,38,52,92},{87,40,65,52,45,90,67})) and not _fy.Visible then
 			return false
 		end
-		_vs = _vs.Parent
+		_fy = _fy.Parent
 	end
-	return _mp.Enabled
+	return _an.Enabled
 end
 
-local function hideInstance(_yp)
-	local _sw
-	if _yp:IsA(_d26gxw({14,57,3,72,34,85,6,40,51},{93,90,113,45,71,59,65})) then
-		_sw = _d26gxw({127,32,39,75,86,43,34},{58,78,70,41})
-	elseif _yp:IsA(_d26gxw({27,67,2,18,34,49,57,85,31},{92,54,107,93,64,91})) then
-		_sw = _d26gxw({45,44,76,84,53,23,32},{123,69,63,61,87})
+local function hideInstance(_bt)
+	local _rq
+	if _bt:IsA(_d1p6ns({35,17,48,77,82,62,43,14,25},{112,114,66,40,55,80,108,123})) then
+		_rq = _d1p6ns({1,21,49,2,40,30,52},{68,123,80,96})
+	elseif _bt:IsA(_d1p6ns({32,95,92,38,79,8,2,73,65},{103,42,53,105,45,98})) then
+		_rq = _d1p6ns({36,35,54,24,90,86,23},{114,74,69,113,56,58})
 	else
 		return
 	end
 
-	if _yp[_sw] then
-		_yp[_sw] = false
+	if _bt[_rq] then
+		_bt[_rq] = false
 	end
 
-	if not _hd[_yp] then
-		_hd[_yp] = true
-		print(_d26gxw({61,63,71,77,6,45,25,1,46,8,68,11,32},{102,115,40,44,98,68,119}), _yp:GetFullName())
+	if not _sj[_bt] then
+		_sj[_bt] = true
+		print(_d1p6ns({127,55,61,5,45,76,72,67,38,114,12,32,65},{36,123,82,100,73,37,38}), _bt:GetFullName())
 		
-		_yp:GetPropertyChangedSignal(_sw):Connect(function()
-			if _df and _yp[_sw] then
-				_yp[_sw] = false
+		_bt:GetPropertyChangedSignal(_rq):Connect(function()
+			if _kn and _bt[_rq] then
+				_bt[_rq] = false
 			end
 		end)
 	end
 end
 
-local function checkLoadingGui(_mp)
-	if _mp == _mm or not _mp:IsA(_d26gxw({36,37,4,55,16,66,50,1,30},{119,70,118,82,117,44,117,116})) then return end
+local function checkLoadingGui(_an)
+	if _an == _vf or not _an:IsA(_d1p6ns({4,37,58,53,53,94,42,34,47},{87,70,72,80,80,48,109})) then return end
 
-	if nameMatches(_mp) then
-		hideInstance(_mp)
+	if nameMatches(_an) then
+		hideInstance(_an)
 		return
 	end
 
-	for _qc, d in ipairs(_mp:GetDescendants()) do
-		if d:IsA(_d26gxw({58,1,53,54,83,51,9,88,9},{125,116,92,121,49,89,108,59})) then
-			if nameMatches(d) and isShowing(d, _mp) then
+	for _pr, d in ipairs(_an:GetDescendants()) do
+		if d:IsA(_d1p6ns({8,31,41,41,8,92,10,14,59},{79,106,64,102,106,54,111,109})) then
+			if nameMatches(d) and isShowing(d, _an) then
 				hideInstance(d)
-			elseif (d:IsA(_d26gxw({119,0,87,28,9,66,7,74,4},{35,101,47,104,69})) or d:IsA(_d26gxw({50,94,26,18,126,84,18,79,13,8},{102,59,98,102,60,33})))
-				and containsAny(d.Text, _av)
-				and isShowing(d, _mp) then
-				hideInstance(_mp) 
+			elseif (d:IsA(_d1p6ns({21,52,37,36,63,32,51,56,60},{65,81,93,80,115})) or d:IsA(_d1p6ns({19,76,70,44,33,50,93,74,55,13},{71,41,62,88,99})))
+				and containsAny(d.Text, _nw)
+				and isShowing(d, _an) then
+				hideInstance(_an) 
 				return
 			end
 		end
@@ -1328,17 +1519,17 @@ local function checkLoadingGui(_mp)
 end
 
 
-table.insert(_mq, _c.ChildAdded:Connect(function(_vd)
-	if _df and _vd:IsA(_d26gxw({40,5,74,47,14,55,50,35,18},{123,102,56,74,107,89,117,86})) then
-		task.defer(checkLoadingGui, _vd)
+table.insert(_ui, _k.ChildAdded:Connect(function(_au)
+	if _kn and _au:IsA(_d1p6ns({124,71,42,28,74,74,31,12,70},{47,36,88,121})) then
+		task.defer(checkLoadingGui, _au)
 	end
 end))
 
 task.spawn(function()
-	while _mm.Parent do
-		if _df then
-			for _qc, _mp in ipairs(_c:GetChildren()) do
-				checkLoadingGui(_mp)
+	while _vf.Parent do
+		if _kn then
+			for _pr, _an in ipairs(_k:GetChildren()) do
+				checkLoadingGui(_an)
 			end
 		end
 		task.wait(0.2)
@@ -1347,149 +1538,181 @@ end)
 
 
 local function scanDimensions()
-	local _gr, dimO = {}, {}
-	local _ut = workspace:FindFirstChild(_d26gxw({124,6,57,71,63,57,87,58,86,28},{56,111,84,34,81,74,62,85}))
-	if _ut then
-		for _qc, _os in ipairs(_ut:GetChildren()) do
-			local nodes = _os:FindFirstChild(_d26gxw({38,14,29,22,89},{104,97,121,115,42,105}))
-			if nodes and nodes:IsA(_d26gxw({40,91,92,20,59,35},{110,52,48,112,94,81,116,70})) then
-				if isDimO(_os.Name) then
-					table.insert(dimO, _os.Name)
+	local _av, dimO = {}, {}
+	local _ge = workspace:FindFirstChild(_d1p6ns({44,34,29,74,30,88,86,1,6,56},{104,75,112,47,112,43,63,110}))
+	if _ge then
+		for _pr, _bc in ipairs(_ge:GetChildren()) do
+			local nodes = _bc:FindFirstChild(_d1p6ns({33,71,20,8,63},{111,40,112,109,76,89}))
+			if nodes and nodes:IsA(_d1p6ns({26,69,49,32,28,16},{92,42,93,68,121,98,35,78})) then
+				if isDimO(_bc.Name) then
+					table.insert(dimO, _bc.Name)
 				else
-					table.insert(_gr, _os.Name)
+					table.insert(_av, _bc.Name)
 				end
 			end
 		end
 	end
-	table.sort(_gr)
+	table.sort(_av)
 	table.sort(dimO)
-	return _gr, dimO
+	return _av, dimO
+end
+
+
+local function scanOreDimensions()
+	local names = {}
+	local _ge = workspace:FindFirstChild(_d1p6ns({124,61,39,87,86,39,35,93,86,39},{56,84,74,50}))
+	if _ge then
+		for _pr, _bc in ipairs(_ge:GetChildren()) do
+			local _zq = _bc:FindFirstChild(_d1p6ns({1,7,35,32},{78,117,70,83}))
+			if _zq and _zq:IsA(_d1p6ns({26,60,37,16,57,33},{92,83,73,116})) then
+				table.insert(names, _bc.Name)
+			end
+		end
+	end
+	table.sort(names)
+	return names
 end
 
 task.spawn(function()
-	while _mm.Parent do
-		local _gr, dimO = scanDimensions()
-		_aa.setNames(_gr)
-		_ju.setNames(dimO)
-		task.wait(_qq)
+	while _vf.Parent do
+		local _av, dimO = scanDimensions()
+		_tx.setNames(_av)
+		_ri.setNames(dimO)
+		_af.setNames(scanOreDimensions())
+		task.wait(_ad)
 	end
 end)
 
-local function getDimension(_zm)
-	local _ut = workspace:FindFirstChild(_d26gxw({38,59,16,81,29,17,59,18,90,0},{98,82,125,52,115}))
-	return _ut and _ut:FindFirstChild(_zm)
+local function getDimension(_rz)
+	local _ge = workspace:FindFirstChild(_d1p6ns({9,35,6,33,94,86,23,75,35,57},{77,74,107,68,48,37,126,36}))
+	return _ge and _ge:FindFirstChild(_rz)
 end
 
-local function getNodesFolder(_zm)
-	local _os = getDimension(_zm)
-	local nodes = _os and _os:FindFirstChild(_d26gxw({32,0,78,29,90},{110,111,42,120,41}))
-	if nodes and nodes:IsA(_d26gxw({30,76,48,62,19,95},{88,35,92,90,118,45,110,99})) then
+local function getOresFolder(_rz)
+	local _bc = getDimension(_rz)
+	local _zq = _bc and _bc:FindFirstChild(_d1p6ns({24,94,13,80},{87,44,104,35}))
+	if _zq and _zq:IsA(_d1p6ns({17,72,8,33,50,85},{87,39,100,69})) then
+		return _zq
+	end
+end
+
+local function getNodesFolder(_rz)
+	local _bc = getDimension(_rz)
+	local nodes = _bc and _bc:FindFirstChild(_d1p6ns({120,69,47,91,69},{54,42,75,62}))
+	if nodes and nodes:IsA(_d1p6ns({53,52,16,69,22,41},{115,91,124,33})) then
 		return nodes
 	end
 end
 
 
-local _xr = nil
-local _xs = 0 
-local _tv = {}
+local _ks = nil
+_gd = function()
+	if _ks and _tz[_ks] then
+		restoreOriginIfAny(_ks)
+	end
+end
+local _sk = 0 
+local _iz = {}
 
 local function refreshButtons()
-	for _sb, _gn in pairs(_tv) do
-		local _un = (_xr == _sb)
-		_gn.button.Text = _gn.label .. (_un and _d26gxw({89,67,106,119},{99,99,37,57}) or _d26gxw({16,72,36,29,103},{42,104,107,91,33,94}))
-		_gn.button.BackgroundColor3 = _un and _hu or _pb
+	for _fz, _un in pairs(_iz) do
+		local _jn = (_ks == _fz)
+		_un.button.Text = _un.label .. (_jn and _d1p6ns({4,92,36,109},{62,124,107,35,96}) or _d1p6ns({24,31,46,62,100},{34,63,97,120}))
+		_un.button.BackgroundColor3 = _jn and _qq or _qg
 	end
 end
 
 
-_pf = function()
-	if _xr then
-		_xs = _xs + (1)
-		_xr = nil
+_hq = function()
+	if _ks then
+		local _rf = _ks
+		_sk = _sk + (1)
+		_ks = nil
 		clearHiddenHold()
+		restoreOriginIfAny(_rf)
 		refreshButtons()
 	end
 end
 
 
 
-local function resolveFast(_wl)
-	if _wl == nil then return _xe end
-	return _wl
+local function resolveFast(_hl)
+	if _hl == nil then return _cy end
+	return _hl
 end
 
 
-local function resolveHidden(_qt)
-	if _qt == nil then return _mt end
-	return _qt
+local function resolveHidden(_zh)
+	if _zh == nil then return _ah end
+	return _zh
 end
 
-local function interruptibleWait(_ve, _hq)
-	local _sn = 0
-	while _sn < _ve and _xs == _hq do
-		_sn = _sn + (task.wait(0.1))
+local function interruptibleWait(_qd, _ik)
+	local _mv = 0
+	while _mv < _qd and _sk == _ik do
+		_mv = _mv + (task.wait(0.1))
 	end
 end
 
-local function triggerPrompt(model, _wl)
-	local _a = model:FindFirstChildWhichIsA(_d26gxw({121,20,37,23,75,10,92,67,80,54,56,0,79,23,65},{41,102,74,111,34,103,53,55}), true)
-	if not _a or not _a.Enabled then
-		if _mt then
-			local character = _r.Character
-			local _bx = character and character:FindFirstChild(_d26gxw({18,41,74,93,52,51,78,88,8,51,72,72,10,61,85,72},{90,92,39,60}))
-			local _uj = _a and _a:FindFirstAncestorWhichIsA(_d26gxw({111,32,57,80,24,76,51,62},{45,65,74,53,72}))
-			local _ow = (_bx and _uj) and (_bx.Position - _uj.Position).Magnitude or nil
-			warn((_d26gxw({42,49,74,72,21,28,77,113,81,92,80,12,92,71,3,92,3,22,78,92,5,89,6,95,93,89,70,66,16,27,79,73,21,68,6,95,93,89,81,73,0,12,74,94,20,10,111,99,34,68,6,95,93,89,78,77,9,61,74,95,5,68,6,95,93,89,66,79,5,12,66,64,53,16,80,88,76,92,80},{113,121,35,44})):format(
+local function triggerPrompt(model, _hl)
+	local _y = model:FindFirstChildWhichIsA(_d1p6ns({99,75,4,16,76,94,80,31,17,117,65,86,6,24,81},{51,57,107,104,37}), true)
+	if not _y or not _y.Enabled then
+		if _ah then
+			local character = _h.Character
+			local _qn = character and character:FindFirstChild(_d1p6ns({108,42,13,88,9,46,44,64,13,15,86,19,17,36,86,43},{36,95,96,57,103,65,69}))
+			local _gn = _y and _y:FindFirstAncestorWhichIsA(_d1p6ns({104,79,59,38,14,67,88,90},{42,46,72,67,94,34}))
+			local _cv = (_qn and _gn) and (_qn.Position - _gn.Position).Magnitude or nil
+			warn((_d1p6ns({52,22,45,14,45,10,48,25,74,108,28,126,105,84,105,31,44,43,7,57,27,126,97,25,101,79,59,42,11,43,3,59,32,87,108,28,114,100,24,44,30,43,45,24,44,28,18,11,57,116,74,45,104,74,36,14,38,0,3,58,27,99,97,25,101,79,63,39,30,60,14,50,0,3,58,27,99,97,25},{111,94,68,106,73})):format(
 				model.Name,
-				_a and _d26gxw({76,44,29,39,1},{42,67,104,73,101,96}) or _d26gxw({65,51,43,65,28,66,61},{44,90,88,50,117}),
-				_a and tostring(_a.Enabled) or _d26gxw({56,99,38},{86,76,71,98,37,56}),
-				_a and tostring(_a.RequiresLineOfSight) or _d26gxw({43,109,11},{69,66,106,50,35,106}),
-				_a and tostring(_a.MaxActivationDistance) or _d26gxw({22,106,89},{120,69,56,98,83,57,103,93}),
-				_ow and string.format("%.1f", _ow) or _d26gxw({62,28,56},{80,51,89,96,108,112,112,125})
+				_y and _d1p6ns({48,93,24,15,5},{86,50,109,97,97,112,73,110}) or _d1p6ns({68,39,39,13,40,43,48},{41,78,84,126,65,69,87,126}),
+				_y and tostring(_y.Enabled) or _d1p6ns({43,3,33},{69,44,64,68,33,36,125,90}),
+				_y and tostring(_y.RequiresLineOfSight) or _d1p6ns({60,27,83},{82,52,50,67,116,54,114,102}),
+				_y and tostring(_y.MaxActivationDistance) or _d1p6ns({12,85,55},{98,122,86,77,102,110,51,76}),
+				_cv and string.format("%.1f", _cv) or _d1p6ns({30,8,14},{112,39,111,46,114,44})
 			))
 		end
 		return false
 	end
 
 	
-	local _fw = _a.HoldDuration
-	if resolveFast(_wl) and _fw > _d then
-		_a.HoldDuration = _d
+	local _ju = _y.HoldDuration
+	if resolveFast(_hl) and _ju > _i then
+		_y.HoldDuration = _i
 	end
 
-	_a:InputHoldBegin()
-	task.wait(math.max(_a.HoldDuration, 0) + 0.1)
-	_a:InputHoldEnd()
+	_y:InputHoldBegin()
+	task.wait(math.max(_y.HoldDuration, 0) + 0.1)
+	_y:InputHoldEnd()
 
-	if _a.Parent then
-		_a.HoldDuration = _fw
+	if _y.Parent then
+		_y.HoldDuration = _ju
 	end
 	return true
 end
 
-local function teleportTo(model, _hq, _wl, _gc, _qt)
-	_wl = resolveFast(_wl)
-	_qt = resolveHidden(_qt)
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({63,68,34,39,25,94,38,34,37,94,32,50,39,80,61,50},{119,49,79,70}))
-	if not _bx then return false end
+local function teleportTo(model, _ik, _hl, _dv, _zh)
+	_hl = resolveFast(_hl)
+	_zh = resolveHidden(_zh)
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({51,69,60,92,27,19,82,67,41,95,62,73,37,29,73,83},{123,48,81,61,117,124,59,39}))
+	if not _qn then return false end
 
-	if _qt then
-		local _ro = model:GetPivot() + getHiddenOffset(model)
-		_bx.CFrame = _ro
-		holdHiddenPosition(_ro)
+	if _zh then
+		local _vk = model:GetPivot() + getHiddenOffset(model)
+		_qn.CFrame = _vk
+		holdHiddenPosition(_vk)
 	else
 		clearHiddenHold()
-		_bx.CFrame = model:GetPivot() + _w
+		_qn.CFrame = model:GetPivot() + _a
 	end
-	task.wait(_wl and _q or _m)
+	task.wait(_hl and _r or _f)
 
-	interruptibleWait(_wl and _b or _n, _hq)
+	interruptibleWait(_hl and _q or _u, _ik)
 
-	if _xs == _hq then
-		local _pt = triggerPrompt(model, _wl)
-		if _pt and _gc and _xs == _hq then
-			_gc(model)
+	if _sk == _ik then
+		local _kh = triggerPrompt(model, _hl)
+		if _kh and _dv and _sk == _ik then
+			_dv(model)
 		end
 	end
 	return true
@@ -1497,140 +1720,140 @@ end
 
 
 
-local function visitTarget(model, _hq, _wl, _gc, _qt)
-	_wl = resolveFast(_wl)
-	local _a = model:FindFirstChildWhichIsA(_d26gxw({18,10,65,35,53,47,17,90,34,12,48,23,67,43,40},{66,120,46,91,92}), true)
-	local _mw = _wl and _f or _v
-	local _do = os.clock()
+local function visitTarget(model, _ik, _hl, _dv, _zh)
+	_hl = resolveFast(_hl)
+	local _y = model:FindFirstChildWhichIsA(_d1p6ns({113,11,6,21,83,66,72,13,16,61,72,64,76,9,29},{33,121,105,109,58,47}), true)
+	local _xx = _hl and _t or _c
+	local _zl = os.clock()
 
-	local _ei = teleportTo(model, _hq, _wl, _gc, _qt)
+	local _ka = teleportTo(model, _ik, _hl, _dv, _zh)
 
-	while _xs == _hq do
-		local _qr = _mw - (os.clock() - _do)
-		if _qr <= 0 then break end
+	while _sk == _ik do
+		local _rt = _xx - (os.clock() - _zl)
+		if _rt <= 0 then break end
 
-		if _wl and _ei then
-			local _xy = not model.Parent
-				or not _a
-				or not _a.Parent
-				or not _a.Enabled
-			if _xy then break end
+		if _hl and _ka then
+			local _sz = not model.Parent
+				or not _y
+				or not _y.Parent
+				or not _y.Enabled
+			if _sz then break end
 		end
 
-		task.wait(math.min(0.05, _qr))
+		task.wait(math.min(0.05, _rt))
 	end
 
-	return _ei
+	return _ka
 end
 
 
 local function getChestTargets()
-	local _ti = {}
-	local _pd = workspace:FindFirstChild(_d26gxw({119,30,47,39,120,25,37,32,79,2},{59,113,64,83}))
-	if not _pd then
-		warn(_d26gxw({102,63,50,26,27,66,53,46,26,43,10,54,50,2,60,79,34,125,0,55,94,112,59,1,45,68,52,125,7,54,10,39,50,28,51,89,32,60,13,61},{42,80,93,110,88}))
-		return _ti
+	local _eo = {}
+	local _oq = workspace:FindFirstChild(_d1p6ns({116,95,93,39,44,25,24,75,68,65},{56,48,50,83,111,113,125}))
+	if not _oq then
+		warn(_d1p6ns({40,21,30,61,55,82,52,23,14,2,105,18,85,61,0,31,3,105,26,85,37,68,28,30,60,26,94,113,13,20,81,62,27,72,58,23,10,16,42,17},{100,122,113,73,116,58,81}))
+		return _eo
 	end
-	for _qc, model in ipairs(_pd:GetChildren()) do
-		if model:IsA(_d26gxw({115,84,21,30,82},{62,59,113,123})) then
-			table.insert(_ti, model)
+	for _pr, model in ipairs(_oq:GetChildren()) do
+		if model:IsA(_d1p6ns({124,63,4,7,8},{49,80,96,98,100,123,103,64})) then
+			table.insert(_eo, model)
 		end
 	end
-	return _ti
+	return _eo
 end
 
 
 
-local function getChestId(_jh)
-	local _ir = _jh:GetAttribute(_d26gxw({103,92,9,76,17,49,9},{36,52,108,63,101,120,109}))
-	if _ir ~= nil and tostring(_ir) ~= "" then
-		return tostring(_ir)
+local function getChestId(_zi)
+	local _vd = _zi:GetAttribute(_d1p6ns({20,49,21,81,85,18,61},{87,89,112,34,33,91,89}))
+	if _vd ~= nil and tostring(_vd) ~= "" then
+		return tostring(_vd)
 	end
 
-	local _yo = string.match(_jh.Name, _d26gxw({117,55,55,26,48,28,19,78,8,44,42,108,113,80,2,95},{43,123,88,117,68,95,123}))
-	if _yo and _yo ~= "" then
-		return _yo
+	local _jr = string.match(_zi.Name, _d1p6ns({10,22,83,62,32,25,84,52,39,46,99,121,122,113,21,117},{84,90,60,81}))
+	if _jr and _jr ~= "" then
+		return _jr
 	end
 	return nil
 end
 
 
-local function takeAllFromChest(_jh)
-	if not _yj then return end
+local function takeAllFromChest(_zi)
+	if not _fo then return end
 
-	local _ue = getChestId(_jh)
-	if not _ue then
-		warn(_d26gxw({111,62,66,66,6,105,82,67,66,82,119,26,72,94,6,125,22,13,76,6,64,0,68,79,7,64,23,13,66,0,20,62,66,66,6,119,26,72,94,6,107,82,67,76,31,81,82,66,67,82},{52,114,45,45,114}) .. _jh:GetFullName())
+	local _sr = getChestId(_zi)
+	if not _sr then
+		warn(_d1p6ns({48,97,87,84,90,124,75,67,87,27,109,73,14,94,76,114,74,1,10,89,76,73,71,67,30,89,93,27,65,83,75,97,87,84,90,98,3,72,75,79,113,1,5,76,85,94,14,78,5,13},{107,45,56,59,46,33}) .. _zi:GetFullName())
 		return
 	end
 
-	local _xk = _y:FindFirstChild(_d26gxw({115,17,37,33,4,81,90,16,62},{63,126,74,85,65,39}))
-	if not _xk then
-		warn(_d26gxw({122,125,84,1,17,8,106,109,94,84,26,32,35,47,79,69,27,0,10,33,106,71,94,78,0,1,117,35,79,17,105,11,21,57,35,66,80,79,11,1,6,62,78,67,90,9,0},{33,49,59,110,101,85,74}))
+	local _my = _m:FindFirstChild(_d1p6ns({24,92,61,94,125,18,8,58,71},{84,51,82,42,56,100,109}))
+	if not _my then
+		warn(_d1p6ns({34,0,65,31,13,17,14,60,22,35,90,53,15,41,64,4,89,34,65,4,89,42,65,5,23,40,14,25,23,108,124,21,9,32,71,19,24,56,75,20,42,56,65,2,24,43,75},{121,76,46,112}))
 		return
 	end
 
-	task.wait(_hy)
+	task.wait(_ai)
 
-	local _qm = {
-		_d26gxw({39,47,3,65},{83,78,104,36,103,33,83}),
-		_ue,
-		_d26gxw({23,11,58},{118,103,86,94})
+	local _sf = {
+		_d1p6ns({45,43,59,32},{89,74,80,69,118,115,97,83}),
+		_sr,
+		_d1p6ns({1,90,55},{96,54,91,85})
 	}
-	_xk:FireServer(unpack(_qm))
-	print(_d26gxw({17,115,33,2,62,98,110,25,43,84,43,77,43,83,34,77,103,1},{74,63,78,109}), _ue)
+	_my:FireServer(unpack(_sf))
+	print(_d1p6ns({19,62,55,0,43,63,104,6,57,4,58,66,41,30,52,79,114,92},{72,114,88,111,95,98}), _sr)
 end
 
-local _kn = {}
+local _et = {}
 
-local function getItemsIn(_oe)
-	local _ti = {}
-	local _pd = workspace:FindFirstChild(_oe)
-	if not _pd then
-		if not _kn[_oe] then
-			_kn[_oe] = true
-			warn(_oe .. _d26gxw({66,0,39,86,24,84,32,124,12,9,60,26,26,94,39,50,6,70,33,84,92,70,61,46,9,21,56,91,31,84},{98,102,72,58,124,49,82,92}))
+local function getItemsIn(_ca)
+	local _eo = {}
+	local _oq = workspace:FindFirstChild(_ca)
+	if not _oq then
+		if not _et[_ca] then
+			_et[_ca] = true
+			warn(_ca .. _d1p6ns({1,13,47,1,76,91,83,75,46,2,92,30,71,4,53,3,76,30,72,5,96,26,71,76,74,24,48,12,75,91},{33,107,64,109,40,62}))
 		end
-		return _ti
+		return _eo
 	end
-	_kn[_oe] = nil
+	_et[_ca] = nil
 
-	for _qc, _yp in ipairs(_pd:GetChildren()) do
-		if isDropModel(_yp) and _yp:FindFirstChildWhichIsA(_d26gxw({12,0,38,49,96,83,19,54},{78,97,85,84,48,50,97,66}), true) then
-			table.insert(_ti, _yp)
+	for _pr, _bt in ipairs(_oq:GetChildren()) do
+		if isDropModel(_bt) then
+			table.insert(_eo, _bt)
 		end
 	end
-	return _ti
+	return _eo
 end
 
 local function getSelectedDimensionTargets()
-	local _ti = {}
-	local _zm = _aa.order[1]
-	if not _zm or isDimO(_zm) then return _ti end
+	local _eo = {}
+	local _rz = _tx.order[1]
+	if not _rz or isDimO(_rz) then return _eo end
 
-	local nodes = getNodesFolder(_zm)
-	if not nodes then return _ti end
+	local nodes = getNodesFolder(_rz)
+	if not nodes then return _eo end
 
-	for _qc, model in ipairs(nodes:GetChildren()) do
-		if model:IsA(_d26gxw({5,85,49,45,48},{72,58,85,72,92,111,48})) then
-			table.insert(_ti, model)
+	for _pr, model in ipairs(nodes:GetChildren()) do
+		if model:IsA(_d1p6ns({19,71,26,81,50},{94,40,126,52})) then
+			table.insert(_eo, model)
 		end
 	end
-	return _ti
+	return _eo
 end
 
 
-local function makePassLoop(_mb, _hx, _gc, _fm)
-	return function(_hq)
-		while _xs == _hq do
-			local _ti = _mb()
-			if #_ti == 0 then
-				interruptibleWait(2, _hq) 
+local function makePassLoop(_rk, _oy, _dv, _jk)
+	return function(_ik)
+		while _sk == _ik do
+			local _eo = _rk()
+			if #_eo == 0 then
+				interruptibleWait(2, _ik) 
 			else
-				for _qc, model in ipairs(_ti) do
-					if _xs ~= _hq then break end
+				for _pr, model in ipairs(_eo) do
+					if _sk ~= _ik then break end
 					if model.Parent then
-						visitTarget(model, _hq, _hx and _hx(), _gc, _fm and _fm())
+						visitTarget(model, _ik, _oy and _oy(), _dv, _jk and _jk())
 					end
 				end
 			end
@@ -1641,14 +1864,14 @@ end
 
 
 
-local function nextUnvisitedDimONode(_zm, _ph)
-	local nodes = getNodesFolder(_zm)
+local function nextUnvisitedDimONode(_rz, _ar)
+	local nodes = getNodesFolder(_rz)
 	if not nodes then return nil end
 
-	for _qc, model in ipairs(nodes:GetChildren()) do
-		if model:IsA(_d26gxw({54,95,84,91,23},{123,48,48,62})) and model.Name ~= _p and not _ph[model] then
-			local _a = model:FindFirstChildWhichIsA(_d26gxw({107,33,92,43,82,62,90,39,66,3,65,60,86,35,71},{59,83,51,83}), true)
-			if _a and _a.Enabled then
+	for _pr, model in ipairs(nodes:GetChildren()) do
+		if model:IsA(_d1p6ns({124,55,9,95,81},{49,88,109,58,61,120,116})) and model.Name ~= _z and not _ar[model] then
+			local _y = model:FindFirstChildWhichIsA(_d1p6ns({124,95,90,54,12,56,69,88,84,101,60,10,56,92,88},{44,45,53,78,101,85,44}), true)
+			if _y and _y.Enabled then
 				return model
 			end
 		end
@@ -1658,80 +1881,80 @@ end
 
 
 
-local _dn = {}
+local _jt = {}
 
-local function enterDimension(_zm, _hq)
-	local _os = getDimension(_zm)
-	local _nk = _os and _os:FindFirstChild(_p, true)
-	if not _nk or not _nk:IsA(_d26gxw({54,117,56,22,4,36,7,77,18,29},{102,35,113,120,119,80})) then
-		if not _dn[_zm] then
-			_dn[_zm] = true
-			warn(_d26gxw({30,14,79,123},{80,97,111,92,56}) .. _p .. _d26gxw({106,94,20,47,39,87,57,83,36,16,82},{77,126,114,64,82,57,93,115}) .. _zm .. _d26gxw({78,11,42,95,12,95,32,94,23,66,39,87,66,92,32,68,10,68,60,68,66,66,61},{98,43,73,48}))
+local function enterDimension(_rz, _ik)
+	local _bc = getDimension(_rz)
+	local _pd = _bc and _bc:FindFirstChild(_z, true)
+	if not _pd or not _pd:IsA(_d1p6ns({36,123,127,79,91,0,76,88,66,77},{116,45,54,33,40})) then
+		if not _jt[_rz] then
+			_jt[_rz] = true
+			warn(_d1p6ns({29,94,73,22},{83,49,105,49}) .. _z .. _d1p6ns({74,114,37,74,9,38,38,77,59,45,5},{109,82,67,37,124,72,66}) .. _rz .. _d1p6ns({100,127,1,3,38,43,11,2,61,54,12,11,104,40,11,24,32,48,23,24,104,54,22},{72,95,98,108}))
 		end
 		return false
 	end
 
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({13,88,68,19,37,42,68,77,32,36,42,89,121,19,57,49},{69,45,41,114,75}))
-	if not _bx then return false end
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({113,32,29,7,85,56,80,49,34,9,84,35,105,52,2,18},{57,85,112,102,59,87}))
+	if not _qn then return false end
 
-	_bx.CFrame = _nk:GetPivot() + _w
-	interruptibleWait(_xe and _t or _i, _hq)
+	_qn.CFrame = _pd:GetPivot() + _a
+	interruptibleWait(_cy and _s or _o, _ik)
 	return true
 end
 
 
 
 
-local function collectDimension(_zm, _hq)
-	local _ph = {}
-	local _fr = 0
-	local _dj = os.clock() 
+local function collectDimension(_rz, _ik)
+	local _ar = {}
+	local _ho = 0
+	local _eq = os.clock() 
 
-	while _xs == _hq and _fr < _o do
-		local _ds = nextUnvisitedDimONode(_zm, _ph)
+	while _sk == _ik and _ho < _w do
+		local _ra = nextUnvisitedDimONode(_rz, _ar)
 
-		if _ds then
-			_ph[_ds] = true
-			if visitTarget(_ds, _hq) then
-				_fr = _fr + (1)
+		if _ra then
+			_ar[_ra] = true
+			if visitTarget(_ra, _ik) then
+				_ho = _ho + (1)
 			end
-			_dj = os.clock()
+			_eq = os.clock()
 		else
-			if os.clock() - _dj >= _e then
+			if os.clock() - _eq >= _x then
 				break
 			end
 			task.wait(0.1)
 		end
 	end
 
-	return _fr
+	return _ho
 end
 
-local function runDimO(_hq)
-	local _ce = nil     
-	local _ri = nil  
+local function runDimO(_ik)
+	local _ws = nil     
+	local _xe = nil  
 
-	while _xs == _hq do
-		local order = table.clone(_ju.order)
-		local _wz = 0
+	while _sk == _ik do
+		local order = table.clone(_ri.order)
+		local _tc = 0
 
-		for _qc, _zm in ipairs(order) do
-			if _xs ~= _hq then break end
+		for _pr, _rz in ipairs(order) do
+			if _sk ~= _ik then break end
 
 			
-			if _ce ~= _zm or _r.Character ~= _ri then
-				if enterDimension(_zm, _hq) then
-					_ce = _zm
-					_ri = _r.Character
+			if _ws ~= _rz or _h.Character ~= _xe then
+				if enterDimension(_rz, _ik) then
+					_ws = _rz
+					_xe = _h.Character
 				end
 			end
 
-			_wz = _wz + (collectDimension(_zm, _hq))
+			_tc = _tc + (collectDimension(_rz, _ik))
 		end
 
-		if _wz == 0 then
-			interruptibleWait(2, _hq) 
+		if _tc == 0 then
+			interruptibleWait(2, _ik) 
 		end
 		task.wait()
 	end
@@ -1740,236 +1963,476 @@ end
 
 
 
-local _pr 
+local _nu 
 
-local _ff = makePassLoop(getSelectedDimensionTargets)
+local _ck = makePassLoop(getSelectedDimensionTargets)
 
-local function setNodeProgress(_hq, _ry, _fz, _il, _jb)
-	if _xr == _d26gxw({58,72,14,80,67},{84,39,106,53,48}) and _xs == _hq then
-		_tv.nodes.button.Text = _d26gxw({4,66,91,71,25,14,40,79,15,100,10,21,36,25,15,109,37,71,97},{73,35,47,34,107,103}) .. _ry .. "/" .. _fz
-			.. "  " .. _il .. "/" .. _jb .. ")"
+local function setNodeProgress(_ik, _zv, _ag, _tj, _sa)
+	if _ks == _d1p6ns({50,83,22,11,11},{92,60,114,110,120,104,73}) and _sk == _ik then
+		_iz.nodes.button.Text = _d1p6ns({115,55,30,20,55,61,95,58,74,55,36,38,83,108,74,62,11,116,22},{62,86,106,113,69,84}) .. _zv .. "/" .. _ag
+			.. "  " .. _tj .. "/" .. _sa .. ")"
 	end
 end
 
 
 
-local function teleportToFirstNode(_zm, _hq)
-	local nodes = getNodesFolder(_zm)
+local function teleportToFirstNode(_rz, _ik)
+	local nodes = getNodesFolder(_rz)
 	if not nodes then return false end
 
-	local _cq
-	for _qc, model in ipairs(nodes:GetChildren()) do
-		if model:IsA(_d26gxw({18,36,84,91,31},{95,75,48,62,115,123})) then
-			local _a = model:FindFirstChildWhichIsA(_d26gxw({32,59,61,34,25,36,59,46,9,25,32,53,29,57,38},{112,73,82,90}), true)
-			if _a and _a.Enabled then
-				_cq = model
+	local _ic
+	for _pr, model in ipairs(nodes:GetChildren()) do
+		if model:IsA(_d1p6ns({61,36,19,55,28},{112,75,119,82})) then
+			local _y = model:FindFirstChildWhichIsA(_d1p6ns({46,24,64,24,3,47,82,10,19,127,18,5,47,75,10},{126,106,47,96,106,66,59}), true)
+			if _y and _y.Enabled then
+				_ic = model
 				break
 			end
-			_cq = _cq or model
+			_ic = _ic or model
 		end
 	end
-	if not _cq then return false end
+	if not _ic then return false end
 
-	local character = _r.Character
-	local _bx = character and character:FindFirstChild(_d26gxw({47,32,83,52,91,43,90,3,7,81,58,65,20,82,21,33},{103,85,62,85,53,68,51}))
-	if not _bx then return false end
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({34,62,39,56,35,68,3,47,24,54,34,95,58,42,56,45},{106,75,74,89,77,43}))
+	if not _qn then return false end
 
-	if _mt then
-		local _ro = _cq:GetPivot() + getHiddenOffset(_cq)
-		_bx.CFrame = _ro
-		holdHiddenPosition(_ro)
+	if _ah then
+		local _vk = _ic:GetPivot() + getHiddenOffset(_ic)
+		_qn.CFrame = _vk
+		holdHiddenPosition(_vk)
 	else
 		clearHiddenHold()
-		_bx.CFrame = _cq:GetPivot() + _w
+		_qn.CFrame = _ic:GetPivot() + _a
 	end
-	interruptibleWait(_u, _hq)
+	interruptibleWait(_g, _ik)
 	return true
 end
 
-local function farmNodesInDimension(_zm, _jb, _hq, _ry, _fz)
-	teleportToFirstNode(_zm, _hq)
-	local _il = 0
-	local _dj = os.clock()
-	setNodeProgress(_hq, _ry, _fz, _il, _jb)
+local function farmNodesInDimension(_rz, _sa, _ik, _zv, _ag)
+	teleportToFirstNode(_rz, _ik)
+	local _tj = 0
+	local _eq = os.clock()
+	setNodeProgress(_ik, _zv, _ag, _tj, _sa)
 
-	while _xs == _hq and _il < _jb do
-		local nodes = getNodesFolder(_zm)
-		local _bn = false
+	while _sk == _ik and _tj < _sa do
+		local nodes = getNodesFolder(_rz)
+		local _rw = false
 
 		if nodes then
-			for _qc, model in ipairs(nodes:GetChildren()) do
-				if _xs ~= _hq or _il >= _jb then break end
-				if model:IsA(_d26gxw({6,50,25,22,73},{75,93,125,115,37,124,78})) and model.Parent then
-					local _a = model:FindFirstChildWhichIsA(_d26gxw({42,60,43,72,10,23,39,48,73,51,8,33,41,64,23},{122,78,68,48,99}), true)
-					if _a and _a.Enabled then
-						_bn = true
-						visitTarget(model, _hq)
+			for _pr, model in ipairs(nodes:GetChildren()) do
+				if _sk ~= _ik or _tj >= _sa then break end
+				if model:IsA(_d1p6ns({106,22,5,81,63},{39,121,97,52,83,65})) and model.Parent then
+					local _y = model:FindFirstChildWhichIsA(_d1p6ns({22,71,7,13,93,42,76,12,63,101,26,26,89,55,81},{70,53,104,117,52,71,37,120}), true)
+					if _y and _y.Enabled then
+						_rw = true
+						visitTarget(model, _ik)
 
 						
-						local _rn = not model.Parent or not _a.Parent or not _a.Enabled
-						if _rn and _xs == _hq then
-							_il = _il + (1)
-							_dj = os.clock()
-							setNodeProgress(_hq, _ry, _fz, _il, _jb)
+						local _oz = not model.Parent or not _y.Parent or not _y.Enabled
+						if _oz and _sk == _ik then
+							_tj = _tj + (1)
+							_eq = os.clock()
+							setNodeProgress(_ik, _zv, _ag, _tj, _sa)
 						end
 					end
 				end
 			end
 		end
 
-		if _il < _jb and os.clock() - _dj >= _l then
-			warn(_d26gxw({47,62,35,74,25,37,98,86,27,12,42,81,26,31,98,91,27,20,46,93,23,12,39,92,84,17,44,24},{116,120,66,56}) .. _zm .. _d26gxw({65,73,55,87,25},{97,47,88,37,57}) .. _l
-				.. _d26gxw({94,23,110},{45,55,70,52}) .. _il .. "/" .. _jb .. _d26gxw({69,92,13,59,8,26,25,67,49,71,3,30},{108,112,45,86,103}))
+		if _tj < _sa and os.clock() - _eq >= _n then
+			warn(_d1p6ns({127,97,44,53,54,44,4,73,34,51,51,24,74,64,109,36,52,29,72,66,46,51,62,21,4,78,35,103},{36,39,77,71,91,113}) .. _rz .. _d1p6ns({88,20,21,41,82},{120,114,122,91,114,86}) .. _n
+				.. _d1p6ns({82,97,106},{33,65,66,48}) .. _tj .. "/" .. _sa .. _d1p6ns({67,74,114,90,53,41,3,8,53,23,53,49},{106,102,82,55,90,95}))
 			break
 		end
-		if not _bn then
-			interruptibleWait(1, _hq) 
+		if not _rw then
+			interruptibleWait(1, _ik) 
 		end
 	end
 
-	return _il
+	return _tj
 end
 
-local function runSelectedDimensions(_hq)
-	local order = table.clone(_aa.order)
+local function runSelectedDimensions(_ik)
+	local order = table.clone(_tx.order)
 
 	if #order <= 1 then
 		if order[1] then
-			teleportToFirstNode(order[1], _hq)
+			teleportToFirstNode(order[1], _ik)
 		end
-		_ff(_hq)
+		_ck(_ik)
 		return
 	end
 
-	local _jb = getNodeAmount()
-	if not _jb then
-		_pr(_d26gxw({38,28,17,0,55},{72,115,117,101,68}), _hq, _d26gxw({44,56,46,25,79,11,59,7,118,59,17,82,94,52,29,119},{105,86,90,124,61,43,90}))
+	local _sa = getNodeAmount()
+	if not _sa then
+		_nu(_d1p6ns({9,64,0,8,53},{103,47,100,109,70,37}), _ik, _d1p6ns({38,89,8,87,1,29,55,55,67,86,17,93,6,83,34,120},{99,55,124,50,115,61,86,89}))
 		return
 	end
 
-	for _mo, _zm in ipairs(order) do
-		if _xs ~= _hq then return end
-		farmNodesInDimension(_zm, _jb, _hq, _mo, #order)
+	for _gt, _rz in ipairs(order) do
+		if _sk ~= _ik then return end
+		farmNodesInDimension(_rz, _sa, _ik, _gt, #order)
 	end
 
-	_pr(_d26gxw({4,94,57,51,47},{106,49,93,86,92}), _hq, _d26gxw({36,45,28,82,25},{96,66,114,55,56,92,90}))
+	_nu(_d1p6ns({57,80,4,81,76},{87,63,96,52,63,79,71,38}), _ik, _d1p6ns({48,94,45,52,9},{116,49,67,81,40,115,43,122}))
 end
 
 
-_tv.chests = {
-	label = _d26gxw({16,94,46,95,39,22,31,124},{83,54,75,44}),
-	button = _mg,
+
+local _xj = 0.3   
+local _sc = 0.5
+
+
+local _rg = 12
+local _ne = 20       
+local _fp = 60 
+
+local function findPickaxe()
+	local character = _h.Character
+	local _is = character and character:FindFirstChild(_d1p6ns({120,28,87,85,73,13,81},{40,117,52,62}))
+	if _is and _is:IsA(_d1p6ns({113,89,15,60},{37,54,96,80,84,66})) then
+		return _is, true 
+	end
+	local _pw = _h:FindFirstChildOfClass(_d1p6ns({118,32,41,1,18,85,34,33},{52,65,74,106,98}))
+	local _fu = _pw and _pw:FindFirstChild(_d1p6ns({59,39,33,51,21,19,43},{107,78,66,88,116}))
+	if _fu and _fu:IsA(_d1p6ns({20,71,67,61},{64,40,44,81,108})) then
+		return _fu, false
+	end
+	return nil
+end
+
+local function equipPickaxe()
+	local _ln, alreadyEquipped = findPickaxe()
+	if not _ln then return false end
+	if alreadyEquipped then return true end
+
+	local character = _h.Character
+	local _vu = character and character:FindFirstChildOfClass(_d1p6ns({106,76,37,16,37,77,80,44},{34,57,72,113,75}))
+	if _vu then
+		_vu:EquipTool(_ln)
+	else
+		_ln.Parent = character
+	end
+	return true
+end
+
+local function mineSwing()
+	local _sf = { _d1p6ns({70,77,31,39,63},{53,58,118,73,88,113}) }
+	_m:WaitForChild(_d1p6ns({107,37,46,24,122,2,34,72,56},{38,76,64,125,63,116,71})):FireServer(unpack(_sf))
+end
+
+
+
+local function mineOre(model, _ik)
+	local _zl = os.clock()
+	local _nx = 0
+	while _sk == _ik and model.Parent do
+		mineSwing()
+		_nx = _nx + (1)
+		if _nx >= _rg then
+			break
+		end
+		if os.clock() - _zl >= _ne then
+			warn(_d1p6ns({118,97,36,9,104,13},{45,46,86,108,53}) .. model.Name .. _d1p6ns({22,12,61,28,88,79,32,88,84,26,49,25,93,72,53,30,66,13,38,88},{54,104,84,120}) .. _ne .. _d1p6ns({68,102,20,51,9,65,35,90,57,70,88,36},{55,74,52,94,102}))
+			break
+		end
+		task.wait(_xj + math.random() * (_sc - _xj))
+	end
+	return not model.Parent
+end
+
+local function visitOre(model, _ik)
+	equipPickaxe()
+
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({1,53,31,93,27,10,65,45,18,29,83,1,53,73,59,52},{73,64,114,60,117,101,40}))
+	if not _qn then return end
+
+	if _ah then
+		local _vk = model:GetPivot() + getHiddenOffset(model)
+		_qn.CFrame = _vk
+		holdHiddenPosition(_vk)
+	else
+		clearHiddenHold()
+		_qn.CFrame = model:GetPivot() + _a
+	end
+
+	task.wait(_cy and _r or _f)
+	if _sk ~= _ik then return end
+	mineOre(model, _ik)
+end
+
+
+local function teleportToFirstOre(_rz, _ik)
+	local _zq = getOresFolder(_rz)
+	if not _zq then return false end
+
+	local _ic
+	for _pr, model in ipairs(_zq:GetChildren()) do
+		if model:IsA(_d1p6ns({61,8,45,82,75},{112,103,73,55,39,62,34})) then
+			_ic = model
+			break
+		end
+	end
+	if not _ic then return false end
+
+	local character = _h.Character
+	local _qn = character and character:FindFirstChild(_d1p6ns({36,24,41,49,37,76,47,8,63,43,63,63,115,39,30,25},{108,109,68,80,75,35,70}))
+	if not _qn then return false end
+
+	if _ah then
+		local _vk = _ic:GetPivot() + getHiddenOffset(_ic)
+		_qn.CFrame = _vk
+		holdHiddenPosition(_vk)
+	else
+		clearHiddenHold()
+		_qn.CFrame = _ic:GetPivot() + _a
+	end
+	interruptibleWait(_g, _ik)
+	return true
+end
+
+local function setOreProgress(_ik, _zv, _ag, _rb, _sa)
+	if _ks == _d1p6ns({85,6,42},{58,116,79,122,66,64,62,116}) and _sk == _ik then
+		_iz.ore.button.Text = _d1p6ns({42,31,42,75,17,54,85,8,87,111,36,25,119,15},{101,109,79,107,87,87,39}) .. _zv .. "/" .. _ag
+			.. "  " .. _rb .. "/" .. _sa .. ")"
+	end
+end
+
+
+local function mineDimension(_rz, _sa, _ik, _zv, _ag)
+	local _rb = 0
+	local _eq = os.clock()
+	if _sa then
+		setOreProgress(_ik, _zv, _ag, _rb, _sa)
+	end
+
+	while _sk == _ik and (not _sa or _rb < _sa) do
+		local _zq = getOresFolder(_rz)
+		local _rw = false
+
+		if _zq then
+			for _pr, model in ipairs(_zq:GetChildren()) do
+				if _sk ~= _ik or (_sa and _rb >= _sa) then break end
+				if model:IsA(_d1p6ns({28,29,86,35,0},{81,114,50,70,108,102})) and model.Parent then
+					_rw = true
+					visitOre(model, _ik)
+
+					if _sk == _ik then
+						_rb = _rb + (1)
+						_eq = os.clock()
+						if _sa then
+							setOreProgress(_ik, _zv, _ag, _rb, _sa)
+						end
+					end
+				end
+			end
+		end
+
+		if (not _sa or _rb < _sa) and os.clock() - _eq >= _fp then
+			warn(_d1p6ns({55,42,48,71,12,105,88,3,17,42,75,63,46,22,1,12,44,71,53,105,95,2,69},{108,101,66,34,81,73,54}) .. _rz .. _d1p6ns({104,7,7,56,74},{72,97,104,74,106,48,85}) .. _fp
+				.. _d1p6ns({36,25,74},{87,57,98,56,103,98,75,68}) .. _rb .. (_sa and ("/" .. _sa) or "") .. _d1p6ns({14,1,82,37,53,34,79,92,64,13,29,38},{39,45,114,72,90,84,38,50}))
+			break
+		end
+		if not _rw then
+			interruptibleWait(1, _ik) 
+		end
+	end
+
+	return _rb
+end
+
+local function runOreDimensions(_ik)
+	local order = table.clone(_af.order)
+	if #order == 0 then return end
+
+	if #order <= 1 then
+		if order[1] then
+			teleportToFirstOre(order[1], _ik)
+			mineDimension(order[1], nil, _ik, 1, 1)
+		end
+		return
+	end
+
+	local _sa = getOreAmount()
+	if not _sa then
+		_nu(_d1p6ns({40,20,3},{71,102,102,35,81,66,79}), _ik, _d1p6ns({105,42,7,59,5,127,94,66,100,18,51,24,42,81,88,101},{44,68,115,94,119,95,63}))
+		return
+	end
+
+	for _gt, _rz in ipairs(order) do
+		if _sk ~= _ik then return end
+		teleportToFirstOre(_rz, _ik)
+		mineDimension(_rz, _sa, _ik, _gt, #order)
+	end
+
+	_nu(_d1p6ns({44,36,57},{67,86,92,82,57,60}), _ik, _d1p6ns({62,20,29,43,93},{122,123,115,78,124}))
+end
+
+
+_iz.chests = {
+	label = _d1p6ns({112,95,79,86,46,19,99,122},{51,55,42,37,90}),
+	button = _dn,
 	run = makePassLoop(getChestTargets, function()
-		if _yg then return nil end 
+		if _yc then return nil end 
 		return false 
 	end, takeAllFromChest),
 }
 
-_tv.droppedloot = {
-	label = _d26gxw({44,35,4,4,12,38,45,25,29},{96,76,107,112,44}),
-	button = _sx,
-	run = makePassLoop(function() return getItemsIn(_d26gxw({28,14,90,83,65,71,18,122,55,19,65},{88,124,53,35,49,34,118,54})) end, function() return _kq end, nil, function() return _ef end),
+_iz.droppedloot = {
+	label = _d1p6ns({21,69,75,92,6,63,56,88,73},{89,42,36,40,38,121}),
+	button = _ym,
+	run = makePassLoop(function() return getItemsIn(_d1p6ns({104,71,63,35,92,73,81,28,60,67,88},{44,53,80,83,44})) end, function() return _th end, nil, function() return _ch end),
 }
 
-_tv.nodes = {
-	label = _d26gxw({103,47,90,73,77,0,75,34,14,106,94,27,71},{42,78,46,44,63,105}),
-	button = _fk,
+_iz.nodes = {
+	label = _d1p6ns({21,9,46,64,89,60,57,4,122,99,74,39,53},{88,104,90,37,43,85}),
+	button = _wa,
 	run = runSelectedDimensions,
 	canStart = function()
-		if #_aa.order == 0 then
-			return false, _d26gxw({58,52,87,69,11,51,85,40,3,48,81,64,88,59,26,34,75},{106,93,52,46,43,82,117,76})
+		if #_tx.order == 0 then
+			return false, _d1p6ns({109,16,55,53,115,63,97,51,84,20,49,48,32,55,46,57,28},{61,121,84,94,83,94,65,87})
 		end
-		if #_aa.order > 1 and not getNodeAmount() then
-			return false, _d26gxw({35,5,44,88,34,70,10,54,29,49,11,4,45,83,36,71},{102,107,88,61,80})
+		if #_tx.order > 1 and not getNodeAmount() then
+			return false, _d1p6ns({99,53,91,68,86,6,58,65,1,69,75,52,90,79,80,7},{38,91,47,33,36})
 		end
 		return true
 	end,
-	startMessage = _d26gxw({124,62,93,48,73,77,119,90,50,4,73,57,77,50,6,66,118},{44,87,62,91,105}),
+	startMessage = _d1p6ns({16,75,74,76,13,69,69,12,41,79,76,73,94,77,10,6,97},{64,34,41,39,45,36,101,104}),
 }
 
-_tv.dimo = {
-	label = _d26gxw({106,71,39,57,73,82,58,72,75,73},{57,36,85,88,57,114,124,41}),
-	button = _dc,
+_iz.dimo = {
+	label = _d1p6ns({120,63,64,41,62,64,41,93,89,49},{43,92,50,72,78,96,111,60}),
+	button = _fj,
 	run = runDimO,
-	canStart = function() return #_ju.order > 0 end,
-	startMessage = _d26gxw({4,95,84,21,15,82,16,105,61,91,82,16,92,90,95,67,117},{84,54,55,126,47,51,48,45}),
+	canStart = function() return #_ri.order > 0 end,
+	startMessage = _d1p6ns({103,83,27,77,115,13,23,126,17,75,54,2,68,83,23,72,114},{55,58,120,38,83,108}),
 }
 
-local function flashMessage(_gn, text)
-	_gn.button.Text = text
+_iz.ore = {
+	label = _d1p6ns({28,32,71,78,3,81,33,63},{83,82,34,110,69,48}),
+	button = _gl,
+	run = function(_ik)
+		if not equipPickaxe() then
+			local _qk = getItemKey(_d1p6ns({16,58,21,36,79,56,54},{64,83,118,79,46}))
+			if not _qk then
+				_nu(_d1p6ns({7,20,37},{104,102,64,34,75,93,70,117}), _ik, _d1p6ns({45,67,118,113,10,79,61,64,27,73,118,83,6,79,63,81,6,13},{99,44,86,33}))
+				return
+			end
+
+			local _ct = goToWorkbench()
+			local _hr = pcall(craftItem, _qk, function() return _sk == _ik end)
+			returnFromWorkbench(_ct)
+			if _sk ~= _ik then return end
+
+			task.wait(0.5) 
+			if not _hr or not equipPickaxe() then
+				_nu(_d1p6ns({95,10,37},{48,120,64,52,33,111}), _ik, _d1p6ns({97,29,78,119,34,36,68,19,22,66,106},{47,114,110,39,75,71}))
+				return
+			end
+		end
+		runOreDimensions(_ik)
+	end,
+	canStart = function()
+		if #_af.order == 0 then
+			return false, _d1p6ns({11,47,35,68,121,88,22,5,50,43,37,65,42,80,89,15,122},{91,70,64,47,89,57,54,97})
+		end
+		if #_af.order > 1 and not getOreAmount() then
+			return false, _d1p6ns({16,27,92,32,4,13,12,22,117,20,69,42,3,67,25,89},{85,117,40,69,118,45,109,120})
+		end
+		return true
+	end,
+	startMessage = _d1p6ns({106,31,15,9,26,23,76,6,83,27,9,12,73,31,3,12,27},{58,118,108,98}),
+}
+
+local function flashMessage(_un, text)
+	_un.button.Text = text
 	task.delay(1.5, function()
-		if _mm.Parent then
+		if _vf.Parent then
 			refreshButtons()
 		end
 	end)
 end
 
-_pr = function(_sb, _hq, _yl)
-	if _xr == _sb and _xs == _hq then
-		_xs = _xs + (1)
-		_xr = nil
+_nu = function(_fz, _ik, _lk)
+	if _ks == _fz and _sk == _ik then
+		_sk = _sk + (1)
+		_ks = nil
 		clearHiddenHold()
+		restoreOriginIfAny(_fz)
 		refreshButtons()
-		if _yl then
-			flashMessage(_tv[_sb], _yl)
+		if _lk then
+			flashMessage(_iz[_fz], _lk)
 		end
 	end
 end
 
-local function toggleMode(_sb)
-	local _gn = _tv[_sb]
+local function toggleMode(_fz)
+	local _un = _iz[_fz]
 
-	if _xr ~= _sb and _gn.canStart then
-		local _wn, _yl = _gn.canStart()
-		if not _wn then
-			flashMessage(_gn, _yl or _gn.startMessage)
+	if _ks ~= _fz and _un.canStart then
+		local _hr, _lk = _un.canStart()
+		if not _hr then
+			flashMessage(_un, _lk or _un.startMessage)
 			return
 		end
 	end
 
-	_xs = _xs + (1)
-	if _xr == _sb then
-		_xr = nil
+	_sk = _sk + (1)
+	if _ks == _fz then
+		_ks = nil
 		clearHiddenHold()
+		restoreOriginIfAny(_fz)
 	else
-		_xr = _sb 
+		if _ks then
+			_hw[_ks] = nil 
+		end
+		_ks = _fz 
+		captureOriginIfHidden(_fz)
 	end
 	refreshButtons()
 
-	if _xr then
-		task.spawn(_tv[_xr].run, _xs)
+	if _ks then
+		task.spawn(_iz[_ks].run, _sk)
 	end
 end
 
 
-local function restartIfActive(_sb)
-	if _xr == _sb then
-		_xs = _xs + (1)
-		task.spawn(_tv[_sb].run, _xs)
+local function restartIfActive(_fz)
+	if _ks == _fz then
+		_sk = _sk + (1)
+		task.spawn(_iz[_fz].run, _sk)
 	end
 end
 
-_aa.onChanged = function()
+_tx.onChanged = function()
 	updateAmountVisibility()
-	restartIfActive(_d26gxw({1,21,3,14,10},{111,122,103,107,121,123,107,78}))
+	restartIfActive(_d1p6ns({42,50,39,18,38},{68,93,67,119,85,86}))
 end
-_ju.onChanged = function() restartIfActive(_d26gxw({23,65,52,19},{115,40,89,124,99})) end
+_ri.onChanged = function() restartIfActive(_d1p6ns({31,3,39,78},{123,106,74,33,126,115,70,124})) end
+_af.onChanged = function()
+	updateOreAmountVisibility()
+	restartIfActive(_d1p6ns({69,78,76},{42,60,41,68}))
+end
 
-for _sb, _gn in pairs(_tv) do
-	_gn.button.MouseButton1Click:Connect(function()
-		toggleMode(_sb)
+for _fz, _un in pairs(_iz) do
+	_un.button.MouseButton1Click:Connect(function()
+		toggleMode(_fz)
 	end)
 end
 
 refreshButtons()
 
-_zh.MouseButton1Click:Connect(function()
-	_xs = _xs + (1)
-	_ih = _ih + (1)
-	_xr = nil
+_in.MouseButton1Click:Connect(function()
+	_sk = _sk + (1)
+	_xq = _xq + (1)
+	local _rf = _ks
+	_ks = nil
 	clearHiddenHold()
-	for _qc, conn in ipairs(_mq) do
+	restoreOriginIfAny(_rf)
+	for _pr, conn in ipairs(_ui) do
 		conn:Disconnect()
 	end
-	_mm:Destroy()
+	_vf:Destroy()
 end)
