@@ -1,5 +1,5 @@
--- LUAOBF-3VE5G | Obfuscated Lua script | 2026-11-15
-local function _d1jbvp(b,k)
+-- LUAOBF-2NLDV | Obfuscated Lua script | 2026-11-15
+local function _d26v8m(b,k)
   local n=#k
   if n==0 then return "" end
   local o={}
@@ -20,16 +20,16 @@ local function _d1jbvp(b,k)
   end
   return table.concat(o)
 end
-local _b = game:GetService(_d1jbvp({125,71,33,70,72,89,51},{45,43,64,63}))
-local _x = game:GetService(_d1jbvp({0,59,47,81,28,38,58,86,33,27,47,81,35,33,41,70},{85,72,74,35}))
-local _m = game:GetService(_d1jbvp({108,76,58,94,54,107,94,45,77,49,91,94},{56,59,95,59,88}))
-local _e = game:GetService(_d1jbvp({3,95,35,0,83,39,48,78,54,8,105,48,62,72,50,11,95},{81,58,83,108,58,68}))
-local _z = game:GetService(_d1jbvp({22,37,22,112,36,54,38,17,64,36},{68,80,120,35,65}))
-local _s = game:GetService(_d1jbvp({1,90,17,22,91,32,89,2,64,6,16},{87,51,99,98,46,65,53}))
-local _t = _b.LocalPlayer
-local _c = _t:WaitForChild(_d1jbvp({11,29,64,81,4,9,106,46,24},{91,113,33,40,97,123,45}))
+local _n = game:GetService(_d26v8m({40,65,63,22,15,74,11},{120,45,94,111,106,56}))
+local _t = game:GetService(_d26v8m({16,3,15,43,12,30,26,44,49,35,15,43,51,25,9,60},{69,112,106,89}))
+local _z = game:GetService(_d26v8m({31,7,78,48,86,118,71,57,6,66,54,93},{75,112,43,85,56,37,34}))
+local _u = game:GetService(_d26v8m({57,38,1,3,80,8,34,5,10,93,56,55,30,29,88,12,38},{107,67,113,111,57}))
+local _d = game:GetService(_d26v8m({32,94,36,48,82,51,17,35,17,78},{114,43,74,99,55,65,103,74}))
+local _l = game:GetService(_d26v8m({61,11,75,26,41,10,14,108,29,57,25},{107,98,57,110,92}))
+local _e = _n.LocalPlayer
+local _b = _e:WaitForChild(_d26v8m({23,33,4,5,34,63,34,9,46},{71,77,101,124}))
 
-local _f = {
+local _i = {
 	TELEPORT_DELAY = 5, 
 	PROMPT_DELAY = 2, 
 	SETTLE_TIME = 0.3, 
@@ -37,7 +37,7 @@ local _f = {
 	FAST_SETTLE_TIME = 0.15,
 	FAST_PROMPT_DELAY = 0.5,
 	FAST_TELEPORT_DELAY = 1.5, 
-	WORKBENCH_NAME = _d1jbvp({51,76,10,94,68,11,54,86,12},{100,35,120,53,38,110,88,53}), 
+	WORKBENCH_NAME = _d26v8m({35,76,42,68,22,70,54,76,28},{116,35,88,47}), 
 	WORKBENCH_WAIT = 1.5,
 	FAST_WORKBENCH_WAIT = 0.75,
 	NODES_PER_DIM_O = 7, 
@@ -47,15 +47,15 @@ local _f = {
 	HEIGHT_OFFSET = Vector3.new(0, 4, 0),
 	HIDDEN_OFFSET_MAX = 8, 
 	HIDDEN_SAFETY_MARGIN = 1.5, 
-	DIM_O_PREFIX = _d1jbvp({61,74,33,30},{121,35,76,65,88,34,116,82}),
+	DIM_O_PREFIX = _d26v8m({57,10,87,109},{125,99,58,50,60,126,112}),
 	LIST_REFRESH = 1.5,
 	AUTO_TAKE_ALL = true,
 	LOOT_TAKE_DELAY = 0.3,
 	CHEST_FOLLOWS_FAST_MODE = false,
 	LOADING_GUI_NAMES = {},
-	LOADING_NAME_KEYWORDS = { _d1jbvp({83,33,16,42,75,81,41},{63,78,113,78,34}), _d1jbvp({89,83,37,62,74,59,10,92,80,82},{53,60,68,90,57,88,120,57}), _d1jbvp({43,22,19,18,31,17,74,54,11,28},{95,100,114,124,108,120,62}), _d1jbvp({35,50,56,75,39,56,38,90,36,52,38,75,50,57},{87,87,84,46}) },
-	LOADING_TEXT_KEYWORDS = { _d1jbvp({72,2,94,4,23,95,24,79,15,82,17},{56,110,59,101,100,58,56}), _d1jbvp({69,7,0,5,53,77,78},{41,104,97,97,92,35}) },
-	EXPANDED_HEIGHT = 620,
+	LOADING_NAME_KEYWORDS = { _d26v8m({32,21,85,77,79,21,49},{76,122,52,41,38,123,86}), _d26v8m({30,39,50,56,94,57,0,45,54,50},{114,72,83,92,45,90}), _d26v8m({31,42,84,86,52,11,31,49,90,86},{107,88,53,56,71,98}), _d26v8m({41,27,37,59,40,17,28,69,46,29,59,59,61,16},{93,126,73,94,88,126,110,49}) },
+	LOADING_TEXT_KEYWORDS = { _d26v8m({40,80,47,95,69,18,120,75,43,87,66},{88,60,74,62,54,119}), _d26v8m({52,90,55,21,49,91,49},{88,53,86,113}) },
+	EXPANDED_HEIGHT = 680,
 	COLLAPSED_HEIGHT = 28,
 	CRAFT_DELAY = 0.4,
 	CRAFT_STEP_DELAY = 0,
@@ -73,7 +73,18 @@ local _f = {
 	SCAN_WAIT = 0.4,
 	SCAN_MAX_CYCLES = 3,
 	FIRE_INTERVAL = 0.3,
-	AIM_PART_PRIORITY = { _d1jbvp({126,62,37,57},{54,91,68,93,94}), _d1jbvp({105,73,30,44},{43,38,122,85,81}) },
+	AIM_PART_PRIORITY = { _d26v8m({31,31,27,29},{87,122,122,121,78}), _d26v8m({102,13,58,3},{36,98,94,122,120,86,118,84}) },
+	
+	
+	CRONENBURG_NAME = _d26v8m({41,5,47,40,23,4,21,37,52,21},{106,119,64,70,114}),
+	CRONENBURG_FOLDER = _d26v8m({50,53,51,94,5,50,36,90,2},{113,71,86,63}),
+	NPC_RESCAN = 5, 
+	
+	LASER_SPEED = 1000, 
+	LEAD_PING_FACTOR = 1, 
+	LEAD_MAX_TIME = 1.5, 
+	LEAD_WARMUP = 0.25, 
+	LEAD_SMOOTHING = 0.15, 
 	COMBAT_SAFE_DISTANCE = 15,
 	MINE_SWING_MIN = 0.3,
 	MINE_SWING_MAX = 0.5,
@@ -84,50 +95,50 @@ local _f = {
 
 
 local _o = true
-local _v = false
+local _q = false
 local _p = false
-local _d = false 
-local _u = false 
-local _h = nil
-local _q = 0 
-local _k = 0
-local _a = nil 
-local _w = {}
-local _i = {}
-local _g = {}
-local _y = {} 
-local _r = {} 
+local _f = false 
+local _w = false 
+local _a = nil
+local _x = 0 
+local _g = 0
+local _j = nil 
+local _r = {}
+local _y = {}
+local _h = {}
+local _s = {} 
+local _c = {} 
 
 
-local _l = function() end
-local _n = function() end
+local _v = function() end
+local _k = function() end
 
 
 
 
-local function isDimO(_iu)
-	return string.sub(_iu, 1, #_f.DIM_O_PREFIX) == _f.DIM_O_PREFIX
+local function isDimO(_ao)
+	return string.sub(_ao, 1, #_i.DIM_O_PREFIX) == _i.DIM_O_PREFIX
 end
 
-local function isDropModel(_ph)
-	return _ph:IsA(_d1jbvp({26,45,45,86,14},{87,66,73,51,98,67,70,44}))
+local function isDropModel(_kb)
+	return _kb:IsA(_d26v8m({46,90,81,68,73},{99,53,53,33,37}))
 end
 
-local _j
+local _m
 do
 	
-	local function dimOwnerId(_ux)
-		local _gh = _ux:GetAttribute(_d1jbvp({23,72,33,75,26,43,60},{88,63,79,46,104,98}))
-		return _gh ~= nil and tonumber(_gh) or nil
+	local function dimOwnerId(_jw)
+		local _zc = _jw:GetAttribute(_d26v8m({57,68,76,89,83,1,20},{118,51,34,60,33,72,112,43}))
+		return _zc ~= nil and tonumber(_zc) or nil
 	end
 
 	
-	_j = function()
-		local _mo = workspace:FindFirstChild(_d1jbvp({114,75,73,83,20,22,14,89,76,87},{54,34,36,54,122,101,103}))
-		if not _mo then return nil end
-		for _ny, _ux in ipairs(_mo:GetChildren()) do
-			if isDimO(_ux.Name) and dimOwnerId(_ux) == _t.UserId then
-				return _ux
+	_m = function()
+		local _em = workspace:FindFirstChild(_d26v8m({58,79,41,75,40,13,79,43,64,53},{126,38,68,46,70}))
+		if not _em then return nil end
+		for _qe, _jw in ipairs(_em:GetChildren()) do
+			if isDimO(_jw.Name) and dimOwnerId(_jw) == _e.UserId then
+				return _jw
 			end
 		end
 		return nil
@@ -136,96 +147,96 @@ end
 
 
 local function getHiddenOffset(model)
-	local _gp = model:FindFirstChildWhichIsA(_d1jbvp({35,89,52,12,11,30,66,47,13,50,1,68,54,4,22},{115,43,91,116,98}), true)
-	local _rs = (_gp and _gp.MaxActivationDistance) or _f.HIDDEN_OFFSET_MAX
-	local _hs = math.clamp(_rs - _f.HIDDEN_SAFETY_MARGIN, 1, _f.HIDDEN_OFFSET_MAX)
-	return Vector3.new(0, -_hs, 0)
+	local _xi = model:FindFirstChildWhichIsA(_d26v8m({104,16,34,5,41,85,81,22,52,45,50,87,85,18,57},{56,98,77,125,64,56}), true)
+	local _zj = (_xi and _xi.MaxActivationDistance) or _i.HIDDEN_OFFSET_MAX
+	local _pl = math.clamp(_zj - _i.HIDDEN_SAFETY_MARGIN, 1, _i.HIDDEN_OFFSET_MAX)
+	return Vector3.new(0, -_pl, 0)
 end
 
-local function equipTool(_dd)
-	local character = _t.Character
-	local _ah, alreadyEquipped
+local function equipTool(_eo)
+	local character = _e.Character
+	local _xu, alreadyEquipped
 
-	local _gc = character and character:FindFirstChild(_dd)
-	if _gc and _gc:IsA(_d1jbvp({3,66,94,52},{87,45,49,88,126})) then
-		_ah, alreadyEquipped = _gc, true
+	local _yi = character and character:FindFirstChild(_eo)
+	if _yi and _yi:IsA(_d26v8m({44,66,20,54},{120,45,123,90,89,33})) then
+		_xu, alreadyEquipped = _yi, true
 	else
-		local _vn = _t:FindFirstChildOfClass(_d1jbvp({54,89,2,88,29,21,91,10},{116,56,97,51,109}))
-		local _ez = _vn and _vn:FindFirstChild(_dd)
-		if _ez and _ez:IsA(_d1jbvp({39,30,20,75},{115,113,123,39,79})) then
-			_ah, alreadyEquipped = _ez, false
+		local _mc = _e:FindFirstChildOfClass(_d26v8m({117,45,46,24,93,54,2,77},{55,76,77,115,45,87,97,38}))
+		local _xf = _mc and _mc:FindFirstChild(_eo)
+		if _xf and _xf:IsA(_d26v8m({109,11,62,81},{57,100,81,61,48,114})) then
+			_xu, alreadyEquipped = _xf, false
 		end
 	end
 
-	if not _ah then return false end
+	if not _xu then return false end
 	if alreadyEquipped then return true end
 
-	local _oi = character and character:FindFirstChildOfClass(_d1jbvp({120,61,29,46,94,39,25,43},{48,72,112,79}))
-	if _oi then
-		_oi:EquipTool(_ah)
+	local _tq = character and character:FindFirstChildOfClass(_d26v8m({8,38,28,21,91,14,41,55},{64,83,113,116,53,97}))
+	if _tq then
+		_tq:EquipTool(_xu)
 	else
-		_ah.Parent = character
+		_xu.Parent = character
 	end
 	return true
 end
 
-local function interruptibleWait(_zu, _fb)
-	local _kq = 0
-	while _kq < _zu and _q == _fb do
-		_kq = _kq + task.wait(0.1)
+local function interruptibleWait(_zs, _sk)
+	local _mj = 0
+	while _mj < _zs and _x == _sk do
+		_mj = _mj + task.wait(0.1)
 	end
 end
 
 
 local function clearHiddenHold()
-	_a = nil
+	_j = nil
 end
 
-local function holdHiddenPosition(_hw)
-	_a = _hw
+local function holdHiddenPosition(_ld)
+	_j = _ld
 end
 
-table.insert(_i, _z.Heartbeat:Connect(function()
-	if _a then
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({14,53,42,45,93,54,47,36,21,35,92,45,22,33,53,56},{70,64,71,76,51,89}))
-		if _db then
-			_db.CFrame = _a
-			_db.AssemblyLinearVelocity = Vector3.zero
+table.insert(_y, _d.Heartbeat:Connect(function()
+	if _j then
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({19,64,13,70,57,23,39,79,9,90,15,83,7,25,60,95},{91,53,96,39,87,120,78,43}))
+		if _af then
+			_af.CFrame = _j
+			_af.AssemblyLinearVelocity = Vector3.zero
 		end
 	end
 end))
 
 
 
-local function isHiddenForMode(_iu)
-	if _iu == _d1jbvp({74,0,93,72,94,23,86,84,65,29,70},{46,114,50,56}) then
-		return _d
+local function isHiddenForMode(_ao)
+	if _ao == _d26v8m({90,60,92,85,76,20,26,82,33,92,81},{62,78,51,37,60,113,126}) then
+		return _f
 	end
-	if _iu == _d1jbvp({12,82,13,7,76,93},{111,61,96,101,45,41}) then
+	if _ao == _d26v8m({93,82,12,82,22,49},{62,61,97,48,119,69,123}) then
 		return true 
 	end
 	return _p
 end
 
-local function captureOriginIfHidden(_iu)
-	if _f.MODE_RETURNS_TO_ORIGIN[_iu] and isHiddenForMode(_iu) then
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({44,83,72,87,10,73,76,82,54,73,74,66,52,71,87,66},{100,38,37,54}))
-		_w[_iu] = _db and _db.CFrame or nil
+local function captureOriginIfHidden(_ao)
+	if _i.MODE_RETURNS_TO_ORIGIN[_ao] and isHiddenForMode(_ao) then
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({20,73,85,2,24,51,85,92,49,25,51,72,104,2,4,40},{92,60,56,99,118}))
+		_r[_ao] = _af and _af.CFrame or nil
 	else
-		_w[_iu] = nil
+		_r[_ao] = nil
 	end
 end
 
-local function restoreOriginIfAny(_iu)
-	if _f.MODE_RETURNS_TO_ORIGIN[_iu] and _w[_iu] then
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({43,19,12,18,13,9,8,23,49,9,14,7,51,7,19,7},{99,102,97,115}))
-		if _db then
-			_db.CFrame = _w[_iu]
+local function restoreOriginIfAny(_ao)
+	if _i.MODE_RETURNS_TO_ORIGIN[_ao] and _r[_ao] then
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({25,57,88,9,4,13,3,53,30,90,7,30,50,11,35,56},{81,76,53,104,106,98,106}))
+		if _af then
+			_af.CFrame = _r[_ao]
 		end
-		_w[_iu] = nil
+		_r[_ao] = nil
 	end
 end
 
@@ -233,414 +244,414 @@ end
 
 
 do
-	local screenGui = Instance.new(_d1jbvp({58,3,22,18,5,24,33,28,9},{105,96,100,119,96,118,102}))
-	screenGui.Name = _d1jbvp({114,57,20,60,69,5,20,35,84,33,30,61,69,22,4,38},{49,81,113,79})
+	local screenGui = Instance.new(_d26v8m({3,53,50,35,53,56,7,51,57},{80,86,64,70}))
+	screenGui.Name = _d26v8m({22,93,85,54,32,1,80,92,32,36,58,71,68,2,33,60},{85,53,48,69,84})
 	screenGui.ResetOnSpawn = false
-	screenGui.Parent = _c
-	_y.screenGui = screenGui
+	screenGui.Parent = _b
+	_s.screenGui = screenGui
 
-	local _tk = Instance.new(_d1jbvp({110,21,41,10,60},{40,103,72,103,89,105,120}))
-	_tk.Size = UDim2.new(0, 460, 0, _f.EXPANDED_HEIGHT)
-	_tk.Position = UDim2.new(0, 20, 0.5, -310)
-	_tk.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
-	_tk.BorderSizePixel = 0
-	_tk.Active = true
-	_tk.Parent = screenGui
-	Instance.new(_d1jbvp({2,29,52,62,48,32,57,37},{87,84,119,81,66,78,92}), _tk).CornerRadius = UDim.new(0, 10)
+	local _bp = Instance.new(_d26v8m({121,2,41,51,35},{63,112,72,94,70,94,43,60}))
+	_bp.Size = UDim2.new(0, 460, 0, _i.EXPANDED_HEIGHT)
+	_bp.Position = UDim2.new(0, 20, 0.5, -340)
+	_bp.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+	_bp.BorderSizePixel = 0
+	_bp.Active = true
+	_bp.Parent = screenGui
+	Instance.new(_d26v8m({113,108,26,71,14,74,64,43},{36,37,89,40,124}), _bp).CornerRadius = UDim.new(0, 10)
 
-	local _qz = Instance.new(_d1jbvp({26,3,31,47,90},{92,113,126,66,63,98,42}))
-	_qz.Size = UDim2.new(1, 0, 0, 28)
-	_qz.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
-	_qz.BorderSizePixel = 0
-	_qz.Parent = _tk
-	Instance.new(_d1jbvp({29,36,54,92,11,28,45,31},{72,109,117,51,121,114}), _qz).CornerRadius = UDim.new(0, 10)
+	local _xm = Instance.new(_d26v8m({30,89,51,17,11},{88,43,82,124,110,41}))
+	_xm.Size = UDim2.new(1, 0, 0, 28)
+	_xm.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
+	_xm.BorderSizePixel = 0
+	_xm.Parent = _bp
+	Instance.new(_d26v8m({118,119,1,43,24,77,91,48},{35,62,66,68,106}), _xm).CornerRadius = UDim.new(0, 10)
 
-	local _lk = Instance.new(_d1jbvp({6,84,15,78,57,76,48,84,27},{82,49,119,58,117,45}))
-	_lk.Size = UDim2.new(1, -64, 1, 0)
-	_lk.Position = UDim2.new(0, 10, 0, 0)
-	_lk.BackgroundTransparency = 1
-	_lk.Text = _d1jbvp({37,0,67,23,40,5,85,60,80,13,45,11,26,23,17,34,60,29,26,9,80,17,36},{117,111,49,99,73,105})
-	_lk.TextColor3 = Color3.new(1, 1, 1)
-	_lk.Font = Enum.Font.GothamBold
-	_lk.TextSize = 14
-	_lk.TextXAlignment = Enum.TextXAlignment.Left
-	_lk.Parent = _qz
+	local _hx = Instance.new(_d26v8m({53,90,67,60,60,0,93,94,36},{97,63,59,72,112}))
+	_hx.Size = UDim2.new(1, -64, 1, 0)
+	_hx.Position = UDim2.new(0, 10, 0, 0)
+	_hx.BackgroundTransparency = 1
+	_hx.Text = _d26v8m({15,9,71,55,56,81,91,37,62,8,81,33,54,69,91,55,42,18,90,37,56,79,22},{95,102,53,67,89,61,123,118})
+	_hx.TextColor3 = Color3.new(1, 1, 1)
+	_hx.Font = Enum.Font.GothamBold
+	_hx.TextSize = 14
+	_hx.TextXAlignment = Enum.TextXAlignment.Left
+	_hx.Parent = _xm
 
-	local _sy = Instance.new(_d1jbvp({109,48,56,80,106,28,77,33,47,74},{57,85,64,36,40,105}))
-	_sy.Size = UDim2.new(0, 22, 0, 22)
-	_sy.Position = UDim2.new(1, -51, 0, 3)
-	_sy.BackgroundColor3 = Color3.fromRGB(90, 90, 110)
-	_sy.Text = "-"
-	_sy.TextColor3 = Color3.new(1, 1, 1)
-	_sy.Font = Enum.Font.GothamBold
-	_sy.TextSize = 16
-	_sy.Parent = _qz
-	Instance.new(_d1jbvp({7,115,4,55,23,60,95,53},{82,58,71,88,101}), _sy).CornerRadius = UDim.new(0, 6)
+	local _uf = Instance.new(_d26v8m({20,23,84,9,108,17,79,52,29,66},{64,114,44,125,46,100,59}))
+	_uf.Size = UDim2.new(0, 22, 0, 22)
+	_uf.Position = UDim2.new(1, -51, 0, 3)
+	_uf.BackgroundColor3 = Color3.fromRGB(90, 90, 110)
+	_uf.Text = "-"
+	_uf.TextColor3 = Color3.new(1, 1, 1)
+	_uf.Font = Enum.Font.GothamBold
+	_uf.TextSize = 16
+	_uf.Parent = _xm
+	Instance.new(_d26v8m({101,37,40,39,66,2,14,58},{48,108,107,72}), _uf).CornerRadius = UDim.new(0, 6)
 
-	local closeButton = Instance.new(_d1jbvp({58,72,62,67,56,63,26,89,41,89},{110,45,70,55,122,74}))
+	local closeButton = Instance.new(_d26v8m({100,60,78,26,117,2,29,12,95,55},{48,89,54,110,55,119,105,120}))
 	closeButton.Size = UDim2.new(0, 22, 0, 22)
 	closeButton.Position = UDim2.new(1, -25, 0, 3)
-	closeButton.BackgroundColor3 = _f.COLOR_OFF
+	closeButton.BackgroundColor3 = _i.COLOR_OFF
 	closeButton.Text = "X"
 	closeButton.TextColor3 = Color3.new(1, 1, 1)
 	closeButton.Font = Enum.Font.GothamBold
 	closeButton.TextSize = 14
-	closeButton.Parent = _qz
-	Instance.new(_d1jbvp({118,121,2,27,81,94,36,6},{35,48,65,116}), closeButton).CornerRadius = UDim.new(0, 6)
-	_y.closeButton = closeButton
+	closeButton.Parent = _xm
+	Instance.new(_d26v8m({6,47,20,61,7,61,3,37},{83,102,87,82,117}), closeButton).CornerRadius = UDim.new(0, 6)
+	_s.closeButton = closeButton
 
-	local _je = Instance.new(_d1jbvp({34,94,81,22,55},{100,44,48,123,82,40,86}))
-	_je.Size = UDim2.new(1, 0, 1, -28)
-	_je.Position = UDim2.new(0, 0, 0, 28)
-	_je.BackgroundTransparency = 1
-	_je.Parent = _tk
+	local _gr = Instance.new(_d26v8m({30,53,59,88,86},{88,71,90,53,51,113,87}))
+	_gr.Size = UDim2.new(1, 0, 1, -28)
+	_gr.Position = UDim2.new(0, 0, 0, 28)
+	_gr.BackgroundTransparency = 1
+	_gr.Parent = _bp
 
 	
-	local _fr = Instance.new(_d1jbvp({7,73,87,30,61},{65,59,54,115,88}))
-	_fr.Size = UDim2.new(1, -20, 0, 24)
-	_fr.Position = UDim2.new(0, 10, 0, 6)
-	_fr.BackgroundTransparency = 1
-	_fr.Parent = _je
+	local _qx = Instance.new(_d26v8m({31,33,11,82,60},{89,83,106,63}))
+	_qx.Size = UDim2.new(1, -20, 0, 24)
+	_qx.Position = UDim2.new(0, 10, 0, 6)
+	_qx.BackgroundTransparency = 1
+	_qx.Parent = _gr
 
-	local _sq = Instance.new(_d1jbvp({122,7,10,54,81,25,33,70,86,33,51,43},{47,78,70,95,34,109,109,39}))
-	_sq.FillDirection = Enum.FillDirection.Horizontal
-	_sq.Padding = UDim.new(0, 6)
-	_sq.SortOrder = Enum.SortOrder.LayoutOrder
-	_sq.Parent = _fr
+	local _ib = Instance.new(_d26v8m({26,57,3,51,24,1,104,37,54,31,58,46},{79,112,79,90,107,117,36,68}))
+	_ib.FillDirection = Enum.FillDirection.Horizontal
+	_ib.Padding = UDim.new(0, 6)
+	_ib.SortOrder = Enum.SortOrder.LayoutOrder
+	_ib.Parent = _qx
 
 	local function createPage()
-		local page = Instance.new(_d1jbvp({120,43,86,82,91},{62,89,55,63}))
+		local page = Instance.new(_d26v8m({7,79,59,72,90},{65,61,90,37,63,54,115,116}))
 		page.Size = UDim2.new(1, 0, 1, -32)
 		page.Position = UDim2.new(0, 0, 0, 32)
 		page.BackgroundTransparency = 1
-		page.Parent = _je
+		page.Parent = _gr
 
-		local _ew = Instance.new(_d1jbvp({121,59,127,2,58,62,49,36,85,29,70,31},{44,114,51,107,73,74,125,69}))
-		_ew.Padding = UDim.new(0, 6)
-		_ew.SortOrder = Enum.SortOrder.LayoutOrder
-		_ew.Parent = page
+		local _me = Instance.new(_d26v8m({97,111,124,54,71,82,124,62,77,73,69,43},{52,38,48,95}))
+		_me.Padding = UDim.new(0, 6)
+		_me.SortOrder = Enum.SortOrder.LayoutOrder
+		_me.Parent = page
 
-		local _jv = Instance.new(_d1jbvp({58,38,1,1,28,11,6,63,7},{111,111,81,96,120}))
-		_jv.PaddingTop = UDim.new(0, 2)
-		_jv.PaddingLeft = UDim.new(0, 10)
-		_jv.PaddingRight = UDim.new(0, 10)
-		_jv.Parent = page
+		local _qy = Instance.new(_d26v8m({120,127,6,24,73,82,63,23,74},{45,54,86,121}))
+		_qy.PaddingTop = UDim.new(0, 2)
+		_qy.PaddingLeft = UDim.new(0, 10)
+		_qy.PaddingRight = UDim.new(0, 10)
+		_qy.Parent = page
 
 		return page
 	end
 
 	
-	local _qp = {
-		{ key = _d1jbvp({20,3,30,12},{114,98,108,97}), text = _d1jbvp({8,33,67,88},{78,64,49,53,54,60}) },
-		{ key = _d1jbvp({7,68,35,12},{107,43,76,120,49,81,114,107}), text = _d1jbvp({55,67,9,61},{123,44,102,73,67}) },
-		{ key = _d1jbvp({59,81,12,60,36},{88,35,109,90,80,52,104}), text = _d1jbvp({4,95,4,86,27},{71,45,101,48,111}) },
+	local _co = {
+		{ key = _d26v8m({68,95,45,53},{34,62,95,88}), text = _d26v8m({4,25,2,25},{66,120,112,116}) },
+		{ key = _d26v8m({21,22,71,64},{121,121,40,52}), text = _d26v8m({28,66,13,30},{80,45,98,106}) },
+		{ key = _d26v8m({44,28,90,73,55},{79,110,59,47,67,125,94,89}), text = _d26v8m({36,14,31,64,51},{103,124,126,38,71,55}) },
 	}
-	local _nw = {}
+	local _ex = {}
 
-	for _if, def in ipairs(_qp) do
-		local _ax = Instance.new(_d1jbvp({106,75,26,91,62,12,74,90,13,65},{62,46,98,47,124,121}))
-		_ax.Size = UDim2.new(1 / 3, -4, 1, 0)
-		_ax.LayoutOrder = _if
-		_ax.Text = def.text
-		_ax.TextColor3 = Color3.new(1, 1, 1)
-		_ax.Font = Enum.Font.GothamBold
-		_ax.TextSize = 13
-		_ax.BorderSizePixel = 0
-		_ax.Parent = _fr
-		Instance.new(_d1jbvp({98,19,56,10,54,66,24,69},{55,90,123,101,68,44,125}), _ax).CornerRadius = UDim.new(0, 6)
+	for _ha, def in ipairs(_co) do
+		local _wa = Instance.new(_d26v8m({123,34,19,31,43,9,71,29,64,41},{47,71,107,107,105,124,51,105}))
+		_wa.Size = UDim2.new(1 / 3, -4, 1, 0)
+		_wa.LayoutOrder = _ha
+		_wa.Text = def.text
+		_wa.TextColor3 = Color3.new(1, 1, 1)
+		_wa.Font = Enum.Font.GothamBold
+		_wa.TextSize = 13
+		_wa.BorderSizePixel = 0
+		_wa.Parent = _qx
+		Instance.new(_d26v8m({101,56,40,33,66,31,14,60},{48,113,107,78}), _wa).CornerRadius = UDim.new(0, 6)
 
 		local page = createPage()
-		_y[def.key .. _d1jbvp({122,87,29,85},{42,54,122,48,124,39})] = page
-		_nw[def.key] = { page = page, button = _ax }
+		_s[def.key .. _d26v8m({7,93,30,52},{87,60,121,81,123,58})] = page
+		_ex[def.key] = { page = page, button = _wa }
 	end
 
-	local function selectTab(_iu)
-		for key, tab in pairs(_nw) do
-			tab.page.Visible = (key == _iu)
-			tab.button.BackgroundColor3 = (key == _iu) and _f.COLOR_ITEM_SELECTED or _f.COLOR_ITEM
+	local function selectTab(_ao)
+		for key, tab in pairs(_ex) do
+			tab.page.Visible = (key == _ao)
+			tab.button.BackgroundColor3 = (key == _ao) and _i.COLOR_ITEM_SELECTED or _i.COLOR_ITEM
 		end
 	end
 
-	for key, tab in pairs(_nw) do
+	for key, tab in pairs(_ex) do
 		tab.button.MouseButton1Click:Connect(function() selectTab(key) end)
 	end
-	selectTab(_d1jbvp({65,70,54,57},{39,39,68,84,67,61,67,38}))
+	selectTab(_d26v8m({85,75,22,91},{51,42,100,54,91}))
 
 	
-	_y.parent = _y.farmPage
+	_s.parent = _s.farmPage
 
 	
-	local _yl = false
-	_sy.MouseButton1Click:Connect(function()
-		_yl = not _yl
-		_je.Visible = not _yl
-		_tk.Size = UDim2.new(0, 460, 0, _yl and _f.COLLAPSED_HEIGHT or _f.EXPANDED_HEIGHT)
-		_sy.Text = _yl and "+" or "-"
+	local _vn = false
+	_uf.MouseButton1Click:Connect(function()
+		_vn = not _vn
+		_gr.Visible = not _vn
+		_bp.Size = UDim2.new(0, 460, 0, _vn and _i.COLLAPSED_HEIGHT or _i.EXPANDED_HEIGHT)
+		_uf.Text = _vn and "+" or "-"
 	end)
 
-	function _y.createToggleButton(_au)
-		local _ax = Instance.new(_d1jbvp({103,22,12,46,119,7,71,7,27,52},{51,115,116,90,53,114}))
-		_ax.Size = UDim2.new(1, 0, 0, 36)
-		_ax.LayoutOrder = _au
-		_ax.BackgroundColor3 = _f.COLOR_OFF
-		_ax.TextColor3 = Color3.new(1, 1, 1)
-		_ax.Font = Enum.Font.GothamBold
-		_ax.TextSize = 16
-		_ax.Parent = _y.parent
-		Instance.new(_d1jbvp({123,33,38,58,6,62,75,26},{46,104,101,85,116,80}), _ax).CornerRadius = UDim.new(0, 8)
-		return _ax
+	function _s.createToggleButton(_dq)
+		local _wa = Instance.new(_d26v8m({117,74,71,75,33,72,41,85,64,81},{33,47,63,63,99,61,93}))
+		_wa.Size = UDim2.new(1, 0, 0, 36)
+		_wa.LayoutOrder = _dq
+		_wa.BackgroundColor3 = _i.COLOR_OFF
+		_wa.TextColor3 = Color3.new(1, 1, 1)
+		_wa.Font = Enum.Font.GothamBold
+		_wa.TextSize = 16
+		_wa.Parent = _s.parent
+		Instance.new(_d26v8m({121,27,55,66,49,50,65,74},{44,82,116,45,67,92,36,56}), _wa).CornerRadius = UDim.new(0, 8)
+		return _wa
 	end
 
-	function _y.createLabel(text, _au)
-		local _zh = Instance.new(_d1jbvp({28,78,1,37,116,41,65,45,71},{72,43,121,81,56,72,35}))
-		_zh.Size = UDim2.new(1, 0, 0, 16)
-		_zh.LayoutOrder = _au
-		_zh.BackgroundTransparency = 1
-		_zh.Text = text
-		_zh.TextColor3 = Color3.fromRGB(170, 170, 180)
-		_zh.Font = Enum.Font.Gotham
-		_zh.TextSize = 12
-		_zh.TextXAlignment = Enum.TextXAlignment.Left
-		_zh.Parent = _y.parent
-		return _zh
+	function _s.createLabel(text, _dq)
+		local _mo = Instance.new(_d26v8m({7,11,89,88,54,50,12,68,64},{83,110,33,44,122}))
+		_mo.Size = UDim2.new(1, 0, 0, 16)
+		_mo.LayoutOrder = _dq
+		_mo.BackgroundTransparency = 1
+		_mo.Text = text
+		_mo.TextColor3 = Color3.fromRGB(170, 170, 180)
+		_mo.Font = Enum.Font.Gotham
+		_mo.TextSize = 12
+		_mo.TextXAlignment = Enum.TextXAlignment.Left
+		_mo.Parent = _s.parent
+		return _mo
 	end
 
 	
-	local _pp = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local _ei = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 
-	function _y.createSwitch(_au, _oo, _xj, onChanged)
-		local _ao = Instance.new(_d1jbvp({21,36,64,36,54},{83,86,33,73}))
-		_ao.Size = UDim2.new(1, 0, 0, 30)
-		_ao.LayoutOrder = _au
-		_ao.BackgroundTransparency = 1
-		_ao.Parent = _y.parent
+	function _s.createSwitch(_dq, _rk, _gz, onChanged)
+		local _ga = Instance.new(_d26v8m({60,54,49,81,17},{122,68,80,60,116,93,120}))
+		_ga.Size = UDim2.new(1, 0, 0, 30)
+		_ga.LayoutOrder = _dq
+		_ga.BackgroundTransparency = 1
+		_ga.Parent = _s.parent
 
-		local label = Instance.new(_d1jbvp({53,70,32,58,36,0,65,61,34},{97,35,88,78,104}))
+		local label = Instance.new(_d26v8m({108,54,85,45,14,52,25,58,84},{56,83,45,89,66,85,123,95}))
 		label.Size = UDim2.new(1, -54, 1, 0)
 		label.BackgroundTransparency = 1
-		label.Text = _oo
+		label.Text = _rk
 		label.TextColor3 = Color3.new(1, 1, 1)
 		label.Font = Enum.Font.GothamMedium
 		label.TextSize = 14
 		label.TextXAlignment = Enum.TextXAlignment.Left
-		label.Parent = _ao
+		label.Parent = _ga
 
-		local _fy = Instance.new(_d1jbvp({98,71,45,36,116,87,33,36,89,76},{54,34,85,80}))
-		_fy.Size = UDim2.new(0, 44, 0, 22)
-		_fy.AnchorPoint = Vector2.new(1, 0.5)
-		_fy.Position = UDim2.new(1, 0, 0.5, 0)
-		_fy.Text = ""
-		_fy.AutoButtonColor = false
-		_fy.BorderSizePixel = 0
-		_fy.Parent = _ao
-		Instance.new(_d1jbvp({114,120,10,72,20,13,47,85},{39,49,73,39,102,99,74}), _fy).CornerRadius = UDim.new(1, 0)
+		local _ac = Instance.new(_d26v8m({40,15,12,12,5,79,8,30,27,22},{124,106,116,120,71,58}))
+		_ac.Size = UDim2.new(0, 44, 0, 22)
+		_ac.AnchorPoint = Vector2.new(1, 0.5)
+		_ac.Position = UDim2.new(1, 0, 0.5, 0)
+		_ac.Text = ""
+		_ac.AutoButtonColor = false
+		_ac.BorderSizePixel = 0
+		_ac.Parent = _ga
+		Instance.new(_d26v8m({62,33,40,80,62,5,13,25},{107,104,107,63,76}), _ac).CornerRadius = UDim.new(1, 0)
 
-		local _ud = Instance.new(_d1jbvp({2,18,6,15,68},{68,96,103,98,33,100,40,101}))
-		_ud.Size = UDim2.new(0, 18, 0, 18)
-		_ud.AnchorPoint = Vector2.new(0, 0.5)
-		_ud.BackgroundColor3 = Color3.new(1, 1, 1)
-		_ud.BorderSizePixel = 0
-		_ud.Parent = _fy
-		Instance.new(_d1jbvp({119,5,12,84,77,2,71,62},{34,76,79,59,63,108}), _ud).CornerRadius = UDim.new(1, 0)
+		local _bj = Instance.new(_d26v8m({16,90,41,80,51},{86,40,72,61}))
+		_bj.Size = UDim2.new(0, 18, 0, 18)
+		_bj.AnchorPoint = Vector2.new(0, 0.5)
+		_bj.BackgroundColor3 = Color3.new(1, 1, 1)
+		_bj.BorderSizePixel = 0
+		_bj.Parent = _ac
+		Instance.new(_d26v8m({14,109,0,86,44,4,62,86},{91,36,67,57,94,106}), _bj).CornerRadius = UDim.new(1, 0)
 
-		local _en = _xj
+		local _ay = _gz
 
-		local function apply(_zx)
-			local _dq = _en and UDim2.new(1, -20, 0.5, 0) or UDim2.new(0, 2, 0.5, 0)
-			local _qu = _en and _f.COLOR_ON or _f.COLOR_SWITCH_OFF
-			if _zx then
-				_ud.Position = _dq
-				_fy.BackgroundColor3 = _qu
+		local function apply(_bs)
+			local _pr = _ay and UDim2.new(1, -20, 0.5, 0) or UDim2.new(0, 2, 0.5, 0)
+			local _pg = _ay and _i.COLOR_ON or _i.COLOR_SWITCH_OFF
+			if _bs then
+				_bj.Position = _pr
+				_ac.BackgroundColor3 = _pg
 			else
-				_m:Create(_ud, _pp, { Position = _dq }):Play()
-				_m:Create(_fy, _pp, { BackgroundColor3 = _qu }):Play()
+				_z:Create(_bj, _ei, { Position = _pr }):Play()
+				_z:Create(_ac, _ei, { BackgroundColor3 = _pg }):Play()
 			end
 		end
 
 		apply(true)
 
-		_fy.MouseButton1Click:Connect(function()
-			_en = not _en
+		_ac.MouseButton1Click:Connect(function()
+			_ay = not _ay
 			apply(false)
-			onChanged(_en)
+			onChanged(_ay)
 		end)
 	end
 
 	
-	function _y.createList(_au, _qb, _dy)
-		local _vy = Instance.new(_d1jbvp({98,50,60,18,51,54,88,63,41,59,45,59,92,52},{49,81,78,125,95,90}))
-		_vy.Size = UDim2.new(1, 0, 0, _dy or 80)
-		_vy.LayoutOrder = _au
-		_vy.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-		_vy.BorderSizePixel = 0
-		_vy.ScrollBarThickness = 4
-		_vy.CanvasSize = UDim2.new(0, 0, 0, 0)
-		_vy.AutomaticCanvasSize = Enum.AutomaticSize.Y
-		_vy.Parent = _y.parent
-		Instance.new(_d1jbvp({5,9,32,27,34,46,6,6},{80,64,99,116}), _vy).CornerRadius = UDim.new(0, 8)
+	function _s.createList(_dq, _pi, _ph)
+		local _oa = Instance.new(_d26v8m({104,81,79,39,51,7,82,92,90,14,45,10,86,87},{59,50,61,72,95,107}))
+		_oa.Size = UDim2.new(1, 0, 0, _ph or 80)
+		_oa.LayoutOrder = _dq
+		_oa.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+		_oa.BorderSizePixel = 0
+		_oa.ScrollBarThickness = 4
+		_oa.CanvasSize = UDim2.new(0, 0, 0, 0)
+		_oa.AutomaticCanvasSize = Enum.AutomaticSize.Y
+		_oa.Parent = _s.parent
+		Instance.new(_d26v8m({31,111,107,58,56,72,77,39},{74,38,40,85}), _oa).CornerRadius = UDim.new(0, 8)
 
-		local _ew = Instance.new(_d1jbvp({0,6,43,45,30,87,30,37,44,32,18,48},{85,79,103,68,109,35,82,68}))
-		_ew.Padding = UDim.new(0, 3)
-		_ew.SortOrder = Enum.SortOrder.LayoutOrder
-		_ew.Parent = _vy
+		local _me = Instance.new(_d26v8m({96,53,123,31,70,8,123,23,76,19,66,2},{53,124,55,118}))
+		_me.Padding = UDim.new(0, 3)
+		_me.SortOrder = Enum.SortOrder.LayoutOrder
+		_me.Parent = _oa
 
-		local _di = Instance.new(_d1jbvp({110,12,97,8,55,6,82,43,86},{59,69,49,105,83,98}))
-		_di.PaddingTop = UDim.new(0, 3)
-		_di.PaddingBottom = UDim.new(0, 3)
-		_di.PaddingLeft = UDim.new(0, 3)
-		_di.PaddingRight = UDim.new(0, 6)
-		_di.Parent = _vy
+		local _vb = Instance.new(_d26v8m({19,38,0,21,13,76,15,40,8},{70,111,80,116,105,40,102}))
+		_vb.PaddingTop = UDim.new(0, 3)
+		_vb.PaddingBottom = UDim.new(0, 3)
+		_vb.PaddingLeft = UDim.new(0, 3)
+		_vb.PaddingRight = UDim.new(0, 6)
+		_vb.Parent = _oa
 
-		local _yp = {
+		local _oy = {
 			names = {},
 			order = {}, 
 			onChanged = nil,
 		}
-		local _bs = {}
+		local _sh = {}
 
-		local function indexOf(_iu)
-			for _oq, _qh in ipairs(_yp.order) do
-				if _qh == _iu then return _oq end
+		local function indexOf(_ao)
+			for _mt, _wf in ipairs(_oy.order) do
+				if _wf == _ao then return _mt end
 			end
 		end
 
 		local function restyle()
-			for _iu, _ax in pairs(_bs) do
-				local _jt = indexOf(_iu)
-				if _jt then
-					_ax.BackgroundColor3 = _f.COLOR_ITEM_SELECTED
-					_ax.Text = _qb and (_jt .. ". " .. _iu) or _iu
+			for _ao, _wa in pairs(_sh) do
+				local _ke = indexOf(_ao)
+				if _ke then
+					_wa.BackgroundColor3 = _i.COLOR_ITEM_SELECTED
+					_wa.Text = _pi and (_ke .. ". " .. _ao) or _ao
 				else
-					_ax.BackgroundColor3 = _f.COLOR_ITEM
-					_ax.Text = _iu
+					_wa.BackgroundColor3 = _i.COLOR_ITEM
+					_wa.Text = _ao
 				end
 			end
 		end
 
-		local function toggle(_iu)
-			local _jt = indexOf(_iu)
-			if _jt then
-				table.remove(_yp.order, _jt)
+		local function toggle(_ao)
+			local _ke = indexOf(_ao)
+			if _ke then
+				table.remove(_oy.order, _ke)
 			else
-				if not _qb then table.clear(_yp.order) end
-				table.insert(_yp.order, _iu)
+				if not _pi then table.clear(_oy.order) end
+				table.insert(_oy.order, _ao)
 			end
 			restyle()
-			if _yp.onChanged then _yp.onChanged() end
+			if _oy.onChanged then _oy.onChanged() end
 		end
 
-		function _yp.setNames(_wn)
+		function _oy.setNames(_nl)
 			
-			if #_wn == #_yp.names then
-				local _yi = true
-				for _oq, _qh in ipairs(_wn) do
-					if _yp.names[_oq] ~= _qh then _yi = false break end
+			if #_nl == #_oy.names then
+				local _ef = true
+				for _mt, _wf in ipairs(_nl) do
+					if _oy.names[_mt] ~= _wf then _ef = false break end
 				end
-				if _yi then return end
+				if _ef then return end
 			end
-			_yp.names = _wn
+			_oy.names = _nl
 
-			local _bv = {}
-			for _ny, _qh in ipairs(_wn) do _bv[_qh] = true end
+			local _fw = {}
+			for _qe, _wf in ipairs(_nl) do _fw[_wf] = true end
 
-			for _iu, _ax in pairs(_bs) do
-				if not _bv[_iu] then
-					_ax:Destroy()
-					_bs[_iu] = nil
-				end
-			end
-
-			local _vl = false
-			for _oq = #_yp.order, 1, -1 do
-				if not _bv[_yp.order[_oq]] then
-					table.remove(_yp.order, _oq)
-					_vl = true
+			for _ao, _wa in pairs(_sh) do
+				if not _fw[_ao] then
+					_wa:Destroy()
+					_sh[_ao] = nil
 				end
 			end
 
-			for _oq, _iu in ipairs(_wn) do
-				local _ax = _bs[_iu]
-				if not _ax then
-					_ax = Instance.new(_d1jbvp({20,41,28,21,1,14,35,52,35,10},{64,76,100,97,67,123,87}))
-					_ax.Size = UDim2.new(1, 0, 0, 24)
-					_ax.TextColor3 = Color3.new(1, 1, 1)
-					_ax.Font = Enum.Font.Gotham
-					_ax.TextSize = 13
-					_ax.TextXAlignment = Enum.TextXAlignment.Left
-					_ax.Parent = _vy
-					Instance.new(_d1jbvp({96,0,13,10,57,35,4,71},{53,73,78,101,75,77,97}), _ax).CornerRadius = UDim.new(0, 6)
-					local _jv = Instance.new(_d1jbvp({36,2,50,56,21,47,11,55,22},{113,75,98,89}))
-					_jv.PaddingLeft = UDim.new(0, 8)
-					_jv.Parent = _ax
-					_ax.MouseButton1Click:Connect(function() toggle(_iu) end)
-					_bs[_iu] = _ax
+			local _jc = false
+			for _mt = #_oy.order, 1, -1 do
+				if not _fw[_oy.order[_mt]] then
+					table.remove(_oy.order, _mt)
+					_jc = true
 				end
-				_ax.LayoutOrder = _oq
+			end
+
+			for _mt, _ao in ipairs(_nl) do
+				local _wa = _sh[_ao]
+				if not _wa then
+					_wa = Instance.new(_d26v8m({5,72,80,59,2,95,10,57,62,67},{81,45,40,79,64,42,126,77}))
+					_wa.Size = UDim2.new(1, 0, 0, 24)
+					_wa.TextColor3 = Color3.new(1, 1, 1)
+					_wa.Font = Enum.Font.Gotham
+					_wa.TextSize = 13
+					_wa.TextXAlignment = Enum.TextXAlignment.Left
+					_wa.Parent = _oa
+					Instance.new(_d26v8m({40,124,17,6,48,35,62,91},{125,53,82,105,66,77,91,41}), _wa).CornerRadius = UDim.new(0, 6)
+					local _qy = Instance.new(_d26v8m({48,38,5,60,31,1,6,59,58},{101,111,85,93,123}))
+					_qy.PaddingLeft = UDim.new(0, 8)
+					_qy.Parent = _wa
+					_wa.MouseButton1Click:Connect(function() toggle(_ao) end)
+					_sh[_ao] = _wa
+				end
+				_wa.LayoutOrder = _mt
 			end
 
 			restyle()
-			if _vl and _yp.onChanged then _yp.onChanged() end
+			if _jc and _oy.onChanged then _oy.onChanged() end
 		end
 
-		return _yp
+		return _oy
 	end
 
 	
-	local _cp = false
-	local _cn, startPos
+	local _gm = false
+	local _mv, startPos
 
-	_qz.InputBegan:Connect(function(_kt)
-		if _kt.UserInputType == Enum.UserInputType.MouseButton1
-			or _kt.UserInputType == Enum.UserInputType.Touch then
-			_cp = true
-			_cn = _kt.Position
-			startPos = _tk.Position
+	_xm.InputBegan:Connect(function(_ym)
+		if _ym.UserInputType == Enum.UserInputType.MouseButton1
+			or _ym.UserInputType == Enum.UserInputType.Touch then
+			_gm = true
+			_mv = _ym.Position
+			startPos = _bp.Position
 
-			_kt.Changed:Connect(function()
-				if _kt.UserInputState == Enum.UserInputState.End then
-					_cp = false
+			_ym.Changed:Connect(function()
+				if _ym.UserInputState == Enum.UserInputState.End then
+					_gm = false
 				end
 			end)
 		end
 	end)
 
-	table.insert(_i, _x.InputChanged:Connect(function(_kt)
-		if _cp and (_kt.UserInputType == Enum.UserInputType.MouseMovement
-			or _kt.UserInputType == Enum.UserInputType.Touch) then
-			local _uv = _kt.Position - _cn
-			_tk.Position = UDim2.new(
-				startPos.X.Scale, startPos.X.Offset + _uv.X,
-				startPos.Y.Scale, startPos.Y.Offset + _uv.Y
+	table.insert(_y, _t.InputChanged:Connect(function(_ym)
+		if _gm and (_ym.UserInputType == Enum.UserInputType.MouseMovement
+			or _ym.UserInputType == Enum.UserInputType.Touch) then
+			local _fr = _ym.Position - _mv
+			_bp.Position = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + _fr.X,
+				startPos.Y.Scale, startPos.Y.Offset + _fr.Y
 			)
 		end
 	end))
 
 	
-	local _as = Instance.new(_d1jbvp({15,34,35,16,1,10,1},{90,107,112,115,96,102,100,113}))
-	_as.Parent = _tk
+	local _ya = Instance.new(_d26v8m({114,114,28,38,70,87,42},{39,59,79,69}))
+	_ya.Parent = _bp
 
 	local function applyWindowScale()
-		local _ed = screenGui.AbsoluteSize
-		if _ed.X <= 0 or _ed.Y <= 0 then
-			local _by = workspace.CurrentCamera
-			if _by then
-				_ed = _by.ViewportSize
+		local _ii = screenGui.AbsoluteSize
+		if _ii.X <= 0 or _ii.Y <= 0 then
+			local _ae = workspace.CurrentCamera
+			if _ae then
+				_ii = _ae.ViewportSize
 			end
 		end
-		if _ed.X <= 0 or _ed.Y <= 0 then return end
+		if _ii.X <= 0 or _ii.Y <= 0 then return end
 
-		local _nr = math.min(
-			(_ed.X - 20) / _f.WINDOW_WIDTH,
-			(_ed.Y - 20) / _f.EXPANDED_HEIGHT
+		local _nd = math.min(
+			(_ii.X - 20) / _i.WINDOW_WIDTH,
+			(_ii.Y - 20) / _i.EXPANDED_HEIGHT
 		)
-		local _xy = math.clamp(_nr, _f.MIN_SCALE, 1)
-		_as.Scale = _xy
+		local _qr = math.clamp(_nd, _i.MIN_SCALE, 1)
+		_ya.Scale = _qr
 
-		_tk.Position = UDim2.new(0, _xy < 1 and 10 or 20, 0.5, -math.floor(_f.EXPANDED_HEIGHT * _xy / 2))
+		_bp.Position = UDim2.new(0, _qr < 1 and 10 or 20, 0.5, -math.floor(_i.EXPANDED_HEIGHT * _qr / 2))
 	end
 
 	applyWindowScale()
-	table.insert(_i, screenGui:GetPropertyChangedSignal(_d1jbvp({111,4,50,57,87,27,90,3,18,63,65,11},{46,102,65,86,59,110})):Connect(applyWindowScale))
+	table.insert(_y, screenGui:GetPropertyChangedSignal(_d26v8m({60,49,53,2,15,8,39,35,62,10,7,54},{125,83,70,109,99})):Connect(applyWindowScale))
 end
 
 
@@ -648,160 +659,166 @@ end
 
 do
 	local createToggleButton, createLabel, createSwitch, createList =
-		_y.createToggleButton, _y.createLabel, _y.createSwitch, _y.createList
-	local farmPage = _y.farmPage
+		_s.createToggleButton, _s.createLabel, _s.createSwitch, _s.createList
+	local farmPage = _s.farmPage
 
-	_y.parent = farmPage
-	_y.chestButton = createToggleButton(1)
+	_s.parent = farmPage
+	_s.chestButton = createToggleButton(1)
 
 	
-	local _iy = Instance.new(_d1jbvp({22,48,19,43,7},{80,66,114,70,98,111,87}))
-	_iy.Size = UDim2.new(1, 0, 0, 0)
-	_iy.AutomaticSize = Enum.AutomaticSize.Y
-	_iy.LayoutOrder = 2
-	_iy.BackgroundTransparency = 1
-	_iy.Parent = farmPage
+	local _ct = Instance.new(_d26v8m({112,65,34,5,53},{54,51,67,104,80}))
+	_ct.Size = UDim2.new(1, 0, 0, 0)
+	_ct.AutomaticSize = Enum.AutomaticSize.Y
+	_ct.LayoutOrder = 2
+	_ct.BackgroundTransparency = 1
+	_ct.Parent = farmPage
 
-	local _wk = Instance.new(_d1jbvp({16,61,58,17,14,45,119,36,13,25,13,9},{69,116,118,120,125,89,59}))
-	_wk.FillDirection = Enum.FillDirection.Horizontal
-	_wk.Padding = UDim.new(0, 8)
-	_wk.SortOrder = Enum.SortOrder.LayoutOrder
-	_wk.Parent = _iy
+	local _ra = Instance.new(_d26v8m({19,6,31,25,53,59,31,17,63,32,38,4},{70,79,83,112}))
+	_ra.FillDirection = Enum.FillDirection.Horizontal
+	_ra.Padding = UDim.new(0, 8)
+	_ra.SortOrder = Enum.SortOrder.LayoutOrder
+	_ra.Parent = _ct
 
-	local function createColumn(_au)
-		local _pd = Instance.new(_d1jbvp({25,3,31,82,1},{95,113,126,63,100,115}))
-		_pd.Size = UDim2.new(0.5, -4, 0, 0)
-		_pd.AutomaticSize = Enum.AutomaticSize.Y
-		_pd.LayoutOrder = _au
-		_pd.BackgroundTransparency = 1
-		_pd.Parent = _iy
+	local function createColumn(_dq)
+		local _bt = Instance.new(_d26v8m({13,46,34,62,80},{75,92,67,83,53,115,35}))
+		_bt.Size = UDim2.new(0.5, -4, 0, 0)
+		_bt.AutomaticSize = Enum.AutomaticSize.Y
+		_bt.LayoutOrder = _dq
+		_bt.BackgroundTransparency = 1
+		_bt.Parent = _ct
 
-		local _ew = Instance.new(_d1jbvp({33,12,60,34,11,0,9,17,50,23,1,49},{116,69,112,75,120}))
-		_ew.Padding = UDim.new(0, 6)
-		_ew.SortOrder = Enum.SortOrder.LayoutOrder
-		_ew.Parent = _pd
+		local _me = Instance.new(_d26v8m({4,111,113,54,19,17,29,71,68,48,21,17},{81,38,61,95,96,101}))
+		_me.Padding = UDim.new(0, 6)
+		_me.SortOrder = Enum.SortOrder.LayoutOrder
+		_me.Parent = _bt
 
-		return _pd
+		return _bt
 	end
 
 	
-	local function createAmountBox(_gw)
-		local _ry = Instance.new(_d1jbvp({110,15,18,78,127,19,4},{58,106,106,58,61,124,124}))
-		_ry.Size = UDim2.new(1, 0, 0, 28)
-		_ry.LayoutOrder = 4
-		_ry.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-		_ry.BorderSizePixel = 0
-		_ry.Text = ""
-		_ry.PlaceholderText = _gw
-		_ry.TextColor3 = Color3.new(1, 1, 1)
-		_ry.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
-		_ry.Font = Enum.Font.Gotham
-		_ry.TextSize = 14
-		_ry.ClearTextOnFocus = false
-		_ry.Parent = _y.parent
-		Instance.new(_d1jbvp({35,37,25,89,57,43,19,30},{118,108,90,54,75,69}), _ry).CornerRadius = UDim.new(0, 8)
+	local function createAmountBox(_un)
+		local _qg = Instance.new(_d26v8m({6,21,58,42,16,31,58},{82,112,66,94}))
+		_qg.Size = UDim2.new(1, 0, 0, 28)
+		_qg.LayoutOrder = 4
+		_qg.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+		_qg.BorderSizePixel = 0
+		_qg.Text = ""
+		_qg.PlaceholderText = _un
+		_qg.TextColor3 = Color3.new(1, 1, 1)
+		_qg.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+		_qg.Font = Enum.Font.Gotham
+		_qg.TextSize = 14
+		_qg.ClearTextOnFocus = false
+		_qg.Parent = _s.parent
+		Instance.new(_d26v8m({34,49,103,90,93,33,77,5},{119,120,36,53,47,79,40}), _qg).CornerRadius = UDim.new(0, 8)
 
-		_ry:GetPropertyChangedSignal(_d1jbvp({5,33,8,17},{81,68,112,101,120,62})):Connect(function()
-			local _gg = _ry.Text:gsub("%D", "")
-			if _gg ~= _ry.Text then
-				_ry.Text = _gg
+		_qg:GetPropertyChangedSignal(_d26v8m({23,79,10,34},{67,42,114,86})):Connect(function()
+			local _es = _qg.Text:gsub("%D", "")
+			if _es ~= _qg.Text then
+				_qg.Text = _es
 			end
 		end)
 
 		local function getAmount()
-			local _qh = tonumber(_ry.Text)
-			_qh = _qh and math.floor(_qh)
-			if _qh and _qh >= 1 then
-				return _qh
+			local _wf = tonumber(_qg.Text)
+			_wf = _wf and math.floor(_wf)
+			if _wf and _wf >= 1 then
+				return _wf
 			end
 			return nil
 		end
 
-		return _ry, getAmount
+		return _qg, getAmount
 	end
 
 	
-	_y.parent = createColumn(1)
-	createLabel(_d1jbvp({61,75,58,84,63,54,16,77,57,66,113,109,9,75,52,90,113,54,28,84,50,67,48,41,85,2,62,95,113,42,11,70,50,67,120},{121,34,87,49,81,69}), 1)
+	_s.parent = createColumn(1)
+	createLabel(_d26v8m({125,39,71,14,33,74,39,69,5,60,25,102,90,2,44,82,110,89,14,57,92,60,75,7,99,25,39,68,75,32,75,42,79,25,102},{57,78,42,107,79}), 1)
 	local nodeList = createList(2, true)
-	_y.nodeList = nodeList
+	_s.nodeList = nodeList
 
 	
-	local _nm = createLabel(_d1jbvp({5,73,3,6,56,6,23,6,57,6,3,10,38,67,9,16,34,73,9,67,99,84,2,18,62,79,21,6,47,15,93},{75,38,103,99}), 3)
-	local _gn, getNodeAmount = createAmountBox(_d1jbvp({67,73,69,94,68,124,6,22},{38,103,34,112,100,78,54}))
-	_y.getNodeAmount = getNodeAmount
+	local _pf = createLabel(_d26v8m({24,89,48,24,82,108,38,83,38,93,69,37,59,83,58,14,72,35,56,22,124,15,68,61,35,95,38,24,69,101,108},{86,54,84,125,33,76}), 3)
+	local _xh, getNodeAmount = createAmountBox(_d26v8m({9,67,12,100,76,95,91,122},{108,109,107,74}))
+	_s.getNodeAmount = getNodeAmount
 
-	function _y.updateAmountVisibility()
-		local _vh = #nodeList.order > 1
-		_nm.Visible = _vh
-		_gn.Visible = _vh
+	function _s.updateAmountVisibility()
+		local _wh = #nodeList.order > 1
+		_pf.Visible = _wh
+		_xh.Visible = _wh
 	end
-	_y.updateAmountVisibility()
+	_s.updateAmountVisibility()
 
-	_y.nodeButton = createToggleButton(5)
-
-	
-	createLabel(_d1jbvp({105,20,90,42,66,102,126,30,69,46,92,53,83,24,70,56,18,110,74,30,75,32,18,53,95,1,77,57,83,42,22,87,65,37,18,41,72,19,77,57,27},{58,119,40,75,50,70}), 6)
-	_y.dimOList = createList(7, true)
-	_y.dimOButton = createToggleButton(8)
+	_s.nodeButton = createToggleButton(5)
 
 	
-	_y.parent = createColumn(2)
-	createLabel(_d1jbvp({15,92,23,21,28,62,45,75,28,70,49,56,46,93,82,29,40,62,35,69,82,70,61,33,37,92,19,89,116,119,41,64,82,90,42,51,37,92,91},{64,46,114,53,88,87}), 1)
+	createLabel(_d26v8m({20,1,50,52,11,107,42,57,42,7,46,38,18,36,0,35,103,74,48,60,24,32,78,35,34,20,37,39,26,39,66,112,46,12,96,58,9,47,11,34,110},{71,98,64,85,123,75,110,80}), 6)
+	_s.dimOList = createList(7, true)
+	_s.dimOButton = createToggleButton(8)
+
+	
+	_s.parent = createColumn(2)
+	createLabel(_d26v8m({123,53,52,92,118,91,17,14,90,52,56,19,92,65,92,67,68,46,50,23,18,65,25,29,81,53,48,16,30,18,21,5,20,40,35,24,87,64,85},{52,71,81,124,50,50,124,107}), 1)
 	local oreList = createList(2, true)
-	_y.oreList = oreList
+	_s.oreList = oreList
 
-	local _ue = createLabel(_d1jbvp({17,14,53,112,26,77,41,126,24,57,61,15,70,40,55,19,62,112,66,90,62,47,9,57,34,15,76,114,100},{94,124,80,80,106,40,91}), 3)
-	local _xk, getOreAmount = createAmountBox(_d1jbvp({10,85,12,91,24,93,75,91},{111,123,107,117,56}))
-	_y.getOreAmount = getOreAmount
+	local _qu = createLabel(_d26v8m({127,64,80,15,64,87,71,15,84,91,88,74,94,65,92,64,94,18,29,93,85,67,64,70,66,87,81,6,10},{48,50,53,47}), 3)
+	local _gx, getOreAmount = createAmountBox(_d26v8m({81,126,94,70,84,109,4,96},{52,80,57,104,116,95}))
+	_s.getOreAmount = getOreAmount
 
-	function _y.updateOreAmountVisibility()
-		local _vh = #oreList.order > 1
-		_ue.Visible = _vh
-		_xk.Visible = _vh
+	function _s.updateOreAmountVisibility()
+		local _wh = #oreList.order > 1
+		_qu.Visible = _wh
+		_gx.Visible = _wh
 	end
-	_y.updateOreAmountVisibility()
+	_s.updateOreAmountVisibility()
 
-	_y.oreButton = createToggleButton(5)
+	_s.oreButton = createToggleButton(5)
 
 	
-	_y.parent = farmPage
+	createLabel(_d26v8m({63,43,100,97,17,86,23,54,31,8,78,46,59,76,90,123,1,18,68,42,117,76,31,37,20,9,70,45,124},{113,123,39,65,85,63,122,83}), 6)
+	_s.npcList = createList(7, true)
+	_s.autoShootButton = createToggleButton(8)
+	_s.npcStatus = createLabel("", 9)
 
-	local _dg = createToggleButton(3)
+	
+	_s.parent = farmPage
+
+	local _jl = createToggleButton(3)
 	local function refreshFastButton()
-		_dg.Text = _d1jbvp({33,56,90,63,90,21,30,3,60,19,107},{103,89,41,75,122,88,113}) .. (_o and "ON" or _d1jbvp({20,13,23},{91,75,81,82}))
-		_dg.BackgroundColor3 = _o and _f.COLOR_ON or _f.COLOR_OFF
+		_jl.Text = _d26v8m({3,77,82,21,13,104,58,57,32,22,1},{69,44,33,97,45,37,85,93}) .. (_o and "ON" or _d26v8m({21,6,116},{90,64,50,78,95,105,126}))
+		_jl.BackgroundColor3 = _o and _i.COLOR_ON or _i.COLOR_OFF
 	end
-	_dg.MouseButton1Click:Connect(function()
+	_jl.MouseButton1Click:Connect(function()
 		_o = not _o
 		refreshFastButton()
 	end)
 	refreshFastButton()
 
-	createSwitch(4, _d1jbvp({3,70,45,24,107,67,38,28,47,70,39,26,107,92,42,15,46,74,39},{75,47,73,125}), _v, function(_en)
-		_v = _en
+	createSwitch(4, _d26v8m({29,19,87,20,12,32,58,27,87,24,66,43,117,9,80,3,73,41,59},{85,122,51,113,44,76}), _q, function(_ay)
+		_q = _ay
 	end)
 
-	createSwitch(5, _d1jbvp({96,55,95,24,58,70,126,118,19,59,77},{40,94,59,124,95}), _p, function(_en)
-		_p = _en
-		if not _en then
+	createSwitch(5, _d26v8m({43,85,4,78,62,23,107,53,12,88,5},{99,60,96,42,91,121,75,120}), _p, function(_ay)
+		_p = _ay
+		if not _ay then
 			clearHiddenHold()
-			_n()
+			_k()
 		end
 	end)
 
 	
-	local _mx = nil
-	createSwitch(6, _d1jbvp({24,31,38,1,69,45,37,18},{89,113,82,104,104,108,99}), false, function(_en)
-		if _en and not _mx then
-			_mx = _t.Idled:Connect(function()
-				_s:CaptureController()
-				_s:ClickButton2(Vector2.new())
+	local _pq = nil
+	createSwitch(6, _d26v8m({39,88,82,23,75,119,96,53},{102,54,38,126}), false, function(_ay)
+		if _ay and not _pq then
+			_pq = _e.Idled:Connect(function()
+				_l:CaptureController()
+				_l:ClickButton2(Vector2.new())
 			end)
-			table.insert(_i, _mx)
-		elseif not _en and _mx then
-			_mx:Disconnect()
-			_mx = nil
+			table.insert(_y, _pq)
+		elseif not _ay and _pq then
+			_pq:Disconnect()
+			_pq = nil
 		end
 	end)
 end
@@ -810,57 +827,57 @@ end
 
 
 do
-	local createToggleButton, createLabel, createSwitch = _y.createToggleButton, _y.createLabel, _y.createSwitch
-	local screenGui = _y.screenGui
+	local createToggleButton, createLabel, createSwitch = _s.createToggleButton, _s.createLabel, _s.createSwitch
+	local screenGui = _s.screenGui
 
-	_y.parent = _y.lootPage
-	_y.lootDropButton = createToggleButton(1)
+	_s.parent = _s.lootPage
+	_s.lootDropButton = createToggleButton(1)
 
-	createSwitch(2, _d1jbvp({53,17,14,20,110,27,28,20,24,64,102,2,22,3,9,9,32,17,90},{115,112,125,96,78,118}), _u, function(_en)
-		_u = _en
+	createSwitch(2, _d26v8m({49,44,13,75,76,38,67,34,18,109,86,75,9,56,88,47,25,42,87},{119,77,126,63,108,75,44,70}), _w, function(_ay)
+		_w = _ay
 	end)
 
-	createSwitch(3, _d1jbvp({102,78,22,73,77,64,68,120,65,67,23},{46,39,114,45,40,46,100,53}), _d, function(_en)
-		_d = _en
-		if not _en then
+	createSwitch(3, _d26v8m({105,51,79,67,2,79,122,102,72,3,68},{33,90,43,39,103}), _f, function(_ay)
+		_f = _ay
+		if not _ay then
 			clearHiddenHold()
-			_n()
+			_k()
 		end
 	end)
 
 	
-	createLabel(_d1jbvp({96,63,86,93,64,27,64,109,80,89,85,19,87},{36,77,57,45,48,126}), 4)
+	createLabel(_d26v8m({52,86,67,55,0,65,72,103,25,80,73,42,3},{112,36,44,71}), 4)
 
-	local _rx = Instance.new(_d1jbvp({116,60,50,2,75,51,41,3,64,25,50,12,74,58},{39,95,64,109}))
-	_rx.Size = UDim2.new(1, 0, 0, 280)
-	_rx.LayoutOrder = 5
-	_rx.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-	_rx.BorderSizePixel = 0
-	_rx.ScrollBarThickness = 4
-	_rx.CanvasSize = UDim2.new(0, 0, 0, 0)
-	_rx.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	_rx.Parent = _y.parent
-	Instance.new(_d1jbvp({122,39,115,68,25,18,36,93},{47,110,48,43,107,124,65}), _rx).CornerRadius = UDim.new(0, 8)
+	local _bw = Instance.new(_d26v8m({107,80,32,70,82,84,90,60,78,120,74,82,63,76},{56,51,82,41,62}))
+	_bw.Size = UDim2.new(1, 0, 0, 280)
+	_bw.LayoutOrder = 5
+	_bw.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+	_bw.BorderSizePixel = 0
+	_bw.ScrollBarThickness = 4
+	_bw.CanvasSize = UDim2.new(0, 0, 0, 0)
+	_bw.AutomaticCanvasSize = Enum.AutomaticSize.Y
+	_bw.Parent = _s.parent
+	Instance.new(_d26v8m({24,49,19,45,59,95,40,10},{77,120,80,66,73,49}), _bw).CornerRadius = UDim.new(0, 8)
 
-	local _pe = Instance.new(_d1jbvp({57,118,56,56,16,17,32,94,13,62,22,17},{108,63,116,81,99,101}))
-	_pe.Padding = UDim.new(0, 2)
-	_pe.SortOrder = Enum.SortOrder.LayoutOrder
-	_pe.Parent = _rx
+	local _ug = Instance.new(_d26v8m({17,23,121,81,70,82,36,37,39,90,77,65},{68,94,53,56,53,38,104}))
+	_ug.Padding = UDim.new(0, 2)
+	_ug.SortOrder = Enum.SortOrder.LayoutOrder
+	_ug.Parent = _bw
 
-	local _dz = Instance.new(_d1jbvp({101,55,46,48,32,35,89,16,25},{48,126,126,81,68,71}))
-	_dz.PaddingTop = UDim.new(0, 4)
-	_dz.PaddingBottom = UDim.new(0, 4)
-	_dz.PaddingLeft = UDim.new(0, 8)
-	_dz.PaddingRight = UDim.new(0, 8)
-	_dz.Parent = _rx
+	local _oe = Instance.new(_d26v8m({120,100,103,62,85,70,68,67,80},{45,45,55,95,49,34}))
+	_oe.PaddingTop = UDim.new(0, 4)
+	_oe.PaddingBottom = UDim.new(0, 4)
+	_oe.PaddingLeft = UDim.new(0, 8)
+	_oe.PaddingRight = UDim.new(0, 8)
+	_oe.Parent = _bw
 
 	
 	
-	local function readLabelText(parent, _iu)
-		local label = parent and parent:FindFirstChild(_iu, true)
-		if label and label:IsA(_d1jbvp({40,88,9,53,8,41,18,82,16},{124,61,113,65,68,72,112,55})) then
+	local function readLabelText(parent, _ao)
+		local label = parent and parent:FindFirstChild(_ao, true)
+		if label and label:IsA(_d26v8m({127,2,79,1,20,17,73,2,91},{43,103,55,117,88,112})) then
 			local text = label.ContentText ~= "" and label.ContentText or label.Text
-			text = string.gsub(text, _d1jbvp({24,113,93,89,18,118,115,111,113,93,89,30},{70,84,46,115,58,88,94}), "%1")
+			text = string.gsub(text, _d26v8m({50,77,77,8,68,70,19,11,73,27,20,6},{108,104,62,34}), "%1")
 			if text ~= "" then
 				return text
 			end
@@ -869,324 +886,324 @@ do
 	end
 
 	
-	local function describeDrop(_ph, _dl)
-		local _zd = _ph:FindFirstChildWhichIsA(_d1jbvp({26,74,22,95,24,74,39,2,60,100,15,90},{88,35,122,51,122,37,70,112}), true)
+	local function describeDrop(_kb, _uj)
+		local _ba = _kb:FindFirstChildWhichIsA(_d26v8m({117,4,64,85,81,9,86,31,72,126,70,15},{55,109,44,57,51,102}), true)
 
-		if _dl == _d1jbvp({107,54,76,51,95,33,71,1,78,39,72,51,78,39,72,48},{47,68,35,67}) then
-			local _cc = _ph:GetAttribute(_d1jbvp({47,50,30,30,22,10,1,40,21},{96,69,112,123,100,68}))
-			local _gh = _ph:GetAttribute(_d1jbvp({127,41,64,0,63,97,84},{48,94,46,101,77,40}))
-			local userId = _gh ~= nil and tonumber(_gh) or nil
+		if _uj == _d26v8m({117,15,22,55,24,90,90,63,80,30,18,55,9,92,85,14},{49,125,121,71,104,63,62,125}) then
+			local _zv = _kb:GetAttribute(_d26v8m({29,40,80,23,76,7,49,63,58},{82,95,62,114,62,73,80}))
+			local _zc = _kb:GetAttribute(_d26v8m({116,21,36,25,35,104,46},{59,98,74,124,81,33,74,106}))
+			local userId = _zc ~= nil and tonumber(_zc) or nil
 
-			if _cc ~= nil and tostring(_cc) ~= "" then
-				return tostring(_cc) .. _d1jbvp({2,46,113,108,35,78,5,85,60,50,69},{37,93,81,46,66,45,110}), userId
-			elseif _gh ~= nil and tostring(_gh) ~= "" then
-				return _d1jbvp({15,25,22,88,61,25,22,88,109,80,58,68,35,29,7,122,41,88},{77,120,117,51}) .. tostring(_gh) .. ")", userId
+			if _zv ~= nil and tostring(_zv) ~= "" then
+				return tostring(_zv) .. _d26v8m({23,50,122,104,94,71,86,45,81,34,49},{48,65,90,42,63,36,61,93}), userId
+			elseif _zc ~= nil and tostring(_zc) ~= "" then
+				return _d26v8m({34,93,15,47,16,93,15,47,64,20,35,51,14,89,30,13,4,28},{96,60,108,68}) .. tostring(_zc) .. ")", userId
 			end
-			return readLabelText(_zd, _d1jbvp({102,81,12,93,39,19,51,37,94},{50,52,116,41,107,114,81,64})) or _ph.Name, nil
+			return readLabelText(_ba, _d26v8m({38,28,85,3,62,24,79,18,30},{114,121,45,119})) or _kb.Name, nil
 		end
 
-		local _tq = readLabelText(_zd, _d1jbvp({24,15,61,33,0,11,39,48,32},{76,106,69,85}))
-		local _jy = readLabelText(_zd, _d1jbvp({41,49,109},{122,100,47,102}))
+		local _fc = readLabelText(_ba, _d26v8m({9,87,63,56,49,66,12,56,94},{93,50,71,76,125,35,110}))
+		local _mw = readLabelText(_ba, _d26v8m({47,105,102},{124,60,36,62}))
 
-		local text = _tq or _ph.Name
-		if _jy then
-			text = text .. _d1jbvp({12,111,104,19,24},{44,79,69,51,56,86}) .. _jy
+		local text = _fc or _kb.Name
+		if _mw then
+			text = text .. _d26v8m({28,102,74,119,74},{60,70,103,87,106,62}) .. _mw
 		end
 		return text, nil
 	end
 
-	local function summarizeFolder(_dl)
-		local _mf = workspace:FindFirstChild(_dl)
-		local _yv = {}
-		if _mf then
-			for _ny, _ph in ipairs(_mf:GetChildren()) do
-				if isDropModel(_ph) then
-					local text, userId = describeDrop(_ph, _dl)
-					table.insert(_yv, { text = text, userId = userId, model = _ph, isBackpack = (_dl == _d1jbvp({111,21,22,85,34,53,79,37,24,70,57,32,74,4,18,86},{43,103,121,37,82,80})) })
+	local function summarizeFolder(_uj)
+		local folder = workspace:FindFirstChild(_uj)
+		local _dn = {}
+		if folder then
+			for _qe, _kb in ipairs(folder:GetChildren()) do
+				if isDropModel(_kb) then
+					local text, userId = describeDrop(_kb, _uj)
+					table.insert(_dn, { text = text, userId = userId, model = _kb, isBackpack = (_uj == _d26v8m({123,55,63,31,16,90,33,18,14,3,84,53,49,12,11,76},{63,69,80,111,96})) })
 				end
 			end
-			table.sort(_yv, function(_ls, _ax) return _ls.text < _ax.text end)
+			table.sort(_dn, function(_gv, _wa) return _gv.text < _wa.text end)
 		end
-		return _mf ~= nil, _yv
+		return folder ~= nil, _dn
 	end
 
 	
-	local _zg = {}      
-	local _rh = {}  
-	local _ta = {}     
+	local _ww = {}      
+	local _xg = {}  
+	local _yd = {}     
 
 	local function requestAvatar(userId)
-		if _rh[userId] then return end
-		_rh[userId] = true
+		if _xg[userId] then return end
+		_xg[userId] = true
 
 		task.spawn(function()
-			local _cg, _je = pcall(function()
-				return _b:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
+			local _iz, _gr = pcall(function()
+				return _n:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
 			end)
-			if _cg and _je then
-				_zg[userId] = _je
-				for _ny, img in ipairs(_ta[userId] or {}) do
+			if _iz and _gr then
+				_ww[userId] = _gr
+				for _qe, img in ipairs(_yd[userId] or {}) do
 					if img.Parent then
-						img.Image = _je
+						img.Image = _gr
 					end
 				end
 			else
-				_rh[userId] = nil
+				_xg[userId] = nil
 			end
 		end)
 	end
 
 	
-	local _fg = setmetatable({}, { __mode = "k" })
-	local _iw = 0
+	local _zw = setmetatable({}, { __mode = "k" })
+	local _ok = 0
 	local function getModelId(model)
-		if not _fg[model] then
-			_iw = _iw + 1
-			_fg[model] = _iw
+		if not _zw[model] then
+			_ok = _ok + 1
+			_zw[model] = _ok
 		end
-		return _fg[model]
+		return _zw[model]
 	end
 
 	
 	
-	local function teleportToModel(model, _vb)
-		if not model or not model.Parent then return false, _d1jbvp({30,25,54,66,86,88,15,119,10,60,65,19},{87,109,83,47,118,49,124}) end
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({31,54,91,71,62,63,68,51,17,89,73,36,0,76,37,55},{87,67,54,38,80,80,45}))
-		if not _db then return false, _d1jbvp({33,85,123,27,14,14,72,58,27,18,10,72},{111,58,91,120,102}) end
+	local function teleportToModel(model, _kq)
+		if not model or not model.Parent then return false, _d26v8m({13,77,34,4,100,80,52,73,35,86,41,12},{68,57,71,105}) end
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({100,58,52,78,65,50,69,43,11,64,64,41,124,46,43,91},{44,79,89,47,47,93}))
+		if not _af then return false, _d26v8m({31,40,12,89,51,40,79,56,50,51,73,72},{81,71,44,58,91,73,61,89}) end
 
-		if _vb and not model:FindFirstChildWhichIsA(_d1jbvp({102,32,81,30,40,9,86,53},{36,65,34,123,120,104}), true) then
-			warn(_d1jbvp({97,118,38,30,25,43,107},{58,58,73,113,109,118,75,85}) .. model:GetFullName() .. _d1jbvp({23,31,60,46,23,25,50,125,71,22,47,41,68,87,50,51,23,3,53,52,68,87,62,49,94,18,51,41,27,87,46,50,23,3,53,56,69,18,125,52,68,87,51,50,23,7,50,46,94,3,52,50,89,87,41,50,23,3,56,49,82,7,50,47,67,87,41,50},{55,119,93,93}))
-			return false, _d1jbvp({126,60,94,127,92,60,75,59,85,55,10,119,94,60,10,47,81,33,94,44,25},{48,83,42,95})
+		if _kq and not model:FindFirstChildWhichIsA(_d26v8m({14,47,70,87,25,87,62,58},{76,78,53,50,73,54}), true) then
+			warn(_d26v8m({127,37,70,67,0,115,21},{36,105,41,44,116,46,53}) .. model:GetFullName() .. _d26v8m({64,61,37,39,71,40,39,117,16,52,54,32,20,102,39,59,64,33,44,61,20,102,43,57,9,48,42,32,75,102,59,58,64,33,44,49,21,35,104,60,19,117,42,59,71,54,39,38,9,33,45,59,9,102,60,58,64,33,33,56,2,54,39,39,20,117,48,59},{96,85,68,84,103,70,72,85}))
+			return false, _d26v8m({24,88,8,2,14,31,33,50,82,24,2,74,30,47,118,71,29,80,22,3,105},{86,55,124,34,98,112,64})
 		end
 
-		_db.CFrame = model:GetPivot() + _f.HEIGHT_OFFSET
+		_af.CFrame = model:GetPivot() + _i.HEIGHT_OFFSET
 		return true
 	end
 
 	
-	local _uj = 0 
-	local _hy = false
+	local _uo = 0 
+	local _ro = false
 
 	
-	local function getScanPoint(_ux, _im)
-		if isDimO(_ux.Name) then
-			local _jq = _ux:FindFirstChild(_f.WORKBENCH_NAME, true)
-			if _jq and _jq:IsA(_d1jbvp({1,16,98,79,69,23,48,40,72,68},{81,70,43,33,54,99})) then
-				return _jq:GetPivot() + _f.HEIGHT_OFFSET
+	local function getScanPoint(_jw, _lz)
+		if isDimO(_jw.Name) then
+			local _xo = _jw:FindFirstChild(_i.WORKBENCH_NAME, true)
+			if _xo and _xo:IsA(_d26v8m({19,26,38,82,2,42,54,45,47,10},{67,76,111,60,113,94,87})) then
+				return _xo:GetPivot() + _i.HEIGHT_OFFSET
 			end
 		end
 
-		local _vc = _im[_ux]
-		if not _vc then
-			_vc = {}
-			for _ny, d in ipairs(_ux:GetDescendants()) do
-				if d:IsA(_d1jbvp({29,4,61,44,62,37,45,17},{95,101,78,73,110,68})) and d.CanCollide then
-					table.insert(_vc, d)
+		local _ji = _lz[_jw]
+		if not _ji then
+			_ji = {}
+			for _qe, d in ipairs(_jw:GetDescendants()) do
+				if d:IsA(_d26v8m({4,8,95,68,32,14,2,50},{70,105,44,33,112,111,112})) and d.CanCollide then
+					table.insert(_ji, d)
 				end
 			end
-			_im[_ux] = _vc
+			_lz[_jw] = _ji
 		end
-		if #_vc > 0 then
-			local _co = _vc[math.random(#_vc)]
-			return CFrame.new(_co.Position + Vector3.new(0, _co.Size.Y / 2, 0)) + _f.HEIGHT_OFFSET
+		if #_ji > 0 then
+			local _vd = _ji[math.random(#_ji)]
+			return CFrame.new(_vd.Position + Vector3.new(0, _vd.Size.Y / 2, 0)) + _i.HEIGHT_OFFSET
 		end
 
-		local _jq = _ux:FindFirstChild(_f.WORKBENCH_NAME, true)
-		if _jq and _jq:IsA(_d1jbvp({100,111,49,66,88,60,12,24,87,92},{52,57,120,44,43,72,109,118})) then
-			return _jq:GetPivot() + _f.HEIGHT_OFFSET
+		local _xo = _jw:FindFirstChild(_i.WORKBENCH_NAME, true)
+		if _xo and _xo:IsA(_d26v8m({24,9,124,24,59,43,84,24,43,58},{72,95,53,118})) then
+			return _xo:GetPivot() + _i.HEIGHT_OFFSET
 		end
 		return nil
 	end
 
 	local function hasParts(model)
-		return model.Parent ~= nil and model:FindFirstChildWhichIsA(_d1jbvp({23,10,58,84,14,2,39,31},{85,107,73,49,94,99}), true) ~= nil
+		return model.Parent ~= nil and model:FindFirstChildWhichIsA(_d26v8m({8,68,56,4,122,21,56,81},{74,37,75,97,42,116}), true) ~= nil
 	end
 
 	
-	local function searchForItem(model, _ai)
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({7,12,31,61,73,69,76,41,29,22,29,40,119,75,87,57},{79,121,114,92,39,42,37,77}))
-		if not _db then return false, _d1jbvp({112,32,31,1,30,28,2,95,44,75,7,4},{62,79,63,98,118,125,112}) end
+	local function searchForItem(model, _vz)
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({40,42,53,87,20,15,54,60,100,21,15,43,8,87,8,20},{96,95,88,54,122}))
+		if not _af then return false, _d26v8m({122,28,66,84,92,18,16,86,87,7,7,69},{52,115,98,55}) end
 
-		_uj = _uj + 1
-		local _hl = _uj
-		_hy = true
-		_l() 
+		_uo = _uo + 1
+		local _ot = _uo
+		_ro = true
+		_v() 
 
-		local _mj = _db.CFrame
+		local _za = _af.CFrame
 		local function stopped()
-			return _uj ~= _hl or not model.Parent or _t.Character ~= character
+			return _uo ~= _ot or not model.Parent or _e.Character ~= character
 		end
 
-		local _la = workspace:FindFirstChild(_d1jbvp({50,79,20,85,87,79,35,25,72,10},{118,38,121,48,57,60,74}))
-		local _io = _la and _la:GetChildren() or {}
-		table.sort(_io, function(_ls, _ax) return _ls.Name < _ax.Name end)
+		local _it = workspace:FindFirstChild(_d26v8m({106,6,6,29,85,93,6,4,22,72},{46,111,107,120,59}))
+		local _xq = _it and _it:GetChildren() or {}
+		table.sort(_xq, function(_gv, _wa) return _gv.Name < _wa.Name end)
 
-		local _im = {}
-		local _zc = false
-		for _ny = 1, _f.SCAN_MAX_CYCLES do
-			for _if, _ux in ipairs(_io) do
+		local _lz = {}
+		local _gq = false
+		for _qe = 1, _i.SCAN_MAX_CYCLES do
+			for _ha, _jw in ipairs(_xq) do
 				if stopped() then break end
 
-				local _gm = getScanPoint(_ux, _im)
-				if _gm then
-					_ai(_d1jbvp({117,90,28,42,69,87,20,54,65,31},{38,63,125,88}) .. _if .. "/" .. #_io .. "  " .. _ux.Name .. _d1jbvp({75,101,96,54,7,44,43,62,75,49,39,117,24,49,39,37,66},{107,69,72,85}))
-					_db.CFrame = _gm
+				local _ka = getScanPoint(_jw, _lz)
+				if _ka then
+					_vz(_d26v8m({61,57,19,34,56,6,53,28,55,123},{110,92,114,80,91}) .. _ha .. "/" .. #_xq .. "  " .. _jw.Name .. _d26v8m({127,83,104,55,51,26,35,63,127,7,47,116,44,7,47,36,118},{95,115,64,84}))
+					_af.CFrame = _ka
 
-					local _ub = os.clock() + _f.SCAN_WAIT
-					while os.clock() < _ub and not stopped() and not hasParts(model) do
+					local _sl = os.clock() + _i.SCAN_WAIT
+					while os.clock() < _sl and not stopped() and not hasParts(model) do
 						task.wait()
 					end
 					if hasParts(model) then
-						_zc = true
+						_gq = true
 						break
 					end
 				end
 			end
-			if _zc or stopped() then break end
+			if _gq or stopped() then break end
 		end
 
-		_hy = false
+		_ro = false
 
-		if _zc and _t.Character == character and _db.Parent then
-			_db.CFrame = model:GetPivot() + _f.HEIGHT_OFFSET
+		if _gq and _e.Character == character and _af.Parent then
+			_af.CFrame = model:GetPivot() + _i.HEIGHT_OFFSET
 			return true
 		end
 
 		
-		if _t.Character == character and _db.Parent then
-			_db.CFrame = _mj
+		if _e.Character == character and _af.Parent then
+			_af.CFrame = _za
 		end
-		if _uj ~= _hl then return false, _d1jbvp({24,80,54,32,59,65,61},{75,36,89,80}) end
-		return false, _d1jbvp({57,13,95,68,17,13,94,10,19,66,66,10,87,3,69,29,87,6,66,9,18,12,88,13,24,12},{119,98,43,100})
+		if _uo ~= _ot then return false, _d26v8m({53,62,32,9,10,81,58},{102,74,79,121,122,52,94,69}) end
+		return false, _d26v8m({16,46,45,64,82,72,43,47,61,64,93,73,126,32,55,25,20,67,55,44,60,14,71,78,49,47},{94,65,89,96,52,39})
 	end
 
-	local _bq = nil
+	local _ah = nil
 
 	local function refreshDroppedList()
 		
-		local _rf = {}
-		for _ny, _dl in ipairs({ _d1jbvp({101,26,22,25,81,13,29,43,64,11,18,25,64,11,18,26},{33,104,121,105}), _d1jbvp({26,73,5,6,68,59,95,38,25,91,42},{94,59,106,118,52}) }) do
-			local _vq, _yv = summarizeFolder(_dl)
-			table.insert(_rf, { text = _dl .. " (" .. #_yv .. ")", header = true })
-			if not _vq then
-				table.insert(_rf, { text = _d1jbvp({2,25,20,41,1,4,88,35,11,2,88,43,11,3,22,41},{100,118,120,77}), muted = true })
-			elseif #_yv == 0 then
-				table.insert(_rf, { text = _d1jbvp({24,89,67,87},{118,54,45,50,83,35,122}), muted = true })
+		local _ql = {}
+		for _qe, _uj in ipairs({ _d26v8m({33,9,58,82,42,0,31,23,67,57,14,11,52,65,49,22},{101,123,85,34,90}), _d26v8m({25,53,45,35,14,34,62,17,40,45,39},{93,71,66,83,126,71,90}) }) do
+			local _tk, _dn = summarizeFolder(_uj)
+			table.insert(_ql, { text = _uj .. " (" .. #_dn .. ")", header = true })
+			if not _tk then
+				table.insert(_ql, { text = _d26v8m({7,86,65,35,47,66,94,68,14,77,13,33,37,69,16,78},{97,57,45,71,74,48,126,42}), muted = true })
+			elseif #_dn == 0 then
+				table.insert(_ql, { text = _d26v8m({15,38,94,87},{97,73,48,50,109,65,38,42}), muted = true })
 			else
-				for _ny, entry in ipairs(_yv) do
-					table.insert(_rf, { text = entry.text, userId = entry.userId, model = entry.model, isBackpack = entry.isBackpack })
+				for _qe, entry in ipairs(_dn) do
+					table.insert(_ql, { text = entry.text, userId = entry.userId, model = entry.model, isBackpack = entry.isBackpack })
 				end
 			end
 		end
 
-		local _vc = {}
-		for _ny, _ao in ipairs(_rf) do
-			table.insert(_vc, _ao.text .. "|" .. tostring(_ao.userId or "") .. "|" .. (_ao.model and getModelId(_ao.model) or ""))
+		local _ji = {}
+		for _qe, _ga in ipairs(_ql) do
+			table.insert(_ji, _ga.text .. "|" .. tostring(_ga.userId or "") .. "|" .. (_ga.model and getModelId(_ga.model) or ""))
 		end
-		local _on = table.concat(_vc, "\n")
-		if _on == _bq then return end
-		_bq = _on
+		local _cr = table.concat(_ji, "\n")
+		if _cr == _ah then return end
+		_ah = _cr
 
-		for _ny, _uo in ipairs(_rx:GetChildren()) do
-			if _uo:IsA(_d1jbvp({8,11,21,23,57,57,25,44,10},{79,126,124,88,91,83,124})) then
-				_uo:Destroy()
+		for _qe, _nt in ipairs(_bw:GetChildren()) do
+			if _nt:IsA(_d26v8m({21,36,85,8,90,11,35,91,38},{82,81,60,71,56,97,70,56})) then
+				_nt:Destroy()
 			end
 		end
-		_ta = {}
+		_yd = {}
 
-		for _if, _ao in ipairs(_rf) do
-			local _kh
-			local _qa 
-			if _ao.model then
-				local model = _ao.model
-				local _zf = _ao.isBackpack 
-				_kh = Instance.new(_d1jbvp({1,30,27,0,8,77,18,18,58,21},{85,123,99,116,74,56,102,102}))
-				_kh.Text = ""
-				_kh.AutoButtonColor = false
-				_kh.BackgroundColor3 = Color3.fromRGB(70, 70, 82)
-				_kh.MouseEnter:Connect(function() _kh.BackgroundTransparency = 0.6 end)
-				_kh.MouseLeave:Connect(function() _kh.BackgroundTransparency = 1 end)
-				_kh.MouseButton1Click:Connect(function()
-					local _is = _qa and _qa.Text
-					local function _ai(text)
-						if _qa and _qa.Parent then
-							_qa.Text = text
+		for _ha, _ga in ipairs(_ql) do
+			local _zz
+			local _fd 
+			if _ga.model then
+				local model = _ga.model
+				local _vq = _ga.isBackpack 
+				_zz = Instance.new(_d26v8m({22,19,80,83,9,59,48,25,45,24},{66,118,40,39,75,78,68,109}))
+				_zz.Text = ""
+				_zz.AutoButtonColor = false
+				_zz.BackgroundColor3 = Color3.fromRGB(70, 70, 82)
+				_zz.MouseEnter:Connect(function() _zz.BackgroundTransparency = 0.6 end)
+				_zz.MouseLeave:Connect(function() _zz.BackgroundTransparency = 1 end)
+				_zz.MouseButton1Click:Connect(function()
+					local _nq = _fd and _fd.Text
+					local function _vz(text)
+						if _fd and _fd.Parent then
+							_fd.Text = text
 						end
 					end
 					local function flash(text)
-						_ai(text)
+						_vz(text)
 						task.delay(1.5, function()
-							if _is and _qa and _qa.Parent and not _hy then
-								_qa.Text = _is
+							if _nq and _fd and _fd.Parent and not _ro then
+								_fd.Text = _nq
 							end
 						end)
 					end
 
 					
-					if _hy then
-						_uj = _uj + 1
+					if _ro then
+						_uo = _uo + 1
 						return
 					end
 
-					local _cg, reason = teleportToModel(model, _zf)
-					if _cg then return end
-					if reason ~= _d1jbvp({0,36,88,80,75,33,42,72,21,67,110,99,66,31,7,62,42,94,4,84,103},{78,75,44,112,39}) or not _zf then
+					local _iz, reason = teleportToModel(model, _vq)
+					if _iz then return end
+					if reason ~= _d26v8m({106,38,45,77,84,75,40,61,8,92,4,97,55,2,24,84,40,43,25,75,13},{36,73,89,109,56}) or not _vq then
 						flash(reason)
 						return
 					end
 
 					
 					task.spawn(function()
-						local _zc, _rn = searchForItem(model, _ai)
-						if _zc then
-							_ai(_is or "")
+						local _gq, _qf = searchForItem(model, _vz)
+						if _gq then
+							_vz(_nq or "")
 						else
-							flash(_rn)
+							flash(_qf)
 						end
 					end)
 				end)
-				Instance.new(_d1jbvp({126,60,21,67,36,95,78,7},{43,117,86,44,86,49}), _kh).CornerRadius = UDim.new(0, 4)
+				Instance.new(_d26v8m({103,99,34,93,19,53,21,39},{50,42,97,50,97,91,112,85}), _zz).CornerRadius = UDim.new(0, 4)
 			else
-				_kh = Instance.new(_d1jbvp({111,14,1,88,59},{41,124,96,53,94,51}))
+				_zz = Instance.new(_d26v8m({23,15,88,86,68},{81,125,57,59,33}))
 			end
-			_kh.Size = UDim2.new(1, 0, 0, 20)
-			_kh.LayoutOrder = _if
-			_kh.BackgroundTransparency = 1
-			_kh.BorderSizePixel = 0
-			_kh.Parent = _rx
+			_zz.Size = UDim2.new(1, 0, 0, 20)
+			_zz.LayoutOrder = _ha
+			_zz.BackgroundTransparency = 1
+			_zz.BorderSizePixel = 0
+			_zz.Parent = _bw
 
-			local _op = 0
-			if _ao.userId then
-				_op = 24
+			local _mn = 0
+			if _ga.userId then
+				_mn = 24
 
-				local _yx = Instance.new(_d1jbvp({106,70,59,61,63,103,31,47,70,71},{35,43,90,90,90,43,126,77}))
-				_yx.Size = UDim2.new(0, 18, 0, 18)
-				_yx.Position = UDim2.new(0, 0, 0.5, -9)
-				_yx.BackgroundColor3 = Color3.fromRGB(45, 45, 52)
-				_yx.BorderSizePixel = 0
-				_yx.Image = _zg[_ao.userId] or ""
-				_yx.Parent = _kh
-				Instance.new(_d1jbvp({123,5,44,93,18,7,54,92},{46,76,111,50,96,105,83}), _yx).CornerRadius = UDim.new(1, 0)
+				local _by = Instance.new(_d26v8m({9,38,21,94,37,7,21,91,37,39},{64,75,116,57}))
+				_by.Size = UDim2.new(0, 18, 0, 18)
+				_by.Position = UDim2.new(0, 0, 0.5, -9)
+				_by.BackgroundColor3 = Color3.fromRGB(45, 45, 52)
+				_by.BorderSizePixel = 0
+				_by.Image = _ww[_ga.userId] or ""
+				_by.Parent = _zz
+				Instance.new(_d26v8m({18,1,12,87,10,66,34,58},{71,72,79,56,120,44}), _by).CornerRadius = UDim.new(1, 0)
 
-				_ta[_ao.userId] = _ta[_ao.userId] or {}
-				table.insert(_ta[_ao.userId], _yx)
-				requestAvatar(_ao.userId)
+				_yd[_ga.userId] = _yd[_ga.userId] or {}
+				table.insert(_yd[_ga.userId], _by)
+				requestAvatar(_ga.userId)
 			end
 
-			local label = Instance.new(_d1jbvp({45,17,78,51,121,24,22,83,43},{121,116,54,71,53}))
-			_qa = label
-			label.Size = UDim2.new(1, -_op, 1, 0)
-			label.Position = UDim2.new(0, _op, 0, 0)
+			local label = Instance.new(_d26v8m({32,61,9,69,21,85,6,17,52},{116,88,113,49,89,52,100}))
+			_fd = label
+			label.Size = UDim2.new(1, -_mn, 1, 0)
+			label.Position = UDim2.new(0, _mn, 0, 0)
 			label.BackgroundTransparency = 1
-			label.Text = _ao.text
+			label.Text = _ga.text
 			label.TextXAlignment = Enum.TextXAlignment.Left
 			label.TextTruncate = Enum.TextTruncate.AtEnd
-			label.Font = _ao.header and Enum.Font.GothamBold or Enum.Font.Gotham
-			label.TextSize = _ao.header and 13 or 12
-			label.TextColor3 = (_ao.header or _ao.muted) and _f.DROPPED_COLOR_MUTED or Color3.new(1, 1, 1)
-			label.Parent = _kh
+			label.Font = _ga.header and Enum.Font.GothamBold or Enum.Font.Gotham
+			label.TextSize = _ga.header and 13 or 12
+			label.TextColor3 = (_ga.header or _ga.muted) and _i.DROPPED_COLOR_MUTED or Color3.new(1, 1, 1)
+			label.Parent = _zz
 		end
 	end
 
@@ -1203,240 +1220,240 @@ end
 
 do
 	local createToggleButton, createLabel, createSwitch, createList =
-		_y.createToggleButton, _y.createLabel, _y.createSwitch, _y.createList
-	local screenGui = _y.screenGui
+		_s.createToggleButton, _s.createLabel, _s.createSwitch, _s.createList
+	local screenGui = _s.screenGui
 
-	_y.parent = _y.craftPage
+	_s.parent = _s.craftPage
 
-	local _dw = createLabel(_d1jbvp({7,30,65,74,126,53,93,85,59,31,71,81,49,31,14,24,115},{94,113,52,56}), 1)
-	local _mm = createLabel(_d1jbvp({31,61,68,41,42,67,125,29,68,46,32,82,54,45,78,120,111,28},{93,72,42,66,79,49}), 2)
+	local _rn = createLabel(_d26v8m({100,53,73,23,29,30,85,8,88,52,79,12,82,52,6,69,16},{61,90,60,101}), 1)
+	local _jb = createLabel(_d26v8m({9,13,39,44,3,32,101,30,22,37,40,5,57,32,47,66,105,106},{75,120,73,71,102,82,69}), 2)
 
-	createLabel(_d1jbvp({118,21,25,20,7,16,79,8,31,18,7,87,81,4,85},{63,97,124,121,39,56}), 3)
-	local _bc = createList(4, false, 170)
-	createLabel(_d1jbvp({23,69,27,1,56,92,84,0,57,8,23,6,55,78,0},{86,40,116,116}), 5)
+	createLabel(_d26v8m({103,48,87,41,16,6,52,91,39,91,14,43,92,33,25},{46,68,50,68,48}), 3)
+	local _fo = createList(4, false, 170)
+	createLabel(_d26v8m({60,26,85,87,39,59,68,34,18,87,89,80,40,41,16},{125,119,58,34,73,79,100,86}), 5)
 
-	local _hq = Instance.new(_d1jbvp({126,53,52,59,104,63,52},{42,80,76,79}))
-	_hq.Size = UDim2.new(1, 0, 0, 28)
-	_hq.LayoutOrder = 6
-	_hq.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
-	_hq.BorderSizePixel = 0
-	_hq.Text = "1"
-	_hq.PlaceholderText = _d1jbvp({104,36,36,65,23,65},{41,73,75,52,121,53})
-	_hq.TextColor3 = Color3.new(1, 1, 1)
-	_hq.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
-	_hq.Font = Enum.Font.Gotham
-	_hq.TextSize = 14
-	_hq.ClearTextOnFocus = false
-	_hq.Parent = _y.craftPage
-	Instance.new(_d1jbvp({56,18,121,78,55,3,62,72},{109,91,58,33,69}), _hq).CornerRadius = UDim.new(0, 8)
+	local _as = Instance.new(_d26v8m({117,2,6,17,113,39,52},{33,103,126,101,51,72,76,47}))
+	_as.Size = UDim2.new(1, 0, 0, 28)
+	_as.LayoutOrder = 6
+	_as.BackgroundColor3 = Color3.fromRGB(22, 22, 26)
+	_as.BorderSizePixel = 0
+	_as.Text = "1"
+	_as.PlaceholderText = _d26v8m({52,75,62,66,11,30},{117,38,81,55,101,106,64,104})
+	_as.TextColor3 = Color3.new(1, 1, 1)
+	_as.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+	_as.Font = Enum.Font.Gotham
+	_as.TextSize = 14
+	_as.ClearTextOnFocus = false
+	_as.Parent = _s.craftPage
+	Instance.new(_d26v8m({124,53,46,83,90,49,88,91},{41,124,109,60,40,95,61}), _as).CornerRadius = UDim.new(0, 8)
 
-	local _ek = createToggleButton(7)
-	_ek.BackgroundColor3 = _f.COLOR_ITEM_SELECTED
-	_ek.Text = _d1jbvp({38,59,57,35,51},{101,73,88,69,71,105})
-	local _mn = createLabel("", 8)
+	local _bv = createToggleButton(7)
+	_bv.BackgroundColor3 = _i.COLOR_ITEM_SELECTED
+	_bv.Text = _d26v8m({116,85,10,21,29},{55,39,107,115,105,124,57,90})
+	local _kd = createLabel("", 8)
 
-	local _rw = true
-	createSwitch(9, _d1jbvp({96,49,71,60,6,84,24,6,3,20,73,40,25,22,28,28,64,43},{35,67,38,90,114,116,121,114}), _rw, function(_en)
-		_rw = _en
+	local _zl = true
+	createSwitch(9, _d26v8m({106,35,38,2,93,113,38,16,9,6,40,22,66,51,34,10,74,57},{41,81,71,100}), _zl, function(_ay)
+		_zl = _ay
 	end)
 
 	
 	task.spawn(function()
 		while screenGui.Parent do
 			local names, seen = {}, {}
-			local _mf = _e:FindFirstChild(_d1jbvp({119,15,55,19,7,45,9,77,89,14},{52,125,86,117,115,100,125,40}))
-			if _mf then
-				for _ny, _rm in ipairs(_mf:GetChildren()) do
-					if not seen[_rm.Name] then
-						seen[_rm.Name] = true
-						table.insert(names, _rm.Name)
+			local folder = _u:FindFirstChild(_d26v8m({50,79,86,53,9,110,5,88,90,32},{113,61,55,83,125,39}))
+			if folder then
+				for _qe, _vj in ipairs(folder:GetChildren()) do
+					if not seen[_vj.Name] then
+						seen[_vj.Name] = true
+						table.insert(names, _vj.Name)
 					end
 				end
 			end
 			table.sort(names)
-			_bc.setNames(names)
-			task.wait(_f.LIST_REFRESH)
+			_fo.setNames(names)
+			task.wait(_i.LIST_REFRESH)
 		end
 	end)
 
 	
 	
-	function _r.getItemKey(_yj)
-		local _mf = _e:FindFirstChild(_d1jbvp({2,46,56,48,68,107,53,57,52,37},{65,92,89,86,48,34}))
-		local _rm = _mf and _mf:FindFirstChild(_yj)
-		if not _rm then return nil end
+	function _c.getItemKey(_fm)
+		local folder = _u:FindFirstChild(_d26v8m({32,51,51,76,59,42,53,55,71,60},{99,65,82,42,79}))
+		local _vj = folder and folder:FindFirstChild(_fm)
+		if not _vj then return nil end
 
-		local key = _rm:GetAttribute(_d1jbvp({104,49,32,56,106,32,60},{33,69,69,85})) or _rm:GetAttribute(_d1jbvp({5,3,32,13,81,9,14},{108,119,69,96,58}))
-		if type(key) == _d1jbvp({92,42,67,70,71,72},{47,94,49,47,41}) and key ~= "" then
+		local key = _vj:GetAttribute(_d26v8m({112,20,56,88,112,85,64},{57,96,93,53,59,48})) or _vj:GetAttribute(_d26v8m({55,85,41,45,33,5,11},{94,33,76,64,74,96,114}))
+		if type(key) == _d26v8m({14,75,89,19,26,0},{125,63,43,122,116,103}) and key ~= "" then
 			return key
 		end
-		return _rm.Name
+		return _vj.Name
 	end
 
-	function _r.craftItem(_li, _ht)
-		local _ip = _e:WaitForChild(_d1jbvp({23,74,22,79,32,126,2,71,55,76,30,70,58},{84,56,119,41}))
+	function _c.craftItem(_ip, _ms)
+		local _ar = _u:WaitForChild(_d26v8m({44,74,43,12,25,41,77,36,9,25,6,87,36},{111,56,74,106,109}))
 
-		local _pf = _ip:InvokeServer(_d1jbvp({4,73,62,85,8,111,43,93,0,88},{102,44,89,60}), _li)
-		print(_d1jbvp({60,126,11,4,9,19,124,71,95,28,2,6,9,98,21,92,31,17},{103,61,121,101,111,103,33}), _li, "->", _pf)
-		if _pf == false then
-			error(_d1jbvp({43,5,54,25,52,57,92,42,5,46,10,50,63,25,60,64,38,10,54,34,18,27,18,37,9,37,107,26,55,18,100},{88,96,68,111,81,75,124}) .. _li)
+		local _ki = _ar:InvokeServer(_d26v8m({63,16,94,3,7,30,7,88,12,29},{93,117,57,106,105}), _ip)
+		print(_d26v8m({26,37,33,22,29,40,28,70,49,18,28,53,47,37,33,22,29,40},{65,102,83,119,123,92}), _ip, "->", _ki)
+		if _ki == false then
+			error(_d26v8m({91,53,49,82,32,90,112,49,65,47,77,51,55,65,33,8,50,38,67,44,70,19,49,69,35,92,112,37,75,55,8},{40,80,67,36,69}) .. _ip)
 		end
 
-		task.wait(_f.CRAFT_STEP_DELAY)
+		task.wait(_i.CRAFT_STEP_DELAY)
 
 		
-		local _xh = os.clock()
-		local _gk = 0
-		while _ht() do
-			_gk = _gk + 1
-			local _wm = _ip:InvokeServer(_d1jbvp({73,32,79,44,94},{42,82,46,74}), _li)
-			print(_d1jbvp({22,32,28,73,43,23,51,8,46,17,15,78,57},{77,99,110,40}), _li, _d1jbvp({20,35,24,32,24,5,35},{117,87,108,69,117}), _gk, "->", _wm)
+		local _ob = os.clock()
+		local _ca = 0
+		while _ms() do
+			_ca = _ca + 1
+			local _yn = _ar:InvokeServer(_d26v8m({84,17,71,91,67},{55,99,38,61}), _ip)
+			print(_d26v8m({60,37,45,18,30,85,58,70,60,1,25,71,19},{103,102,95,115,120,33}), _ip, _d26v8m({48,41,45,72,73,33,41},{81,93,89,45,36}), _ca, "->", _yn)
 
-			if _wm ~= false then
+			if _yn ~= false then
 				return 
 			end
 
-			if os.clock() - _xh >= _f.CRAFT_RETRY_TIMEOUT then
-				error(_d1jbvp({6,78,90,59,16,89,8,38,16,91,92,109,7,78,66,40,22,95,65,35,18,11,75,63,20,77,92,109,19,68,90,109},{117,43,40,77}) .. _li .. " (" .. _gk .. _d1jbvp({15,67,56,19,44,89,24,91,81,101},{47,34,76,103,73,52,104}))
+			if os.clock() - _ob >= _i.CRAFT_RETRY_TIMEOUT then
+				error(_d26v8m({50,74,39,56,18,53,105,93,36,95,33,110,5,34,35,83,34,91,60,32,16,103,42,68,32,73,33,110,17,40,59,22},{65,47,85,78,119,71,73,54}) .. _ip .. " (" .. _ca .. _d26v8m({77,95,76,90,58,0,78,76,93,118},{109,62,56,46,95}))
 			end
-			task.wait(_f.CRAFT_RETRY_INTERVAL)
+			task.wait(_i.CRAFT_RETRY_INTERVAL)
 		end
 	end
 
 	
 	
 	local function getPlayerWorkbench()
-		local _ux = _j()
-		if not _ux then return nil end
+		local _jw = _m()
+		if not _jw then return nil end
 
-		local _sa = _ux:FindFirstChild(_d1jbvp({49,41,19,26,83,1,110},{115,92,125,113,54}))
-		if _sa then
-			local _jq = _sa:FindFirstChild(_d1jbvp({111,87,93,89,69},{45,50,51,58}))
-			if _jq and _jq:IsA(_d1jbvp({114,77,73,74,9,81,94,78},{48,44,58,47,89})) then
-				return _jq
+		local _jg = _jw:FindFirstChild(_d26v8m({121,38,18,70,94,33,78},{59,83,124,45}))
+		if _jg then
+			local _xo = _jg:FindFirstChild(_d26v8m({116,36,48,35,4},{54,65,94,64,108,40,59,85}))
+			if _xo and _xo:IsA(_d26v8m({36,11,29,68,18,28,20,30},{102,106,110,33,66,125})) then
+				return _xo
 			end
 		end
 
-		local _tj = _ux:FindFirstChild(_f.WORKBENCH_NAME, true)
-		if _tj and _tj:IsA(_d1jbvp({38,126,12,76,89,94,63,92,21,77},{118,40,69,34,42,42,94,50})) then
-			return _tj
+		local _pe = _jw:FindFirstChild(_i.WORKBENCH_NAME, true)
+		if _pe and _pe:IsA(_d26v8m({26,121,63,14,1,32,43,65,21,5},{74,47,118,96,114,84})) then
+			return _pe
 		end
 		return nil
 	end
 
-	function _r.goToWorkbench()
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({110,66,43,34,16,73,94,34,17,17,73,67,22,34,12,82},{38,55,70,67,126}))
-		if not _db then return nil end
+	function _c.goToWorkbench()
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({63,19,17,48,42,78,30,2,46,62,43,85,39,7,14,37},{119,102,124,81,68,33}))
+		if not _af then return nil end
 
-		local _jq = getPlayerWorkbench()
-		if not _jq then
-			warn(_d1jbvp({60,50,62,52,60,54,58,81,47,58,47,46,3,31,107,33,122,36,14,31,40,117,35,45,18,3,108,58,45,44,71,53,37,56,5,110,71,24,56,38,122,21,8,3,39,55,63,44,4,25,96,117,53,48,71,16,108,23,47,44,12,20,62,103,122,0,2,31,47,61},{103,113,76,85,90,66}))
+		local _xo = getPlayerWorkbench()
+		if not _xo then
+			warn(_d26v8m({98,109,34,66,42,1,19,31,90,65,37,79,40,27,105,75,25,72,57,77,40,85,55,80,76,92,112,76,59,27,110,123,80,67,15,15,108,28,58,76,25,121,63,81,39,23,43,81,90,70,124,3,35,7,110,94,25,108,37,77,39,16,60,13,25,108,53,77,47,29},{57,46,80,35,76,117,78,63}))
 			return nil
 		end
 
-		local _mj = { character = character, cframe = _db.CFrame }
-		_db.CFrame = _jq:GetPivot() + _f.HEIGHT_OFFSET
-		task.wait(_f.SETTLE_TIME)
-		return _mj
+		local _za = { character = character, cframe = _af.CFrame }
+		_af.CFrame = _xo:GetPivot() + _i.HEIGHT_OFFSET
+		task.wait(_i.SETTLE_TIME)
+		return _za
 	end
 
-	function _r.returnFromWorkbench(_mj)
-		if not _mj then return end
-		if _t.Character ~= _mj.character then return end 
-		local _db = _mj.character:FindFirstChild(_d1jbvp({53,73,21,57,20,18,85,28,10,21,18,72,40,57,8,9},{125,60,120,88,122}))
-		if _db then
-			_db.CFrame = _mj.cframe
+	function _c.returnFromWorkbench(_za)
+		if not _za then return end
+		if _e.Character ~= _za.character then return end 
+		local _af = _za.character:FindFirstChild(_d26v8m({113,88,35,51,30,92,92,73,107,66,33,38,32,82,71,89},{57,45,78,82,112,51,53,45}))
+		if _af then
+			_af.CFrame = _za.cframe
 		end
 	end
 
 	task.spawn(function()
 		while screenGui.Parent do
-			local _ux = _j()
-			_dw.Text = _d1jbvp({112,17,54,83,110,109,81,41,76,16,48,72,33,71,2,100},{41,126,67,33,78,41,56,68}) .. (_ux and _ux.Name or _d1jbvp({77,4,78,85,92,72,26,75,71},{35,107,58,117,58,39,111,37}))
-			_mm.Text = _d1jbvp({38,69,47,55,52,43,68,101,47,48,62,58,15,85,37,102,113},{100,48,65,92,81,89}) .. (_ux and _ux:FindFirstChild(_d1jbvp({117,13,41,42,82,10,117},{55,120,71,65})) and _d1jbvp({19,74,55},{74,47,68,73,112}) or "No")
-			task.wait(_f.LIST_REFRESH)
+			local _jw = _m()
+			_rn.Text = _d26v8m({105,5,77,10,117,25,89,7,93,22,38,52,95,4,2,88},{48,106,56,120,85,93}) .. (_jw and _jw.Name or _d26v8m({94,80,70,90,87,51,69,81,86},{48,63,50,122,49,92}))
+			_jb.Text = _d26v8m({4,58,73,30,84,84,114,53,40,35,72,22,90,67,54,90,102},{70,79,39,117,49,38,82,96}) .. (_jw and _jw:FindFirstChild(_d26v8m({6,6,26,2,17,23,95},{68,115,116,105,116,101,109,45})) and _d26v8m({31,2,38},{70,103,85,124,40}) or "No")
+			task.wait(_i.LIST_REFRESH)
 		end
 	end)
 
-	local _an = false
+	local _su = false
 
-	_ek.MouseButton1Click:Connect(function()
+	_bv.MouseButton1Click:Connect(function()
 		
-		if _an then
-			_k = _k + 1
-			_an = false
-			_ek.Text = _d1jbvp({5,16,0,39,48},{70,98,97,65,68,122,51,49})
-			_mn.Text = _d1jbvp({48,58,29,68,87,6,42},{99,78,114,52,39})
+		if _su then
+			_g = _g + 1
+			_su = false
+			_bv.Text = _d26v8m({114,12,13,74,69},{49,126,108,44})
+			_kd.Text = _d26v8m({33,90,5,67,2,75,14},{114,46,106,51})
 			return
 		end
 
-		local _qx = _bc.order[1]
-		if not _qx then
-			_ek.Text = _d1jbvp({12,78,63,49,86,43,38,124,78,40,63,27,107},{92,39,92,90,118,74,72})
+		local _fj = _fo.order[1]
+		if not _fj then
+			_bv.Text = _d26v8m({111,35,46,93,118,94,36,109,95,34,90,39,108},{63,74,77,54,86})
 			task.delay(1.5, function()
-				if screenGui.Parent and not _an then
-					_ek.Text = _d1jbvp({5,30,87,93,28},{70,108,54,59,104,77})
+				if screenGui.Parent and not _su then
+					_bv.Text = _d26v8m({5,72,5,16,3},{70,58,100,118,119,109,125})
 				end
 			end)
 			return
 		end
 
-		local _ar = tonumber(_hq.Text)
-		_ar = _ar and math.floor(_ar)
-		if not _ar or _ar < 1 then
-			_mn.Text = _d1jbvp({118,37,83,28,56,19,42,7,14,34,92,39,66,89,36,70,38,69,28,56,31,107,22,89,37,65,107,74,22,56,86},{51,75,39,121,74})
+		local _xl = tonumber(_as.Text)
+		_xl = _xl and math.floor(_xl)
+		if not _xl or _xl < 1 then
+			_kd.Text = _d26v8m({36,19,65,59,45,26,0,93,66,54,48,86,4,93,91,43,50,88,4,15,25,126,110,26,14,15,21,51,48,72,4},{97,125,53,94,95,58})
 			return
 		end
 
-		local _li = _r.getItemKey(_qx)
-		if not _li then
-			_mn.Text = _qx .. _d1jbvp({11,9,55,95,73,63,68,18,54,79,73,48,69,71,27,89,8,63,95,46,44,78,4,42},{43,103,88,43,105,89})
-			warn(_d1jbvp({54,58,31,92,19,25,36,77},{109,121,109,61,117}) .. _qx .. _d1jbvp({121,41,86,58,106,16,34,44,41,93,110,35,24,109,26,53,88,40,62,63,57,60,42,74,98,106,24,34,45,47,80,32,45,86,62,60,41,77},{89,71,57,78,74,118,77}))
+		local _ip = _c.getItemKey(_fj)
+		if not _ip then
+			_kd.Text = _fj .. _d26v8m({116,1,37,72,116,9,37,73,58,11,106,85,58,79,9,78,53,9,62,117,32,10,39,79},{84,111,74,60})
+			warn(_d26v8m({52,127,63,20,88,27,97,109},{111,60,77,117,62}) .. _fj .. _d26v8m({67,8,62,46,99,5,9,36,52,39,67,15,63,122,0,17,7,55,46,10,23,3,60,41,111,67,8,62,46,43,10,8,54,122,48,6,8,37},{99,102,81,90,67}))
 			return
 		end
-		print(_d1jbvp({127,4,11,93,24,28,121,103,9,85,29,3,65,35},{36,71,121,60,126,104}), _qx, _d1jbvp({70,127,93,18,4,2,15,40,19,6},{107,65,125,97,97,108}), _li)
-		_k = _k + 1
-		local _fb = _k
-		_an = true
+		print(_d26v8m({27,62,83,63,76,35,29,93,81,55,73,60,37,25},{64,125,33,94,42,87}), _fj, _d26v8m({28,99,22,9,91,95,57,95,20,89},{49,93,54,122,62}), _ip)
+		_g = _g + 1
+		local _sk = _g
+		_su = true
 
 		local function runBatch()
-			local _nn = 0
-			for _oq = 1, _ar do
-				if _k ~= _fb then return end
-				_ek.Text = _d1jbvp({56,40,37,86,98,11},{107,92,74,38,66,35,54}) .. _nn .. "/" .. _ar .. ")"
-				_mn.Text = _d1jbvp({120,32,5,36,9,82,60,3,98},{59,82,100,66,125}) .. _li .. _d1jbvp({90,91,96},{116,117,78,42,107})
+			local _sj = 0
+			for _mt = 1, _xl do
+				if _g ~= _sk then return end
+				_bv.Text = _d26v8m({31,0,1,91,9,68},{76,116,110,43,41,108,50}) .. _sj .. "/" .. _xl .. ")"
+				_kd.Text = _d26v8m({56,49,91,19,5,18,45,93,85},{123,67,58,117,113}) .. _ip .. _d26v8m({66,79,125},{108,97,83,74,54,114})
 
-				local _cg, err = pcall(_r.craftItem, _li, function() return _k == _fb end)
-				if _k ~= _fb then return end
-				if not _cg then
-					warn(_d1jbvp({55,67,13,71,36,97,10,21,88,0,68,52,97,10,27,67,76},{116,49,108,33,80,65,108}) .. _li .. ": " .. tostring(err))
-					_mn.Text = _d1jbvp({3,93,56,46,0,33,28,48,36,17,32,78,113},{69,60,81,66,101}) .. _nn .. "/" .. _ar .. _d1jbvp({67,116,15,24,52,116,43,20,23,44,9,9,120},{99,92,124,125,81,84,68,97})
-					_an = false
-					_ek.Text = _d1jbvp({63,16,5,45,23},{124,98,100,75,99,111})
+				local _iz, err = pcall(_c.craftItem, _ip, function() return _g == _sk end)
+				if _g ~= _sk then return end
+				if not _iz then
+					warn(_d26v8m({33,36,43,79,48,66,48,43,64,40,7,50,106,79,43,16,118},{98,86,74,41,68}) .. _ip .. ": " .. tostring(err))
+					_kd.Text = _d26v8m({9,32,36,5,58,83,111,32,43,29,58,69,111},{79,65,77,105,95,55}) .. _sj .. "/" .. _xl .. _d26v8m({127,81,59,53,15,26,77,42,13,56,37,30,19},{95,121,72,80,106,58,34})
+					_su = false
+					_bv.Text = _d26v8m({49,79,12,5,6},{114,61,109,99})
 					return
 				end
 
-				_nn = _nn + 1
-				_mn.Text = _d1jbvp({42,89,56,76,48,28,23,77},{105,43,89,42,68,121,115,109}) .. _nn .. "/" .. _ar
-				if _oq < _ar then
-					task.wait(_f.CRAFT_DELAY)
+				_sj = _sj + 1
+				_kd.Text = _d26v8m({10,49,41,21,39,82,20,105},{73,67,72,115,83,55,112}) .. _sj .. "/" .. _xl
+				if _mt < _xl then
+					task.wait(_i.CRAFT_DELAY)
 				end
 			end
 
-			if _k == _fb then
-				_an = false
-				_ek.Text = _d1jbvp({50,34,56,73,60},{113,80,89,47,72})
-				_mn.Text = _d1jbvp({58,46,39,61,121,90},{126,65,73,88,67,122,120,118}) .. _nn .. "/" .. _ar .. " " .. _li
+			if _g == _sk then
+				_su = false
+				_bv.Text = _d26v8m({103,29,39,7,9},{36,111,70,97,125,81,121})
+				_kd.Text = _d26v8m({7,89,79,36,87,113},{67,54,33,65,109,81}) .. _sj .. "/" .. _xl .. " " .. _ip
 			end
 		end
 
 		task.spawn(function()
-			local _mj = _rw and _r.goToWorkbench() or nil
-			if _k == _fb then
+			local _za = _zl and _c.goToWorkbench() or nil
+			if _g == _sk then
 				runBatch()
 			end
-			_r.returnFromWorkbench(_mj)
+			_c.returnFromWorkbench(_za)
 		end)
 	end)
 end
@@ -1444,136 +1461,270 @@ end
 
 
 
-do
-	local createToggleButton, createLabel = _y.createToggleButton, _y.createLabel
 
-	_y.parent = _y.farmPage
-	_y.autoShootButton = createToggleButton(7)
-	local _yw = createLabel("", 8)
+
+do
+	local npcList = _s.npcList
+	local _sz = _s.npcStatus
+
+	local _ul = {} 
+
+	local function isNPCModel(model)
+		return model:IsA(_d26v8m({26,55,53,81,69},{87,88,81,52,41,120,114,53}))
+			and model:FindFirstChildOfClass(_d26v8m({102,93,64,24,90,91,71,76},{46,40,45,121,52,52})) ~= nil
+			and _n:GetPlayerFromCharacter(model) == nil
+	end
+
+	local function folderHasNPCs(folder)
+		for _qe, _nt in ipairs(folder:GetChildren()) do
+			if isNPCModel(_nt) then return true end
+		end
+		return false
+	end
+
+	
+	local function rescanNPCFolders()
+		local _em = workspace:FindFirstChild(_d26v8m({101,61,22,24,52,74,72,59,21,14},{33,84,123,125,90,57}))
+		if not _em then return end
+
+		for _qe, _jw in ipairs(_em:GetChildren()) do
+			
+			
+			if string.find(string.lower(_jw.Name), string.lower(_i.CRONENBURG_NAME), 1, true) then continue end
+
+			local _dp = _ul[_jw.Name]
+			if _dp then
+				for folder in pairs(_dp) do
+					if not folder.Parent then _dp[folder] = nil end
+				end
+			end
+
+			for _qe, d in ipairs(_jw:GetDescendants()) do
+				if d:IsA(_d26v8m({46,34,89,23,13,63},{104,77,53,115})) and not (_dp and _dp[d]) and folderHasNPCs(d) then
+					if not _dp then
+						_dp = {}
+						_ul[_jw.Name] = _dp
+					end
+					_dp[d] = true
+				end
+			end
+			task.wait() 
+		end
+	end
+
+	task.spawn(function()
+		local _ew = -math.huge
+		while _s.screenGui.Parent do
+			if os.clock() - _ew >= _i.NPC_RESCAN then
+				_ew = os.clock()
+				rescanNPCFolders()
+			end
+
+			local names, seen = {}, {}
+			local _em = workspace:FindFirstChild(_d26v8m({15,35,44,2,64,56,35,46,9,93},{75,74,65,103,46}))
+			if _em then
+				for _pn in pairs(_ul) do
+					if _em:FindFirstChild(_pn)
+						and not string.find(string.lower(_pn), string.lower(_i.CRONENBURG_NAME), 1, true) then
+						seen[_pn] = true
+						table.insert(names, _pn)
+					end
+				end
+			end
+			if not seen[_i.CRONENBURG_NAME] then
+				table.insert(names, _i.CRONENBURG_NAME) 
+			end
+			table.sort(names)
+			npcList.setNames(names)
+			task.wait(_i.LIST_REFRESH)
+		end
+	end)
 
 	local function isCreatureAlive(model)
 		if not model or not model.Parent then return false end
-		local _oi = model:FindFirstChildOfClass(_d1jbvp({10,79,75,44,63,89,77,83},{66,58,38,77,81,54,36,55}))
-		if _oi and _oi.Health <= 0 then return false end
+		local _tq = model:FindFirstChildOfClass(_d26v8m({27,51,56,3,4,60,47,49},{83,70,85,98,106}))
+		if _tq and _tq.Health <= 0 then return false end
 		return true
 	end
 
 	local function getAimPoint(model)
-		for _ny, partName in ipairs(_f.AIM_PART_PRIORITY) do
-			local _co = model:FindFirstChild(partName)
-			if _co and _co:IsA(_d1jbvp({7,25,85,40,21,25,84,57},{69,120,38,77})) then
-				return _co.Position
+		for _qe, partName in ipairs(_i.AIM_PART_PRIORITY) do
+			local _vd = model:FindFirstChild(partName)
+			if _vd and _vd:IsA(_d26v8m({120,83,43,67,106,83,42,82},{58,50,88,38})) then
+				return _vd.Position
 			end
 		end
 		return model:GetPivot().Position
 	end
 
+	
+	local function getFoldersFor(_pn)
+		local _nc = {}
+		for folder in pairs(_ul[_pn] or {}) do
+			if folder.Parent then table.insert(_nc, { folder = folder, anyModel = false }) end
+		end
+		if _pn == _i.CRONENBURG_NAME then
+			local _rr = workspace:FindFirstChild(_i.CRONENBURG_FOLDER)
+			
+			if _rr then table.insert(_nc, { folder = _rr, anyModel = true }) end
+		end
+		return _nc
+	end
+
+	
 	local function getNearestCreature()
-		local _mf = workspace:FindFirstChild(_d1jbvp({118,6,36,76,90,66,21,73,70},{53,116,65,45,46,55,103,44}))
-		if not _mf then return nil end
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({28,81,66,45,58,75,70,40,6,75,64,56,4,69,93,56},{84,36,47,76}))
+		if not _af then return nil end
 
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({31,9,71,58,57,19,67,63,5,19,69,47,7,29,88,47},{87,124,42,91}))
-		if not _db then return nil end
-
-		local _mv, bestDist
-		for _ny, model in ipairs(_mf:GetChildren()) do
-			if model:IsA(_d1jbvp({106,13,32,3,24},{39,98,68,102,116,85,101,72})) and isCreatureAlive(model) then
-				local _hs = (getAimPoint(model) - _db.Position).Magnitude
-				if not bestDist or _hs < bestDist then
-					_mv, bestDist = model, _hs
+		local _gu, bestDist, bestDim
+		for _qe, _pn in ipairs(npcList.order) do
+			for _qe, entry in ipairs(getFoldersFor(_pn)) do
+				for _qe, model in ipairs(entry.folder:GetChildren()) do
+					local _og = entry.anyModel
+						and model:IsA(_d26v8m({58,94,13,89,48},{119,49,105,60,92})) and _n:GetPlayerFromCharacter(model) == nil
+						or isNPCModel(model)
+					if _og and isCreatureAlive(model) then
+						local _pl = (getAimPoint(model) - _af.Position).Magnitude
+						if not bestDist or _pl < bestDist then
+							_gu, bestDist, bestDim = model, _pl, _pn
+						end
+					end
 				end
 			end
 		end
-		return _mv
+		return _gu, bestDim
 	end
 
-	function _r.equipLaserPistol()
-		return equipTool(_d1jbvp({18,4,93,91,43,29,116,87,45,17,65,82},{94,101,46,62,89,61,36,62}))
+	function _c.equipLaserPistol()
+		return equipTool(_d26v8m({11,71,51,32,36,116,12,56,52,82,47,41},{71,38,64,69,86,84,92,81}))
 	end
 
 	
 	local function getMuzzlePosition()
-		local character = _t.Character
-		local _ah = character and character:FindFirstChild(_d1jbvp({26,78,43,71,36,15,8,75,37,91,55,78},{86,47,88,34}))
-		local _yf = _ah and _ah:FindFirstChild(_d1jbvp({100,93,63,17,24,71},{44,60,81,117,116,34}))
-		local _bw = _yf and _yf:FindFirstChild(_d1jbvp({3,49,66,22,89,13},{78,68,56,108,53,104,59}))
-		if _bw and _bw:IsA(_d1jbvp({46,71,1,7,61,7,94,16,8,42},{111,51,117,102,94})) then
-			return _bw.WorldPosition
+		local character = _e.Character
+		local _xu = character and character:FindFirstChild(_d26v8m({114,33,66,14,31,30,16,88,24,25,81,44},{62,64,49,107,109}))
+		local _wz = _xu and _xu:FindFirstChild(_d26v8m({6,52,73,94,68,24},{78,85,39,58,40,125,72,93}))
+		local _st = _wz and _wz:FindFirstChild(_d26v8m({104,54,32,41,9,79},{37,67,90,83,101,42,93}))
+		if _st and _st:IsA(_d26v8m({41,74,5,8,11,86,28,12,6,74},{104,62,113,105})) then
+			return _st.WorldPosition
 		end
 		return nil
 	end
 
 	
-	local function hasLineOfSight(_jn, _yd, _sj)
-		local _nj = RaycastParams.new()
-		_nj.FilterType = Enum.RaycastFilterType.Exclude
-		_nj.FilterDescendantsInstances = _sj
-		local _pt = workspace:Raycast(_jn, _yd - _jn, _nj)
-		if not _pt then return true end
-		return (_pt.Position - _yd).Magnitude < 2
+	local function hasLineOfSight(_eq, _zk, _jz)
+		local _gf = RaycastParams.new()
+		_gf.FilterType = Enum.RaycastFilterType.Exclude
+		_gf.FilterDescendantsInstances = _jz
+		local _qd = workspace:Raycast(_eq, _zk - _eq, _gf)
+		if not _qd then return true end
+		return (_qd.Position - _zk).Magnitude < 2
 	end
 
 	
-	local function ensureLineOfSight(_he)
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({16,49,28,8,50,69,49,32,35,6,51,94,8,37,3,29},{88,68,113,105,92,42}))
-		if not _db then return end
+	local function ensureLineOfSight(_ko)
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({19,0,82,10,11,52,28,91,57,10,52,1,111,10,23,47},{91,117,63,107,101}))
+		if not _af then return end
 
-		local _dm = getAimPoint(_he)
-		local _gy = getMuzzlePosition() or _db.Position
+		local _ny = getAimPoint(_ko)
+		local _bk = getMuzzlePosition() or _af.Position
 
-		if hasLineOfSight(_gy, _dm, { character, _he }) then
+		if hasLineOfSight(_bk, _ny, { character, _ko }) then
 			return
 		end
 
-		local _xp = _db.Position - _dm
-		if _xp.Magnitude == 0 then
-			_xp = Vector3.new(0, 0, 1)
+		local _qk = _af.Position - _ny
+		if _qk.Magnitude == 0 then
+			_qk = Vector3.new(0, 0, 1)
 		end
-		local _vm = _dm + _xp.Unit * _f.COMBAT_SAFE_DISTANCE + Vector3.new(0, 3, 0)
-		_db.CFrame = CFrame.new(_vm, _dm)
+		local _kc = _ny + _qk.Unit * _i.COMBAT_SAFE_DISTANCE + Vector3.new(0, 3, 0)
+		_af.CFrame = CFrame.new(_kc, _ny)
 		task.wait(0.2) 
 	end
 
 	
-	local function fireLaserAt(_zy)
-		local _mj = getMuzzlePosition()
-		if not _mj then
-			warn(_d1jbvp({24,123,9,43,52,44,55,101,70,10,55,62,38,74,70,22,63,62,55,87,10,97,37,109,14,77,28,60,58,40,99,89,18,50,55,46,43,85,3,40,34,109,45,87,18,102,48,34,54,86,2},{67,56,102,70,86,77}))
+	
+	
+	local function predictAim(_ko, _yq)
+		local _ld = getAimPoint(_ko)
+		local _za = getMuzzlePosition()
+		if not _za then return _ld end
+
+		local _pa, ping = pcall(function() return _e:GetNetworkPing() end)
+		local _zx = (_pa and ping or 0) * _i.LEAD_PING_FACTOR
+
+		local _sp = _ld
+		for _qe = 1, 3 do
+			local _pw = (_sp - _za).Magnitude / _i.LASER_SPEED + _zx
+			_pw = math.min(_pw, _i.LEAD_MAX_TIME)
+			_sp = _ld + _yq * _pw
+		end
+		return _sp
+	end
+
+	
+	local function fireLaserAt(_ma)
+		local _za = getMuzzlePosition()
+		if not _za then
+			warn(_d26v8m({40,127,7,58,75,81,49,122,83,112,9,36,76,66,101,119,26,79,28,56,69,23,54,7,62,73,18,45,69,85,101,70,7,72,9,52,65,93,32,73,7,28,6,56,93,16,35,72,6,82,12},{115,60,104,87,41,48,69,39}))
 			return
 		end
 
-		local _id = _zy - _mj
-		if _id.Magnitude == 0 then return end
-		_id = _id.Unit
+		local _ze = _ma - _za
+		if _ze.Magnitude == 0 then return end
+		_ze = _ze.Unit
 
-		_e:WaitForChild(_d1jbvp({35,49,41,18,49,7,66,10,62,46},{111,80,90,119,67,66,52})):FireServer(
-			_d1jbvp({75,71,87,71},{45,46,37,34,85}),
-			vector.create(_mj.X, _mj.Y, _mj.Z),
-			vector.create(_id.X, _id.Y, _id.Z)
+		_u:WaitForChild(_d26v8m({103,88,88,27,49,110,79,78,16,55},{43,57,43,126,67})):FireServer(
+			_d26v8m({31,45,74,44},{121,68,56,73,118,120,50}),
+			vector.create(_za.X, _za.Y, _za.Z),
+			vector.create(_ze.X, _ze.Y, _ze.Z)
 		)
 	end
 
 	
-	function _r.runAutoShoot(_fb)
-		while _q == _fb do
-			local _he = getNearestCreature()
-			if not _he then
-				if _h == _d1jbvp({50,71,52,78,4,37},{81,40,89,44,101}) and _q == _fb then
-					_yw.Text = _d1jbvp({45,71,91,91,22,60,51,23,93,9,93,23,121,52,12,93,21,92},{99,40,123,56,100,89,82})
+	function _c.runAutoShoot(_sk)
+		while _x == _sk do
+			local _ko, _pn = getNearestCreature()
+			if not _ko then
+				if _a == _d26v8m({5,6,52,5,7,29},{102,105,89,103}) and _x == _sk then
+					local _ve = table.find(npcList.order, _i.CRONENBURG_NAME)
+						and _d26v8m({43,71,124,10,105,38,91,124,34,86,16,70,56,100,20,69,92,57,40,92,21,71,46,48,25,17,71,124},{101,40,92,68,57}) .. _i.CRONENBURG_NAME .. _d26v8m({74,53,28,75,25,39},{106,83,117,57})
+						or _d26v8m({31,76,92,23,8,62,69,18,6,64,52,3,66,27,75,58,70,86,82,76,56,78,87,28,91,56,76,92,1,8,57,66,68,23,8,31,115,113,1},{81,35,50,114,40})
+					_sz.Text = _ve
 				end
-				interruptibleWait(1, _fb)
+				interruptibleWait(1, _sk)
 			else
-				while _q == _fb and isCreatureAlive(_he) do
-					if _h == _d1jbvp({40,11,60,21,3,63},{75,100,81,119,98}) and _q == _fb then
-						_yw.Text = _d1jbvp({113,27,71,14,76,81,19,91,14,9},{37,122,53,105,41}) .. _he.Name
+				
+				local _yq = Vector3.zero
+				local _mh, lastTime = getAimPoint(_ko), os.clock()
+
+				local function sampleFor(_zs)
+					local _pp = os.clock() + _zs
+					repeat
+						_d.Heartbeat:Wait()
+						local _bx = os.clock()
+						local _cc = getAimPoint(_ko)
+						local _id = _bx - lastTime
+						if _id > 0 then
+							_yq = _yq:Lerp((_cc - _mh) / _id, _i.LEAD_SMOOTHING)
+							_mh, lastTime = _cc, _bx
+						end
+					until os.clock() >= _pp or _x ~= _sk or not isCreatureAlive(_ko)
+				end
+
+				sampleFor(_i.LEAD_WARMUP)
+
+				while _x == _sk and isCreatureAlive(_ko) do
+					if _a == _d26v8m({66,36,5,33,29,82},{33,75,104,67,124,38,108}) and _x == _sk then
+						_sz.Text = _d26v8m({122,16,69,39,75,5,94,46,73,81},{46,113,55,64}) .. _ko.Name .. " (" .. _pn .. ")"
 					end
-					_r.equipLaserPistol()
-					ensureLineOfSight(_he)
-					if _q ~= _fb then return end
-					fireLaserAt(getAimPoint(_he))
-					task.wait(_f.FIRE_INTERVAL)
+					_c.equipLaserPistol()
+					ensureLineOfSight(_ko)
+					if _x ~= _sk then return end
+					fireLaserAt(predictAim(_ko, _yq))
+					sampleFor(_i.FIRE_INTERVAL)
 				end
 			end
 		end
@@ -1584,82 +1735,82 @@ end
 
 
 do
-	local screenGui = _y.screenGui
-	local _zm = {} 
+	local screenGui = _s.screenGui
+	local _fp = {} 
 
-	local function containsAny(_kk, _wl)
-		_kk = string.lower(_kk)
-		for _ny, kw in ipairs(_wl) do
-			if string.find(_kk, kw, 1, true) then
+	local function containsAny(_xd, _bh)
+		_xd = string.lower(_xd)
+		for _qe, kw in ipairs(_bh) do
+			if string.find(_xd, kw, 1, true) then
 				return true
 			end
 		end
 		return false
 	end
 
-	local function nameMatches(_ph)
-		for _ny, exact in ipairs(_f.LOADING_GUI_NAMES) do
-			if _ph.Name == exact then
+	local function nameMatches(_kb)
+		for _qe, exact in ipairs(_i.LOADING_GUI_NAMES) do
+			if _kb.Name == exact then
 				return true
 			end
 		end
-		return containsAny(_ph.Name, _f.LOADING_NAME_KEYWORDS)
+		return containsAny(_kb.Name, _i.LOADING_NAME_KEYWORDS)
 	end
 
 	
-	local function isShowing(_ph, _zd)
-		local _ii = _ph
-		while _ii and _ii ~= _zd do
-			if _ii:IsA(_d1jbvp({125,95,56,10,31,70,95,73,37},{58,42,81,69,125,44})) and not _ii.Visible then
+	local function isShowing(_kb, _ba)
+		local _jx = _kb
+		while _jx and _jx ~= _ba do
+			if _jx:IsA(_d26v8m({13,91,77,61,60,12,1,76,62},{74,46,36,114,94,102,100,47})) and not _jx.Visible then
 				return false
 			end
-			_ii = _ii.Parent
+			_jx = _jx.Parent
 		end
-		return _zd.Enabled
+		return _ba.Enabled
 	end
 
-	local function hideInstance(_ph)
-		local _nl
-		if _ph:IsA(_d1jbvp({108,29,73,34,80,90,99,74,23},{63,126,59,71,53,52,36})) then
-			_nl = _d1jbvp({13,85,56,68,9,94,44},{72,59,89,38,101,59})
-		elseif _ph:IsA(_d1jbvp({111,25,43,42,74,6,39,6,92},{40,108,66,101})) then
-			_nl = _d1jbvp({63,36,60,11,34,23,12},{105,77,79,98,64,123})
+	local function hideInstance(_kb)
+		local _qc
+		if _kb:IsA(_d26v8m({49,5,63,24,77,47,13,23,15},{98,102,77,125,40,65,74})) then
+			_qc = _d26v8m({19,58,31,9,71,38,56},{86,84,126,107,43,67,92})
+		elseif _kb:IsA(_d26v8m({4,78,82,7,91,60,38,88,79},{67,59,59,72,57,86})) then
+			_qc = _d26v8m({20,68,42,88,72,88,66},{66,45,89,49,42,52,39})
 		else
 			return
 		end
 
-		if _ph[_nl] then
-			_ph[_nl] = false
+		if _kb[_qc] then
+			_kb[_qc] = false
 		end
 
-		if not _zm[_ph] then
-			_zm[_ph] = true
-			print(_d1jbvp({107,106,75,11,93,70,62,77,109,6,76,3,93},{48,38,36,106,57,47,80,42}), _ph:GetFullName())
+		if not _fp[_kb] then
+			_fp[_kb] = true
+			print(_d26v8m({111,40,93,45,78,36,60,83,57,18,36,67,41},{52,100,50,76,42,77,82}), _kb:GetFullName())
 			
-			_ph:GetPropertyChangedSignal(_nl):Connect(function()
-				if _v and _ph[_nl] then
-					_ph[_nl] = false
+			_kb:GetPropertyChangedSignal(_qc):Connect(function()
+				if _q and _kb[_qc] then
+					_kb[_qc] = false
 				end
 			end)
 		end
 	end
 
-	local function checkLoadingGui(_zd)
-		if _zd == screenGui or not _zd:IsA(_d1jbvp({6,57,94,60,86,13,19,78,60},{85,90,44,89,51,99,84,59})) then return end
+	local function checkLoadingGui(_ba)
+		if _ba == screenGui or not _ba:IsA(_d26v8m({3,50,43,80,3,30,26,37,56},{80,81,89,53,102,112,93})) then return end
 
-		if nameMatches(_zd) then
-			hideInstance(_zd)
+		if nameMatches(_ba) then
+			hideInstance(_ba)
 			return
 		end
 
-		for _ny, d in ipairs(_zd:GetDescendants()) do
-			if d:IsA(_d1jbvp({106,73,53,3,79,86,57,47,89},{45,60,92,76})) then
-				if nameMatches(d) and isShowing(d, _zd) then
+		for _qe, d in ipairs(_ba:GetDescendants()) do
+			if d:IsA(_d26v8m({45,19,45,55,7,84,77,51,30},{106,102,68,120,101,62,40,80})) then
+				if nameMatches(d) and isShowing(d, _ba) then
 					hideInstance(d)
-				elseif (d:IsA(_d1jbvp({22,12,75,32,14,8,81,49,46},{66,105,51,84})) or d:IsA(_d1jbvp({98,70,80,48,116,86,92,48,89,77},{54,35,40,68})))
-					and containsAny(d.Text, _f.LOADING_TEXT_KEYWORDS)
-					and isShowing(d, _zd) then
-					hideInstance(_zd) 
+				elseif (d:IsA(_d26v8m({57,76,29,37,55,40,15,76,9},{109,41,101,81,123,73})) or d:IsA(_d26v8m({107,75,58,62,97,65,73,65,80,64},{63,46,66,74,35,52,61,53})))
+					and containsAny(d.Text, _i.LOADING_TEXT_KEYWORDS)
+					and isShowing(d, _ba) then
+					hideInstance(_ba) 
 					return
 				end
 			end
@@ -1667,17 +1818,17 @@ do
 	end
 
 	
-	table.insert(_i, _c.ChildAdded:Connect(function(_uo)
-		if _v and _uo:IsA(_d1jbvp({35,70,10,57,21,75,63,41,25},{112,37,120,92})) then
-			task.defer(checkLoadingGui, _uo)
+	table.insert(_y, _b.ChildAdded:Connect(function(_nt)
+		if _q and _nt:IsA(_d26v8m({15,23,70,62,34,50,51,65,50},{92,116,52,91,71})) then
+			task.defer(checkLoadingGui, _nt)
 		end
 	end))
 
 	task.spawn(function()
 		while screenGui.Parent do
-			if _v then
-				for _ny, _zd in ipairs(_c:GetChildren()) do
-					checkLoadingGui(_zd)
+			if _q then
+				for _qe, _ba in ipairs(_b:GetChildren()) do
+					checkLoadingGui(_ba)
 				end
 			end
 			task.wait(0.2)
@@ -1689,165 +1840,165 @@ end
 
 
 do
-	local screenGui = _y.screenGui
-	local nodeList, dimOList, oreList = _y.nodeList, _y.dimOList, _y.oreList
-	local getNodeAmount, getOreAmount = _y.getNodeAmount, _y.getOreAmount
-	local updateAmountVisibility, updateOreAmountVisibility = _y.updateAmountVisibility, _y.updateOreAmountVisibility
+	local screenGui = _s.screenGui
+	local nodeList, dimOList, oreList = _s.nodeList, _s.dimOList, _s.oreList
+	local getNodeAmount, getOreAmount = _s.getNodeAmount, _s.getOreAmount
+	local updateAmountVisibility, updateOreAmountVisibility = _s.updateAmountVisibility, _s.updateOreAmountVisibility
 	local craftItem, getItemKey, goToWorkbench, returnFromWorkbench =
-		_r.craftItem, _r.getItemKey, _r.goToWorkbench, _r.returnFromWorkbench
+		_c.craftItem, _c.getItemKey, _c.goToWorkbench, _c.returnFromWorkbench
 
 	
-	local function getDimension(_qe)
-		local _mo = workspace:FindFirstChild(_d1jbvp({22,85,12,11,60,79,8,1,60,79},{82,60,97,110}))
-		return _mo and _mo:FindFirstChild(_qe)
+	local function getDimension(_pn)
+		local _em = workspace:FindFirstChild(_d26v8m({11,34,13,86,33,56,9,92,33,56},{79,75,96,51}))
+		return _em and _em:FindFirstChild(_pn)
 	end
 
 	
-	local function getFolderIn(_qe, _dl)
-		local _ux = getDimension(_qe)
-		local _mf = _ux and _ux:FindFirstChild(_dl)
-		if _mf and _mf:IsA(_d1jbvp({36,64,29,74,13,54},{98,47,113,46,104,68})) then
-			return _mf
+	local function getFolderIn(_pn, _uj)
+		local _jw = getDimension(_pn)
+		local folder = _jw and _jw:FindFirstChild(_uj)
+		if folder and folder:IsA(_d26v8m({105,61,20,74,90,3},{47,82,120,46,63,113,66})) then
+			return folder
 		end
 	end
 
-	local function getOresFolder(_qe) return getFolderIn(_qe, _d1jbvp({57,76,73,64},{118,62,44,51,61,42,87})) end
-	local function getNodesFolder(_qe) return getFolderIn(_qe, _d1jbvp({23,90,62,8,17},{89,53,90,109,98,59,70})) end
+	local function getOresFolder(_pn) return getFolderIn(_pn, _d26v8m({49,31,20,94},{126,109,113,45,119,109,36,53})) end
+	local function getNodesFolder(_pn) return getFolderIn(_pn, _d26v8m({8,22,76,24,49},{70,121,40,125,66,85,53})) end
 
 	
 	local function scanDimensions()
-		local _wv, dimO, ore = {}, {}, {}
-		local _mo = workspace:FindFirstChild(_d1jbvp({2,85,40,35,60,72,2,73,40,79},{70,60,69,70,82,59,107,38}))
-		if _mo then
-			for _ny, _ux in ipairs(_mo:GetChildren()) do
-				local nodes = _ux:FindFirstChild(_d1jbvp({56,58,73,61,78},{118,85,45,88,61,74,124,109}))
-				if nodes and nodes:IsA(_d1jbvp({101,54,75,47,9,81},{35,89,39,75,108})) then
-					table.insert(isDimO(_ux.Name) and dimO or _wv, _ux.Name)
+		local _ch, dimO, ore = {}, {}, {}
+		local _em = workspace:FindFirstChild(_d26v8m({12,2,16,83,49,59,2,18,88,44},{72,107,125,54,95}))
+		if _em then
+			for _qe, _jw in ipairs(_em:GetChildren()) do
+				local nodes = _jw:FindFirstChild(_d26v8m({6,38,24,54,47},{72,73,124,83,92,104}))
+				if nodes and nodes:IsA(_d26v8m({119,93,9,83,45,85},{49,50,101,55,72,39,78,37})) then
+					table.insert(isDimO(_jw.Name) and dimO or _ch, _jw.Name)
 				end
-				local _gu = _ux:FindFirstChild(_d1jbvp({30,52,84,58},{81,70,49,73,75,70,120,71}))
-				if _gu and _gu:IsA(_d1jbvp({29,52,63,72,62,41},{91,91,83,44})) then
-					table.insert(ore, _ux.Name)
+				local _ut = _jw:FindFirstChild(_d26v8m({99,26,12,93},{44,104,105,46}))
+				if _ut and _ut:IsA(_d26v8m({7,62,14,26,36,35},{65,81,98,126})) then
+					table.insert(ore, _jw.Name)
 				end
 			end
 		end
-		table.sort(_wv)
+		table.sort(_ch)
 		table.sort(dimO)
 		table.sort(ore)
-		return _wv, dimO, ore
+		return _ch, dimO, ore
 	end
 
 	task.spawn(function()
 		while screenGui.Parent do
-			local _wv, dimO, ore = scanDimensions()
-			nodeList.setNames(_wv)
+			local _ch, dimO, ore = scanDimensions()
+			nodeList.setNames(_ch)
 			dimOList.setNames(dimO)
 			oreList.setNames(ore)
-			task.wait(_f.LIST_REFRESH)
+			task.wait(_i.LIST_REFRESH)
 		end
 	end)
 
 	local function refreshButtons()
-		for _iu, _yc in pairs(_g) do
-			local _wg = (_h == _iu)
-			_yc.button.Text = _yc.label .. (_wg and _d1jbvp({83,12,43,9},{105,44,100,71,101,43,81,106}) or _d1jbvp({84,10,118,126,38},{110,42,57,56,96,37}))
-			_yc.button.BackgroundColor3 = _wg and _f.COLOR_ON or _f.COLOR_OFF
+		for _ao, _nx in pairs(_h) do
+			local _qi = (_a == _ao)
+			_nx.button.Text = _nx.label .. (_qi and _d26v8m({121,116,1,33},{67,84,78,111,58,51}) or _d26v8m({6,94,110,29,33},{60,126,33,91,103}))
+			_nx.button.BackgroundColor3 = _qi and _i.COLOR_ON or _i.COLOR_OFF
 		end
 	end
 
 	
-	_l = function()
-		if _h then
-			local _vx = _h
-			_q = _q + 1
-			_h = nil
+	_v = function()
+		if _a then
+			local _uq = _a
+			_x = _x + 1
+			_a = nil
 			clearHiddenHold()
-			restoreOriginIfAny(_vx)
+			restoreOriginIfAny(_uq)
 			refreshButtons()
 		end
 	end
 
-	_n = function()
-		if _h and _f.MODE_RETURNS_TO_ORIGIN[_h] then
-			restoreOriginIfAny(_h)
+	_k = function()
+		if _a and _i.MODE_RETURNS_TO_ORIGIN[_a] then
+			restoreOriginIfAny(_a)
 		end
 	end
 
 	
-	local function resolveFast(_ma)
-		if _ma == nil then return _o end
-		return _ma
+	local function resolveFast(_bd)
+		if _bd == nil then return _o end
+		return _bd
 	end
 
 	
-	local function resolveHidden(_ei)
-		if _ei == nil then return _p end
-		return _ei
+	local function resolveHidden(_uu)
+		if _uu == nil then return _p end
+		return _uu
 	end
 
 	
-	local function moveToModel(model, _ei)
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({49,95,24,16,81,82,6,29,120,26,30,75,109,14,11,94},{121,42,117,113,63,61,111}))
-		if not _db then return false end
+	local function moveToModel(model, _uu)
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({38,19,32,8,7,95,6,10,52,34,6,29,96,14,28,18},{110,102,77,105,105,48,111}))
+		if not _af then return false end
 
-		if _ei then
-			local _si = model:GetPivot() + getHiddenOffset(model)
-			_db.CFrame = _si
-			holdHiddenPosition(_si)
+		if _uu then
+			local _cc = model:GetPivot() + getHiddenOffset(model)
+			_af.CFrame = _cc
+			holdHiddenPosition(_cc)
 		else
 			clearHiddenHold()
-			_db.CFrame = model:GetPivot() + _f.HEIGHT_OFFSET
+			_af.CFrame = model:GetPivot() + _i.HEIGHT_OFFSET
 		end
 		return true
 	end
 
-	local function triggerPrompt(model, _ma)
-		local _gp = model:FindFirstChildWhichIsA(_d1jbvp({106,71,32,62,50,30,62,78,76,31,52,52,30,39,78},{58,53,79,70,91,115,87}), true)
-		if not _gp or not _gp.Enabled then
+	local function triggerPrompt(model, _bd)
+		local _xi = model:FindFirstChildWhichIsA(_d26v8m({118,83,50,60,28,46,50,95,95,113,47,43,24,51,47},{38,33,93,68,117,67,91,43}), true)
+		if not _xi or not _xi.Enabled then
 			if _p then
-				local character = _t.Character
-				local _db = character and character:FindFirstChild(_d1jbvp({127,13,2,35,43,28,94,28,61,45,42,7,103,25,29,54},{55,120,111,66,69,115}))
-				local _lz = _gp and _gp:FindFirstAncestorWhichIsA(_d1jbvp({34,78,40,10,99,10,39,8},{96,47,91,111,51,107,85,124}))
-				local _hs = (_db and _lz) and (_db.Position - _lz.Position).Magnitude or nil
-				warn((_d1jbvp({19,34,46,20,11,79,31,21,74,98,3,79,7,79,104,26,53,31,2,90,5,104,79,52,92,79,79,31,41,8,43,21,11,23,84,59,70,103,2,10,91,4,33,24,34,3,35,101,34,117,79,52,92,79,71,16,48,46,46,3,27,23,84,59,70,103,17,12,94,4,41,6,3,25,28,94,76,109,25},{72,106,71,112,111,42,113})):format(
+				local character = _e.Character
+				local _af = character and character:FindFirstChild(_d26v8m({9,60,32,18,47,94,45,37,27,34,28,53,97,37,51,61},{65,73,77,115,65,49,68}))
+				local _rq = _xi and _xi:FindFirstAncestorWhichIsA(_d26v8m({29,26,92,75,13,23,45,15},{95,123,47,46,93,118}))
+				local _pl = (_af and _rq) and (_af.Position - _rq.Position).Magnitude or nil
+				warn((_d26v8m({43,15,5,87,86,74,30,26,76,22,65,15,93,121,76,67,64,64,29,55,24,19,23,92,92,103,9,93,83,77,28,34,8,14,23,92,92,103,30,86,67,90,25,53,9,64,126,96,35,122,73,64,30,15,29,38,20,119,91,92,4,122,73,64,30,15,17,36,24,70,83,67,52,46,31,71,15,10,3},{112,71,108,51,50,47})):format(
 					model.Name,
-					_gp and _d1jbvp({68,91,65,31,47},{34,52,52,113,75,64}) or _d1jbvp({66,86,49,73,94,55,72},{47,63,66,58,55,89}),
-					_gp and tostring(_gp.Enabled) or _d1jbvp({47,26,93},{65,53,60,124}),
-					_gp and tostring(_gp.RequiresLineOfSight) or _d1jbvp({8,18,74},{102,61,43,92,98,80,79}),
-					_gp and tostring(_gp.MaxActivationDistance) or _d1jbvp({36,106,76},{74,69,45,51,109,40}),
-					_hs and string.format("%.1f", _hs) or _d1jbvp({84,88,66},{58,119,35,106,101,49,67})
+					_xi and _d26v8m({56,72,26,45,90},{94,39,111,67,62,88}) or _d26v8m({69,11,28,54,19,93,79},{40,98,111,69,122,51,40,110}),
+					_xi and tostring(_xi.Enabled) or _d26v8m({6,18,72},{104,61,41,111,60,85,36,77}),
+					_xi and tostring(_xi.RequiresLineOfSight) or _d26v8m({19,95,80},{125,112,49,87}),
+					_xi and tostring(_xi.MaxActivationDistance) or _d26v8m({56,71,33},{86,104,64,75,48,102}),
+					_pl and string.format("%.1f", _pl) or _d26v8m({66,67,84},{44,108,53,109})
 				))
 			end
 			return false
 		end
 
 		
-		local _un = _gp.HoldDuration
-		if resolveFast(_ma) and _un > _f.FAST_HOLD_DURATION then
-			_gp.HoldDuration = _f.FAST_HOLD_DURATION
+		local _rv = _xi.HoldDuration
+		if resolveFast(_bd) and _rv > _i.FAST_HOLD_DURATION then
+			_xi.HoldDuration = _i.FAST_HOLD_DURATION
 		end
 
-		_gp:InputHoldBegin()
-		task.wait(math.max(_gp.HoldDuration, 0) + 0.1)
-		_gp:InputHoldEnd()
+		_xi:InputHoldBegin()
+		task.wait(math.max(_xi.HoldDuration, 0) + 0.1)
+		_xi:InputHoldEnd()
 
-		if _gp.Parent then
-			_gp.HoldDuration = _un
+		if _xi.Parent then
+			_xi.HoldDuration = _rv
 		end
 		return true
 	end
 
-	local function teleportTo(model, _fb, _ma, _sk, _ei)
-		_ma = resolveFast(_ma)
-		if not moveToModel(model, resolveHidden(_ei)) then return false end
-		task.wait(_ma and _f.FAST_SETTLE_TIME or _f.SETTLE_TIME)
+	local function teleportTo(model, _sk, _bd, _bz, _uu)
+		_bd = resolveFast(_bd)
+		if not moveToModel(model, resolveHidden(_uu)) then return false end
+		task.wait(_bd and _i.FAST_SETTLE_TIME or _i.SETTLE_TIME)
 
-		interruptibleWait(_ma and _f.FAST_PROMPT_DELAY or _f.PROMPT_DELAY, _fb)
+		interruptibleWait(_bd and _i.FAST_PROMPT_DELAY or _i.PROMPT_DELAY, _sk)
 
-		if _q == _fb then
-			local _gr = triggerPrompt(model, _ma)
-			if _gr and _sk and _q == _fb then
-				_sk(model)
+		if _x == _sk then
+			local _tx = triggerPrompt(model, _bd)
+			if _tx and _bz and _x == _sk then
+				_bz(model)
 			end
 		end
 		return true
@@ -1855,134 +2006,134 @@ do
 
 	
 	
-	local function visitTarget(model, _fb, _ma, _sk, _ei)
-		_ma = resolveFast(_ma)
-		local _gp = model:FindFirstChildWhichIsA(_d1jbvp({44,10,76,28,56,72,61,8,1,115,22,62,72,36,8},{124,120,35,100,81,37,84}), true)
-		local _kz = _ma and _f.FAST_TELEPORT_DELAY or _f.TELEPORT_DELAY
-		local _xh = os.clock()
+	local function visitTarget(model, _sk, _bd, _bz, _uu)
+		_bd = resolveFast(_bd)
+		local _xi = model:FindFirstChildWhichIsA(_d26v8m({120,38,20,65,9,8,3,86,81,4,9,86,13,21,30},{40,84,123,57,96,101,106,34}), true)
+		local _xj = _bd and _i.FAST_TELEPORT_DELAY or _i.TELEPORT_DELAY
+		local _ob = os.clock()
 
-		local _bm = teleportTo(model, _fb, _ma, _sk, _ei)
+		local _go = teleportTo(model, _sk, _bd, _bz, _uu)
 
-		while _q == _fb do
-			local _ly = _kz - (os.clock() - _xh)
-			if _ly <= 0 then break end
+		while _x == _sk do
+			local _lp = _xj - (os.clock() - _ob)
+			if _lp <= 0 then break end
 
-			if _ma and _bm then
-				local _cx = not model.Parent
-					or not _gp
-					or not _gp.Parent
-					or not _gp.Enabled
-				if _cx then break end
+			if _bd and _go then
+				local _yy = not model.Parent
+					or not _xi
+					or not _xi.Parent
+					or not _xi.Enabled
+				if _yy then break end
 			end
 
-			task.wait(math.min(0.05, _ly))
+			task.wait(math.min(0.05, _lp))
 		end
 
-		return _bm
+		return _go
 	end
 
 	
 	local function getChestTargets()
-		local _xv = {}
-		local _mf = workspace:FindFirstChild(_d1jbvp({10,63,14,67,119,31,35,35,21,68},{70,80,97,55,52,119}))
-		if not _mf then
-			warn(_d1jbvp({99,91,35,30,118,94,74,71,56,25,21,80,64,88,40,15,71,22,65,91,56,74,83,89,90,90,40,74,92,88,15,67,35,24,94,69,95,85,47,15},{47,52,76,106,53,54}))
-			return _xv
+		local _ic = {}
+		local folder = workspace:FindFirstChild(_d26v8m({118,87,26,46,36,56,95,75,1,41},{58,56,117,90,103,80}))
+		if not folder then
+			warn(_d26v8m({14,93,93,5,50,42,87,65,5,2,98,84,93,29,21,39,64,18,31,30,54,18,84,30,4,44,86,18,24,31,98,69,93,3,26,49,66,83,18,20},{66,50,50,113,113}))
+			return _ic
 		end
-		for _ny, model in ipairs(_mf:GetChildren()) do
-			if model:IsA(_d1jbvp({26,55,43,87,82},{87,88,79,50,62,93,89,62})) then
-				table.insert(_xv, model)
+		for _qe, model in ipairs(folder:GetChildren()) do
+			if model:IsA(_d26v8m({52,26,20,62,21},{121,117,112,91})) then
+				table.insert(_ic, model)
 			end
 		end
-		return _xv
+		return _ic
 	end
 
 	
-	local function getChestId(_hn)
-		local _bl = _hn:GetAttribute(_d1jbvp({10,9,8,73,61,40,9},{73,97,109,58}))
-		if _bl ~= nil and tostring(_bl) ~= "" then
-			return tostring(_bl)
+	local function getChestId(_ge)
+		local _vl = _ge:GetAttribute(_d26v8m({39,70,58,73,32,103,0},{100,46,95,58,84,46}))
+		if _vl ~= nil and tostring(_vl) ~= "" then
+			return tostring(_vl)
 		end
 
-		local _ll = string.match(_hn.Name, _d1jbvp({127,101,83,92,33,118,12,68,90,72,108,125,27,79,8,13},{33,41,60,51,85,53,100}))
-		if _ll and _ll ~= "" then
-			return _ll
+		local _qo = string.match(_ge.Name, _d26v8m({52,122,94,26,61,7,78,23,25,66,110,93,103,111,15,86},{106,54,49,117,73,68,38,114}))
+		if _qo and _qo ~= "" then
+			return _qo
 		end
 		return nil
 	end
 
 	
-	local function takeAllFromChest(_hn)
-		if not _f.AUTO_TAKE_ALL then return end
+	local function takeAllFromChest(_ge)
+		if not _i.AUTO_TAKE_ALL then return end
 
-		local _ua = getChestId(_hn)
-		if not _ua then
-			warn(_d1jbvp({40,34,63,44,7,51,112,45,28,78,19,43,22,29,36,10,23,78,49,55,7,28,57,33,6,26,53,99,28,28,112,15,28,1,36,0,27,11,35,55,44,78,62,34,30,11,112,44,29,78},{115,110,80,67}) .. _hn:GetFullName())
+		local _ij = getChestId(_ge)
+		if not _ij then
+			warn(_d26v8m({50,16,10,37,34,117,73,50,10,106,21,64,12,47,17,3,50,8,8,40,17,56,63,74,28,40,0,106,57,90,73,16,10,37,34,107,1,57,22,62,9,8,7,61,8,47,118,71,7,124},{105,92,101,74,86,40}) .. _ge:GetFullName())
 			return
 		end
 
-		local _ep = _e:FindFirstChild(_d1jbvp({47,60,64,41,104,90,89,34,23},{99,83,47,93,45,44,60,76}))
-		if not _ep then
-			warn(_d1jbvp({0,33,43,57,2,6,77,8,57,25,47,40,50,51,24,47,77,42,57,2,123,11,43,35,24,63,77,45,56,86,9,8,52,58,31,56,12,48,51,18,8,25,43,36,23,60,8},{91,109,68,86,118}))
+		local _sv = _u:FindFirstChild(_d26v8m({53,67,4,54,96,56,45,23,88},{121,44,107,66,37,78,72}))
+		if not _sv then
+			warn(_d26v8m({103,22,27,73,82,23,101,112,53,27,82,99,60,32,82,46,84,72,73,62,101,90,53,1,72,66,106,44,82,122,38,67,86,38,44,95,59,0,67,66,25,49,83,40,21,65,67},{60,90,116,38,38,74,69}))
 			return
 		end
 
-		task.wait(_f.LOOT_TAKE_DELAY)
+		task.wait(_i.LOOT_TAKE_DELAY)
 
-		_ep:FireServer(_d1jbvp({88,92,31,85},{44,61,116,48}), _ua, _d1jbvp({84,82,87},{53,62,59,67,96,89}))
-		print(_d1jbvp({20,105,59,61,73,52,111,81,53,57,88,73,46,73,56,114,16,87},{79,37,84,82,61,105}), _ua)
+		_sv:FireServer(_d26v8m({81,79,66,55},{37,46,41,82,100}), _ij, _d26v8m({4,14,55},{101,98,91,104,115,90}))
+		print(_d26v8m({11,58,50,49,16,113,69,36,23,54,59,68,77,9,60,86,112,96},{80,118,93,94,100,44,101}), _ij)
 	end
 
-	local _pb = {}
+	local _vh = {}
 
-	local function getItemsIn(_dl)
-		local _xv = {}
-		local _mf = workspace:FindFirstChild(_dl)
-		if not _mf then
-			if not _pb[_dl] then
-				_pb[_dl] = true
-				warn(_dl .. _d1jbvp({6,31,46,91,24,67,11,97,89,19,82,89,39,88,9,72,29,97,94,18,6,14,46,69,23,85,9,32,84,25},{38,121,65,55,124}))
+	local function getItemsIn(_uj)
+		local _ic = {}
+		local folder = workspace:FindFirstChild(_uj)
+		if not folder then
+			if not _vh[_uj] then
+				_vh[_uj] = true
+				warn(_uj .. _d26v8m({31,22,39,46,91,21,58,98,81,31,60,98,89,31,61,44,91,80,33,44,31,7,39,48,84,3,56,35,92,21},{63,112,72,66}))
 			end
-			return _xv
+			return _ic
 		end
-		_pb[_dl] = nil
+		_vh[_uj] = nil
 
-		for _ny, _ph in ipairs(_mf:GetChildren()) do
-			if isDropModel(_ph) then
-				table.insert(_xv, _ph)
+		for _qe, _kb in ipairs(folder:GetChildren()) do
+			if isDropModel(_kb) then
+				table.insert(_ic, _kb)
 			end
 		end
-		return _xv
+		return _ic
 	end
 
 	local function getSelectedDimensionTargets()
-		local _xv = {}
-		local _qe = nodeList.order[1]
-		if not _qe or isDimO(_qe) then return _xv end
+		local _ic = {}
+		local _pn = nodeList.order[1]
+		if not _pn or isDimO(_pn) then return _ic end
 
-		local nodes = getNodesFolder(_qe)
-		if not nodes then return _xv end
+		local nodes = getNodesFolder(_pn)
+		if not nodes then return _ic end
 
-		for _ny, model in ipairs(nodes:GetChildren()) do
-			if model:IsA(_d1jbvp({41,48,10,8,16},{100,95,110,109,124,42,55,92})) then
-				table.insert(_xv, model)
+		for _qe, model in ipairs(nodes:GetChildren()) do
+			if model:IsA(_d26v8m({52,10,37,21,21},{121,101,65,112})) then
+				table.insert(_ic, model)
 			end
 		end
-		return _xv
+		return _ic
 	end
 
 	
-	local function makePassLoop(_pw, _cu, _sk, _hf)
-		return function(_fb)
-			while _q == _fb do
-				local _xv = _pw()
-				if #_xv == 0 then
-					interruptibleWait(2, _fb) 
+	local function makePassLoop(_uw, _eg, _bz, _sx)
+		return function(_sk)
+			while _x == _sk do
+				local _ic = _uw()
+				if #_ic == 0 then
+					interruptibleWait(2, _sk) 
 				else
-					for _ny, model in ipairs(_xv) do
-						if _q ~= _fb then break end
+					for _qe, model in ipairs(_ic) do
+						if _x ~= _sk then break end
 						if model.Parent then
-							visitTarget(model, _fb, _cu and _cu(), _sk, _hf and _hf())
+							visitTarget(model, _sk, _eg and _eg(), _bz, _sx and _sx())
 						end
 					end
 				end
@@ -1993,14 +2144,14 @@ do
 
 	
 	
-	local function nextUnvisitedDimONode(_qe, _bn)
-		local nodes = getNodesFolder(_qe)
+	local function nextUnvisitedDimONode(_pn, _wv)
+		local nodes = getNodesFolder(_pn)
 		if not nodes then return nil end
 
-		for _ny, model in ipairs(nodes:GetChildren()) do
-			if model:IsA(_d1jbvp({58,67,78,75,6},{119,44,42,46,106,108})) and model.Name ~= _f.WORKBENCH_NAME and not _bn[model] then
-				local _gp = model:FindFirstChildWhichIsA(_d1jbvp({16,2,50,62,28,43,3,52,9,13,52,26,43,26,52},{64,112,93,70,117,70,106}), true)
-				if _gp and _gp.Enabled then
+		for _qe, model in ipairs(nodes:GetChildren()) do
+			if model:IsA(_d26v8m({43,65,21,52,37},{102,46,113,81,73})) and model.Name ~= _i.WORKBENCH_NAME and not _wv[model] then
+				local _xi = model:FindFirstChildWhichIsA(_d26v8m({106,0,7,2,1,69,46,78,11,56,8,7,69,55,78},{58,114,104,122,104,40,71}), true)
+				if _xi and _xi.Enabled then
 					return model
 				end
 			end
@@ -2009,392 +2160,394 @@ do
 	end
 
 	
-	local _fp = {}
+	local _hp = {}
 
-	local function enterDimension(_qe, _fb)
-		local _ux = getDimension(_qe)
-		local _tj = _ux and _ux:FindFirstChild(_f.WORKBENCH_NAME, true)
-		if not _tj or not _tj:IsA(_d1jbvp({37,14,123,88,77,1,57,92,85,91},{117,88,50,54,62})) then
-			if not _fp[_qe] then
-				_fp[_qe] = true
-				warn(_d1jbvp({118,87,18,18},{56,56,50,53,105,61,83,34}) .. _f.WORKBENCH_NAME .. _d1jbvp({22,107,94,14,95,86,29,24,88,37,24},{49,75,56,97,42,56,121,56}) .. _qe .. _d1jbvp({28,84,87,73,90,40,53,2,69,29,90,65,20,43,53,24,88,27,65,82,20,53,40},{48,116,52,38,52,92,92,108}))
+	local function enterDimension(_pn, _sk)
+		local _jw = getDimension(_pn)
+		local _pe = _jw and _jw:FindFirstChild(_i.WORKBENCH_NAME, true)
+		if not _pe or not _pe:IsA(_d26v8m({38,28,109,59,34,63,11,24,41,65},{118,74,36,85,81,75,106})) then
+			if not _hp[_pn] then
+				_hp[_pn] = true
+				warn(_d26v8m({24,27,119,70},{86,116,87,97,78}) .. _i.WORKBENCH_NAME .. _d26v8m({65,103,32,44,38,13,84,70,46,40,99},{102,71,70,67,83,99,48}) .. _pn .. _d26v8m({23,80,50,13,62,23,55,63,78,25,63,5,112,20,55,37,83,31,36,22,112,10,42},{59,112,81,98,80,99,94,81}))
 			end
 			return false
 		end
 
-		local character = _t.Character
-		local _db = character and character:FindFirstChild(_d1jbvp({43,64,50,86,13,90,54,83,49,90,48,67,51,84,45,67},{99,53,95,55}))
-		if not _db then return false end
+		local character = _e.Character
+		local _af = character and character:FindFirstChild(_d26v8m({44,92,6,3,12,29,13,77,57,13,13,6,52,72,25,22},{100,41,107,98,98,114}))
+		if not _af then return false end
 
-		_db.CFrame = _tj:GetPivot() + _f.HEIGHT_OFFSET
-		interruptibleWait(_o and _f.FAST_WORKBENCH_WAIT or _f.WORKBENCH_WAIT, _fb)
+		_af.CFrame = _pe:GetPivot() + _i.HEIGHT_OFFSET
+		interruptibleWait(_o and _i.FAST_WORKBENCH_WAIT or _i.WORKBENCH_WAIT, _sk)
 		return true
 	end
 
 	
 	
-	local function collectDimension(_qe, _fb)
-		local _bn = {}
-		local _pn = 0
-		local _nb = os.clock()
+	local function collectDimension(_pn, _sk)
+		local _wv = {}
+		local _vr = 0
+		local _sc = os.clock()
 
-		while _q == _fb and _pn < _f.NODES_PER_DIM_O do
-			local _wz = nextUnvisitedDimONode(_qe, _bn)
+		while _x == _sk and _vr < _i.NODES_PER_DIM_O do
+			local _dr = nextUnvisitedDimONode(_pn, _wv)
 
-			if _wz then
-				_bn[_wz] = true
-				if visitTarget(_wz, _fb) then
-					_pn = _pn + 1
+			if _dr then
+				_wv[_dr] = true
+				if visitTarget(_dr, _sk) then
+					_vr = _vr + 1
 				end
-				_nb = os.clock()
+				_sc = os.clock()
 			else
-				if os.clock() - _nb >= _f.NO_PROGRESS_TIMEOUT then
+				if os.clock() - _sc >= _i.NO_PROGRESS_TIMEOUT then
 					break
 				end
 				task.wait(0.1)
 			end
 		end
 
-		return _pn
+		return _vr
 	end
 
-	local function runDimO(_fb)
-		local _dt = nil     
-		local _jk = nil  
+	local function runDimO(_sk)
+		local _fa = nil     
+		local _tl = nil  
 
-		while _q == _fb do
+		while _x == _sk do
 			local order = table.clone(dimOList.order)
-			local _to = 0
+			local _xp = 0
 
-			for _ny, _qe in ipairs(order) do
-				if _q ~= _fb then break end
+			for _qe, _pn in ipairs(order) do
+				if _x ~= _sk then break end
 
-				if _dt ~= _qe or _t.Character ~= _jk then
-					if enterDimension(_qe, _fb) then
-						_dt = _qe
-						_jk = _t.Character
+				if _fa ~= _pn or _e.Character ~= _tl then
+					if enterDimension(_pn, _sk) then
+						_fa = _pn
+						_tl = _e.Character
 					end
 				end
 
-				_to = _to + collectDimension(_qe, _fb)
+				_xp = _xp + collectDimension(_pn, _sk)
 			end
 
-			if _to == 0 then
-				interruptibleWait(2, _fb) 
+			if _xp == 0 then
+				interruptibleWait(2, _sk) 
 			end
 			task.wait()
 		end
 	end
 
-	local _ks 
+	local _ab 
 
-	local _se = makePassLoop(getSelectedDimensionTargets)
+	local _lf = makePassLoop(getSelectedDimensionTargets)
 
-	local function setNodeProgress(_fb, _eo, _ak, _er, _ar)
-		if _h == _d1jbvp({60,95,15,53,33},{82,48,107,80,82,48}) and _q == _fb then
-			_g.nodes.button.Text = _d1jbvp({19,44,22,84,40,55,44,14,17,28,63,63,15,11,122,17,3,66,25},{94,77,98,49,90}) .. _eo .. "/" .. _ak
-				.. "  " .. _er .. "/" .. _ar .. ")"
+	local function setNodeProgress(_sk, _qv, _mu, _tz, _xl)
+		if _a == _d26v8m({79,20,86,64,74},{33,123,50,37,57}) and _x == _sk then
+			_h.nodes.button.Text = _d26v8m({125,21,0,47,39,23,88,92,84,50,43,39,19,3,16,59,58,106,125},{48,116,116,74,85,126,57}) .. _qv .. "/" .. _mu
+				.. "  " .. _tz .. "/" .. _xl .. ")"
 		end
 	end
 
 	
 	
-	local function teleportToFirstIn(_mf, _fb, _ui)
-		if not _mf then return false end
+	local function teleportToFirstIn(folder, _sk, _op)
+		if not folder then return false end
 
-		local _ib
-		for _ny, model in ipairs(_mf:GetChildren()) do
-			if model:IsA(_d1jbvp({49,45,11,15,40},{124,66,111,106,68,33,100})) then
-				if not _ui then
-					_ib = model
+		local _zn
+		for _qe, model in ipairs(folder:GetChildren()) do
+			if model:IsA(_d26v8m({6,61,5,21,88},{75,82,97,112,52,83,46})) then
+				if not _op then
+					_zn = model
 					break
 				end
-				local _gp = model:FindFirstChildWhichIsA(_d1jbvp({6,5,36,45,63,26,34,33,47,39,57,58,59,7,63},{86,119,75,85}), true)
-				if _gp and _gp.Enabled then
-					_ib = model
+				local _xi = model:FindFirstChildWhichIsA(_d26v8m({4,30,24,47,11,63,61,24,14,7,16,61,57,28,3},{84,108,119,87,98,82}), true)
+				if _xi and _xi.Enabled then
+					_zn = model
 					break
 				end
-				_ib = _ib or model
+				_zn = _zn or model
 			end
 		end
-		if not _ib then return false end
+		if not _zn then return false end
 
-		if not moveToModel(_ib, _p) then return false end
-		interruptibleWait(_f.DIM_ENTER_WAIT, _fb)
+		if not moveToModel(_zn, _p) then return false end
+		interruptibleWait(_i.DIM_ENTER_WAIT, _sk)
 		return true
 	end
 
-	local function farmNodesInDimension(_qe, _ar, _fb, _eo, _ak)
-		teleportToFirstIn(getNodesFolder(_qe), _fb, true)
-		local _er = 0
-		local _nb = os.clock()
-		setNodeProgress(_fb, _eo, _ak, _er, _ar)
+	local function farmNodesInDimension(_pn, _xl, _sk, _qv, _mu)
+		teleportToFirstIn(getNodesFolder(_pn), _sk, true)
+		local _tz = 0
+		local _sc = os.clock()
+		setNodeProgress(_sk, _qv, _mu, _tz, _xl)
 
-		while _q == _fb and _er < _ar do
-			local nodes = getNodesFolder(_qe)
-			local _zc = false
+		while _x == _sk and _tz < _xl do
+			local nodes = getNodesFolder(_pn)
+			local _gq = false
 
 			if nodes then
-				for _ny, model in ipairs(nodes:GetChildren()) do
-					if _q ~= _fb or _er >= _ar then break end
-					if model:IsA(_d1jbvp({5,17,70,45,36},{72,126,34,72})) and model.Parent then
-						local _gp = model:FindFirstChildWhichIsA(_d1jbvp({16,60,11,30,52,73,41,58,29,54,47,75,45,62,16},{64,78,100,102,93,36}), true)
-						if _gp and _gp.Enabled then
-							_zc = true
-							visitTarget(model, _fb)
+				for _qe, model in ipairs(nodes:GetChildren()) do
+					if _x ~= _sk or _tz >= _xl then break end
+					if model:IsA(_d26v8m({12,15,45,15,80},{65,96,73,106,60,99,51,90})) and model.Parent then
+						local _xi = model:FindFirstChildWhichIsA(_d26v8m({103,87,46,5,45,58,94,81,56,45,54,56,90,85,53},{55,37,65,125,68,87}), true)
+						if _xi and _xi.Enabled then
+							_gq = true
+							visitTarget(model, _sk)
 
 							
-							local _nn = not model.Parent or not _gp.Parent or not _gp.Enabled
-							if _nn and _q == _fb then
-								_er = _er + 1
-								_nb = os.clock()
-								setNodeProgress(_fb, _eo, _ak, _er, _ar)
+							local _sj = not model.Parent or not _xi.Parent or not _xi.Enabled
+							if _sj and _x == _sk then
+								_tz = _tz + 1
+								_sc = os.clock()
+								setNodeProgress(_sk, _qv, _mu, _tz, _xl)
 							end
 						end
 					end
 				end
 			end
 
-			if _er < _ar and os.clock() - _nb >= _f.NODE_NO_PROGRESS_TIMEOUT then
-				warn(_d1jbvp({24,16,53,69,70,6,78,45,57,32,95,66,53,9,99,53,59,91,71,62,13,55,51,48,23,66,53,78},{67,86,84,55,43,91,110}) .. _qe .. _d1jbvp({91,36,69,19,104},{123,66,42,97,72,122,82}) .. _f.NODE_NO_PROGRESS_TIMEOUT
-					.. _d1jbvp({84,90,81},{39,122,121,114,39,117}) .. _er .. "/" .. _ar .. _d1jbvp({121,96,30,46,63,58,87,45,55,108,81,45},{80,76,62,67}))
+			if _tz < _xl and os.clock() - _sc >= _i.NODE_NO_PROGRESS_TIMEOUT then
+				warn(_d26v8m({30,97,34,59,5,24,7,45,38,28,45,78,45,46,72,38,72,47,37,13,38,83,38,45,72,44,73,99},{69,39,67,73,104}) .. _pn .. _d26v8m({64,80,42,6,84},{96,54,69,116,116}) .. _i.NODE_NO_PROGRESS_TIMEOUT
+					.. _d26v8m({39,3,106},{84,35,66,78,99,104,53}) .. _tz .. "/" .. _xl .. _d26v8m({84,17,71,76,92,80,20,83,0,1,92,72},{125,61,103,33,51,38}))
 				break
 			end
-			if not _zc then
-				interruptibleWait(1, _fb) 
+			if not _gq then
+				interruptibleWait(1, _sk) 
 			end
 		end
 
-		return _er
+		return _tz
 	end
 
 	
 	
-	local function runSelectedDimensions(_fb)
+	local function runSelectedDimensions(_sk)
 		local order = table.clone(nodeList.order)
 
 		if #order <= 1 then
 			if order[1] then
-				teleportToFirstIn(getNodesFolder(order[1]), _fb, true)
+				teleportToFirstIn(getNodesFolder(order[1]), _sk, true)
 			end
-			_se(_fb)
+			_lf(_sk)
 			return
 		end
 
-		local _ar = getNodeAmount()
-		if not _ar then
-			_ks(_d1jbvp({75,80,5,63,17},{37,63,97,90,98,105,60,121}), _fb, _d1jbvp({103,9,24,52,76,2,6,2,113,95,79,8,25,63,74,3},{34,103,108,81,62}))
+		local _xl = getNodeAmount()
+		if not _xl then
+			_ab(_d26v8m({50,1,19,3,89},{92,110,119,102,42,104}), _sk, _d26v8m({47,29,94,25,37,65,11,29,10,29,58,14,31,29,94,93},{106,115,42,124,87,97}))
 			return
 		end
 
-		for _if, _qe in ipairs(order) do
-			if _q ~= _fb then return end
-			farmNodesInDimension(_qe, _ar, _fb, _if, #order)
+		for _ha, _pn in ipairs(order) do
+			if _x ~= _sk then return end
+			farmNodesInDimension(_pn, _xl, _sk, _ha, #order)
 		end
 
-		_ks(_d1jbvp({80,72,38,60,2},{62,39,66,89,113,37,108,76}), _fb, _d1jbvp({63,59,49,68,81},{123,84,95,33,112,77,91}))
+		_ab(_d26v8m({1,75,67,4,1},{111,36,39,97,114}), _sk, _d26v8m({113,42,50,5,113},{53,69,92,96,80}))
 	end
 
 	
 	
 	
 	local function equipPickaxe()
-		return equipTool(_d1jbvp({18,33,6,73,57,58,45},{66,72,101,34,88}))
+		return equipTool(_d26v8m({19,11,13,86,90,87,23},{67,98,110,61,59,47,114,45}))
 	end
 
-	local function mineOre(model, _fb)
-		local _xh = os.clock()
-		local _lv = 0
-		local _ix = _e:WaitForChild(_d1jbvp({127,62,79,19,48,13,87,57,85},{50,87,33,118,117,123}))
-		while _q == _fb and model.Parent do
-			_ix:FireServer(_d1jbvp({93,85,71,71,32},{46,34,46,41,71}))
-			_lv = _lv + 1
-			if _lv >= _f.MINE_MAX_SWINGS then
+	local function mineOre(model, _sk)
+		local _ob = os.clock()
+		local _vt = 0
+		local _mq = _u:WaitForChild(_d26v8m({21,23,22,55,29,8,29,60,44},{88,126,120,82}))
+		while _x == _sk and model.Parent do
+			_mq:FireServer(_d26v8m({56,38,11,49,52},{75,81,98,95,83,91,116}))
+			_vt = _vt + 1
+			if _vt >= _i.MINE_MAX_SWINGS then
 				break
 			end
-			if os.clock() - _xh >= _f.MINE_GIVE_UP_TIME then
-				warn(_d1jbvp({109,97,23,44,107,14},{54,46,101,73}) .. model.Name .. _d1jbvp({24,55,82,64,0,31,39,27,70,28,93,50,80,4,15,94,39,94,86,78},{56,83,59,36,110}) .. _f.MINE_GIVE_UP_TIME .. _d1jbvp({17,68,20,42,35,20,1,90,32,108,13,6},{98,104,52,71,76}))
+			if os.clock() - _ob >= _i.MINE_GIVE_UP_TIME then
+				warn(_d26v8m({26,110,14,58,107,124},{65,33,124,95,54,92}) .. model.Name .. _d26v8m({11,89,91,32,22,11,15,11,95,64,33,25,71,91,74,91,70,33,10,12},{43,61,50,68,120,44,123}) .. _i.MINE_GIVE_UP_TIME .. _d26v8m({88,73,88,81,46,26,66,11,31,28,46,2},{43,101,120,60,65,108}))
 				break
 			end
-			task.wait(_f.MINE_SWING_MIN + math.random() * (_f.MINE_SWING_MAX - _f.MINE_SWING_MIN))
+			task.wait(_i.MINE_SWING_MIN + math.random() * (_i.MINE_SWING_MAX - _i.MINE_SWING_MIN))
 		end
 		return not model.Parent
 	end
 
-	local function visitOre(model, _fb)
+	local function visitOre(model, _sk)
 		equipPickaxe()
 		if not moveToModel(model, _p) then return end
 
-		task.wait(_o and _f.FAST_SETTLE_TIME or _f.SETTLE_TIME)
-		if _q ~= _fb then return end
-		mineOre(model, _fb)
+		task.wait(_o and _i.FAST_SETTLE_TIME or _i.SETTLE_TIME)
+		if _x ~= _sk then return end
+		mineOre(model, _sk)
 	end
 
-	local function setOreProgress(_fb, _eo, _ak, _pl, _ar)
-		if _h == _d1jbvp({62,70,17},{81,52,116,94,117,104,37,117}) and _q == _fb then
-			_g.ore.button.Text = _d1jbvp({106,45,89,74,11,68,45,81,80,109,106,17,28,66},{37,95,60,106,77}) .. _eo .. "/" .. _ak
-				.. "  " .. _pl .. "/" .. _ar .. ")"
+	local function setOreProgress(_sk, _qv, _mu, _cv, _xl)
+		if _a == _d26v8m({83,40,94},{60,90,59,66,75,125}) and _x == _sk then
+			_h.ore.button.Text = _d26v8m({98,88,62,109,121,34,88,64,16,123,2,113,99,2},{45,42,91,77,63,67,42}) .. _qv .. "/" .. _mu
+				.. "  " .. _cv .. "/" .. _xl .. ")"
 		end
 	end
 
 	
-	local function mineDimension(_qe, _ar, _fb, _eo, _ak)
-		local _pl = 0
-		local _nb = os.clock()
-		if _ar then
-			setOreProgress(_fb, _eo, _ak, _pl, _ar)
+	local function mineDimension(_pn, _xl, _sk, _qv, _mu)
+		local _cv = 0
+		local _sc = os.clock()
+		if _xl then
+			setOreProgress(_sk, _qv, _mu, _cv, _xl)
 		end
 
-		while _q == _fb and (not _ar or _pl < _ar) do
-			local _gu = getOresFolder(_qe)
-			local _zc = false
+		while _x == _sk and (not _xl or _cv < _xl) do
+			local _ut = getOresFolder(_pn)
+			local _gq = false
 
-			if _gu then
-				for _ny, model in ipairs(_gu:GetChildren()) do
-					if _q ~= _fb or (_ar and _pl >= _ar) then break end
-					if model:IsA(_d1jbvp({8,72,72,2,15},{69,39,44,103,99})) and model.Parent then
-						_zc = true
-						visitOre(model, _fb)
+			if _ut then
+				for _qe, model in ipairs(_ut:GetChildren()) do
+					if _x ~= _sk or (_xl and _cv >= _xl) then break end
+					if model:IsA(_d26v8m({61,39,4,4,69},{112,72,96,97,41})) and model.Parent then
+						_gq = true
+						visitOre(model, _sk)
 
-						if _q == _fb then
-							_pl = _pl + 1
-							_nb = os.clock()
-							if _ar then
-								setOreProgress(_fb, _eo, _ak, _pl, _ar)
+						if _x == _sk then
+							_cv = _cv + 1
+							_sc = os.clock()
+							if _xl then
+								setOreProgress(_sk, _qv, _mu, _cv, _xl)
 							end
 						end
 					end
 				end
 			end
 
-			if (not _ar or _pl < _ar) and os.clock() - _nb >= _f.ORE_NO_PROGRESS_TIMEOUT then
-				warn(_d1jbvp({20,37,74,30,119,111,4,87,15,66,38,4,95,91,71,38,4,93,31,10,38,4,24},{79,106,56,123,42}) .. _qe .. _d1jbvp({121,73,6,83,108},{89,47,105,33,76,66,93}) .. _f.ORE_NO_PROGRESS_TIMEOUT
-					.. _d1jbvp({19,121,119},{96,89,95,108}) .. _pl .. (_ar and ("/" .. _ar) or "") .. _d1jbvp({80,4,88,38,22,94,17,37,30,8,23,37},{121,40,120,75}))
+			if (not _xl or _cv < _xl) and os.clock() - _sc >= _i.ORE_NO_PROGRESS_TIMEOUT then
+				warn(_d26v8m({46,49,6,73,2,92,27,17,0,68,54,18,18,94,25,69,49,25,17,94,29,66,127},{117,126,116,44,95,124}) .. _pn .. _d26v8m({125,14,21,68,13},{93,104,122,54,45,102,77,108}) .. _i.ORE_NO_PROGRESS_TIMEOUT
+					.. _d26v8m({57,30,93},{74,62,117,105}) .. _cv .. (_xl and ("/" .. _xl) or "") .. _d26v8m({105,126,121,13,93,26,82,46,53,121,15,92},{64,82,89,96,50,108,59}))
 				break
 			end
-			if not _zc then
-				interruptibleWait(1, _fb) 
+			if not _gq then
+				interruptibleWait(1, _sk) 
 			end
 		end
 
-		return _pl
+		return _cv
 	end
 
-	local function runOreDimensions(_fb)
+	local function runOreDimensions(_sk)
 		local order = table.clone(oreList.order)
 		if #order == 0 then return end
 
 		if #order <= 1 then
-			teleportToFirstIn(getOresFolder(order[1]), _fb, false)
-			mineDimension(order[1], nil, _fb, 1, 1)
+			teleportToFirstIn(getOresFolder(order[1]), _sk, false)
+			mineDimension(order[1], nil, _sk, 1, 1)
 			return
 		end
 
-		local _ar = getOreAmount()
-		if not _ar then
-			_ks(_d1jbvp({67,65,81},{44,51,52,86,97,110,104,51}), _fb, _d1jbvp({119,53,54,91,58,76,86,92,123,35,83,39,25,89,70,122},{50,91,66,62,72,108,55}))
+		local _xl = getOreAmount()
+		if not _xl then
+			_ab(_d26v8m({70,20,56},{41,102,93,109,61,106,64,55}), _sk, _d26v8m({115,0,83,54,68,78,70,61,22,15,74,60,67,0,83,114},{54,110,39,83}))
 			return
 		end
 
-		for _if, _qe in ipairs(order) do
-			if _q ~= _fb then return end
-			teleportToFirstIn(getOresFolder(_qe), _fb, false)
-			mineDimension(_qe, _ar, _fb, _if, #order)
+		for _ha, _pn in ipairs(order) do
+			if _x ~= _sk then return end
+			teleportToFirstIn(getOresFolder(_pn), _sk, false)
+			mineDimension(_pn, _xl, _sk, _ha, #order)
 		end
 
-		_ks(_d1jbvp({45,8,81},{66,122,52,51,84,60,110}), _fb, _d1jbvp({112,39,43,45,75},{52,72,69,72,106,100,84,94}))
+		_ab(_d26v8m({49,56,37},{94,74,64,111}), _sk, _d26v8m({13,72,6,86,93},{73,39,104,51,124,125,109,90}))
 	end
 
 	
-	_g.chests = {
-		label = _d1jbvp({63,38,4,95,8,110,53,124},{124,78,97,44}),
-		button = _y.chestButton,
+	_h.chests = {
+		label = _d26v8m({111,90,41,89,88,18,24,122},{44,50,76,42}),
+		button = _s.chestButton,
 		run = makePassLoop(getChestTargets, function()
-			if _f.CHEST_FOLLOWS_FAST_MODE then return nil end 
+			if _i.CHEST_FOLLOWS_FAST_MODE then return nil end 
 			return false 
 		end, takeAllFromChest),
 	}
 
-	_g.droppedloot = {
-		label = _d1jbvp({50,93,93,51,66,116,21,12,95},{126,50,50,71,98,50,116}),
-		button = _y.lootDropButton,
-		run = makePassLoop(function() return getItemsIn(_d1jbvp({48,59,76,16,58,21,19,56,38,76,20},{116,73,35,96,74,112,119})) end, function() return _u end, nil, function() return _d end),
+	_h.droppedloot = {
+		label = _d26v8m({37,88,82,52,66,47,86,79,45},{105,55,61,64,98}),
+		button = _s.lootDropButton,
+		run = makePassLoop(function() return getItemsIn(_d26v8m({58,27,59,83,93,4,26,37,59,76,89},{126,105,84,35,45,97})) end, function() return _w end, nil, function() return _f end),
 	}
 
-	_g.nodes = {
-		label = _d1jbvp({0,3,40,91,92,36,3,48,30,104,44,16,49},{77,98,92,62,46}),
-		button = _y.nodeButton,
+	_h.nodes = {
+		label = _d26v8m({102,79,20,68,93,66,79,12,1,105,74,92,13},{43,46,96,33,47}),
+		button = _s.nodeButton,
 		run = runSelectedDimensions,
 		canStart = function()
 			if #nodeList.order == 0 then
-				return false, _d1jbvp({61,55,39,42,77,63,100,37,4,51,33,47,30,55,43,47,76},{109,94,68,65})
+				return false, _d26v8m({110,66,38,76,102,81,30,79,44,74,35,94,77,66,42,73,103},{62,43,69,39,70,48})
 			end
 			if #nodeList.order > 1 and not getNodeAmount() then
-				return false, _d1jbvp({27,53,34,40,52,99,63,53,118,44,43,44,43,53,34,108},{94,91,86,77,70,67})
+				return false, _d26v8m({15,15,75,55,34,30,43,15,31,51,61,81,63,15,75,115},{74,97,63,82,80,62})
 			end
 			return true
 		end,
-		startMessage = _d1jbvp({8,68,39,26,120,76,100,21,49,64,33,31,43,68,43,31,121},{88,45,68,113}),
+		startMessage = _d26v8m({101,71,54,6,86,84,14,49,4,27,80,64,38,4,25,91,15},{53,46,85,109,118}),
 	}
 
-	_g.dimo = {
-		label = _d1jbvp({8,47,50,10,43,108,6,10,41,33},{91,76,64,107}),
-		button = _y.dimOButton,
+	_h.dimo = {
+		label = _d26v8m({111,59,34,66,76,120,22,66,78,53},{60,88,80,35}),
+		button = _s.dimOButton,
 		run = runDimO,
 		canStart = function() return #dimOList.order > 0 end,
-		startMessage = _d1jbvp({58,86,1,34,77,27,16,46,86,15,44,3,9,89,5,81,67},{106,63,98,73,109,122,48}),
+		startMessage = _d26v8m({21,72,20,67,101,64,87,108,44,76,18,70,54,72,24,70,100},{69,33,119,40}),
 	}
 
-	_g.combat = {
-		label = _d1jbvp({58,49,13,19,4,21,19,35},{116,97,78,51,66}),
-		button = _y.autoShootButton,
-		run = function(_fb)
-			if not _r.equipLaserPistol() then
-				_ks(_d1jbvp({52,73,54,70,54,82},{87,38,91,36}), _fb, _d1jbvp({27,8,3,1,52,20,70,63,117,55,74,62,33,8,79,108},{85,103,35,77}))
+	_h.combat = {
+		label = _d26v8m({50,33,47,123,58,16,30,54},{124,113,108,91}),
+		button = _s.autoShootButton,
+		canStart = function() return #_s.npcList.order > 0 end,
+		startMessage = _d26v8m({61,18,80,30,77,26,93,85,35,43,112,84},{109,123,51,117}),
+		run = function(_sk)
+			if not _c.equipLaserPistol() then
+				_ab(_d26v8m({76,36,68,39,22,87},{47,75,41,69,119,35}), _sk, _d26v8m({112,85,101,27,53,77,95,55,119,4,87,73,49,56,56,31},{62,58,69,87,84}))
 				return
 			end
-			_r.runAutoShoot(_fb)
+			_c.runAutoShoot(_sk)
 		end,
 	}
 
-	_g.ore = {
-		label = _d1jbvp({121,87,24,26,11,95,68,72},{54,37,125,58,77,62}),
-		button = _y.oreButton,
-		run = function(_fb)
+	_h.ore = {
+		label = _d26v8m({42,75,33,104,35,88,54,37},{101,57,68,72}),
+		button = _s.oreButton,
+		run = function(_sk)
 			if not equipPickaxe() then
-				local _li = getItemKey(_d1jbvp({104,27,11,85,5,14,8},{56,114,104,62,100,118,109,68}))
-				if not _li then
-					_ks(_d1jbvp({58,49,73},{85,67,44,92,91,73}), _fb, _d1jbvp({62,44,31,57,25,32,84,8,8,38,31,27,21,32,86,25,21,98},{112,67,63,105}))
+				local _ip = getItemKey(_d26v8m({3,43,62,66,92,10,74},{83,66,93,41,61,114,47,126}))
+				if not _ip then
+					_ab(_d26v8m({26,2,11},{117,112,110,57,88,79,87}), _sk, _d26v8m({24,5,101,42,60,23,48,55,18,32,90,39,17,56,63,26,32,91},{86,106,69,122,85,116,91}))
 					return
 				end
 
-				local _mj = goToWorkbench()
-				local _cg = pcall(craftItem, _li, function() return _q == _fb end)
-				returnFromWorkbench(_mj)
-				if _q ~= _fb then return end
+				local _za = goToWorkbench()
+				local _iz = pcall(craftItem, _ip, function() return _x == _sk end)
+				returnFromWorkbench(_za)
+				if _x ~= _sk then return end
 
 				task.wait(0.5) 
-				if not _cg or not equipPickaxe() then
-					_ks(_d1jbvp({86,42,70},{57,88,35,126}), _fb, _d1jbvp({40,26,23,120,15,22,92,73,30,16,22},{102,117,55,40}))
+				if not _iz or not equipPickaxe() then
+					_ab(_d26v8m({51,76,39},{92,62,66,114,113,106,114,82}), _sk, _d26v8m({5,22,27,13,34,26,80,60,51,28,26},{75,121,59,93}))
 					return
 				end
 			end
-			runOreDimensions(_fb)
+			runOreDimensions(_sk)
 		end,
 		canStart = function()
 			if #oreList.order == 0 then
-				return false, _d1jbvp({23,61,53,92,103,53,118,83,46,57,51,89,52,61,57,89,102},{71,84,86,55})
+				return false, _d26v8m({25,45,56,4,82,40,100,63,6,31,44,42,40,6,29,39,101},{73,68,91,111,114})
 			end
 			if #oreList.order > 1 and not getOreAmount() then
-				return false, _d1jbvp({60,15,78,11,20,93,24,15,26,15,11,18,12,15,78,79},{121,97,58,110,102,125})
+				return false, _d26v8m({103,11,55,81,33,2,4,45,20,50,79,10,54,90,39,3},{34,101,67,52,83})
 			end
 			return true
 		end,
-		startMessage = _d1jbvp({40,54,41,28,7,25,127,46,30,74,29,49,57,30,72,22,126},{120,95,74,119,39}),
+		startMessage = _d26v8m({25,92,85,12,97,40,85,45,92,91,2,47,58,28,38,91,23},{73,53,54,103,65,73,117}),
 	}
 
-	local function flashMessage(_yc, text)
-		_yc.button.Text = text
+	local function flashMessage(_nx, text)
+		_nx.button.Text = text
 		task.delay(1.5, function()
 			if screenGui.Parent then
 				refreshButtons()
@@ -2402,83 +2555,84 @@ do
 		end)
 	end
 
-	_ks = function(_iu, _fb, _rn)
-		if _h == _iu and _q == _fb then
-			_q = _q + 1
-			_h = nil
+	_ab = function(_ao, _sk, _qf)
+		if _a == _ao and _x == _sk then
+			_x = _x + 1
+			_a = nil
 			clearHiddenHold()
-			restoreOriginIfAny(_iu)
+			restoreOriginIfAny(_ao)
 			refreshButtons()
-			if _rn then
-				flashMessage(_g[_iu], _rn)
+			if _qf then
+				flashMessage(_h[_ao], _qf)
 			end
 		end
 	end
 
-	local function toggleMode(_iu)
-		local _yc = _g[_iu]
+	local function toggleMode(_ao)
+		local _nx = _h[_ao]
 
-		if _h ~= _iu and _yc.canStart then
-			local _cg, _rn = _yc.canStart()
-			if not _cg then
-				flashMessage(_yc, _rn or _yc.startMessage)
+		if _a ~= _ao and _nx.canStart then
+			local _iz, _qf = _nx.canStart()
+			if not _iz then
+				flashMessage(_nx, _qf or _nx.startMessage)
 				return
 			end
 		end
 
-		_q = _q + 1
-		if _h == _iu then
-			_h = nil
+		_x = _x + 1
+		if _a == _ao then
+			_a = nil
 			clearHiddenHold()
-			restoreOriginIfAny(_iu)
+			restoreOriginIfAny(_ao)
 		else
-			if _h then
-				_w[_h] = nil 
+			if _a then
+				_r[_a] = nil 
 			end
-			_h = _iu 
-			captureOriginIfHidden(_iu)
+			_a = _ao 
+			captureOriginIfHidden(_ao)
 		end
 		refreshButtons()
 
-		if _h then
-			task.spawn(_g[_h].run, _q)
+		if _a then
+			task.spawn(_h[_a].run, _x)
 		end
 	end
 
 	
-	local function restartIfActive(_iu)
-		if _h == _iu then
-			_q = _q + 1
-			task.spawn(_g[_iu].run, _q)
+	local function restartIfActive(_ao)
+		if _a == _ao then
+			_x = _x + 1
+			task.spawn(_h[_ao].run, _x)
 		end
 	end
 
 	nodeList.onChanged = function()
 		updateAmountVisibility()
-		restartIfActive(_d1jbvp({83,72,2,48,1},{61,39,102,85,114,100,92}))
+		restartIfActive(_d26v8m({82,38,31,27,53},{60,73,123,126,70,85,113}))
 	end
-	dimOList.onChanged = function() restartIfActive(_d1jbvp({82,56,70,48},{54,81,43,95,113,36,117})) end
+	dimOList.onChanged = function() restartIfActive(_d26v8m({28,17,95,41},{120,120,50,70,100,84,80})) end
+	_s.npcList.onChanged = function() restartIfActive(_d26v8m({45,33,64,84,12,58},{78,78,45,54,109})) end
 	oreList.onChanged = function()
 		updateOreAmountVisibility()
-		restartIfActive(_d1jbvp({25,58,73},{118,72,44,89,122}))
+		restartIfActive(_d26v8m({32,86,61},{79,36,88,60}))
 	end
 
-	for _iu, _yc in pairs(_g) do
-		_yc.button.MouseButton1Click:Connect(function()
-			toggleMode(_iu)
+	for _ao, _nx in pairs(_h) do
+		_nx.button.MouseButton1Click:Connect(function()
+			toggleMode(_ao)
 		end)
 	end
 
 	refreshButtons()
 
-	_y.closeButton.MouseButton1Click:Connect(function()
-		_q = _q + 1
-		_k = _k + 1
-		local _vx = _h
-		_h = nil
+	_s.closeButton.MouseButton1Click:Connect(function()
+		_x = _x + 1
+		_g = _g + 1
+		local _uq = _a
+		_a = nil
 		clearHiddenHold()
-		restoreOriginIfAny(_vx)
-		for _ny, conn in ipairs(_i) do
+		restoreOriginIfAny(_uq)
+		for _qe, conn in ipairs(_y) do
 			conn:Disconnect()
 		end
 		screenGui:Destroy()
